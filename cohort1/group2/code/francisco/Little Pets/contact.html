@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Pets - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Little Pets Logo" class="logo">
+            <h1 class="logo-text">Little Pets</h1>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="container-title">Contact</h2>
+            <p class="contact-description">
+                Have a question? Fill out the form, and we’ll get in touch as soon as possible.
+            </p>
+            <form class="contact-form" action="submit_form.php" method="POST">
+                <input type="text" 
+                class="contact-input" 
+                placeholder="Name" 
+                required>
+                <input type="email"
+                class="contact-input"
+                placeholder="Email"
+                required>
+                <textarea class="contact-textarea"
+                placeholder="Write a message here..."
+                required></textarea>
+                <button type="submit"
+                class="contact-button">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Little Pets. All rights reserved.</p>
+        <p><a href="404.html">Privacy Policy</a> | <a href="404.html">Terms and Conditions</a></p>
+    </footer>
+</body>
+</html>

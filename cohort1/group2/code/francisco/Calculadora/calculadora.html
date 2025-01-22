@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- Enlace al archivo CSS para los estilos visuales -->
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <!-- Contenedor principal de la calculadora -->
+    <div class="calculadora">
+        <!-- Título de la calculadora -->
+        <h5>Calculadora</h5>
+        <!-- Pantalla donde se mostrarán los números y el resultado -->
+        <input type="text" id="pantalla" readonly>
+        
+        <!-- Primera fila de botones: limpiar, borrar un carácter, porcentaje y división -->
+        <div class="fila-botones">
+            <input type="button" value="C" onclick="Limpiar()"> <!-- Botón para limpiar toda la pantalla -->
+            <input type="button" value="←" onclick="BorrarUno()"> <!-- Botón para borrar el último número o símbolo -->
+            <input type="button" value="%" onclick="Agregar('%')"> <!-- Botón para agregar el símbolo de porcentaje -->
+            <input type="button" value="/" onclick="Agregar('/')"> <!-- Botón para agregar el símbolo de división -->
+        </div>
+
+        <!-- Segunda fila de botones: números del 1 al 3 y multiplicación -->
+        <div class="fila-botones">
+            <input type="button" value="1" onclick="Agregar('1')"> <!-- Botón para el número 1 -->
+            <input type="button" value="2" onclick="Agregar('2')"> <!-- Botón para el número 2 -->
+            <input type="button" value="3" onclick="Agregar('3')"> <!-- Botón para el número 3 -->
+            <input type="button" value="*" onclick="Agregar('*')"> <!-- Botón para agregar el símbolo de multiplicación -->
+        </div>
+
+        <!-- Tercera fila de botones: números del 4 al 6 y resta -->
+        <div class="fila-botones">
+            <input type="button" value="4" onclick="Agregar('4')"> <!-- Botón para el número 4 -->
+            <input type="button" value="5" onclick="Agregar('5')"> <!-- Botón para el número 5 -->
+            <input type="button" value="6" onclick="Agregar('6')"> <!-- Botón para el número 6 -->
+            <input type="button" value="-" onclick="Agregar('-')"> <!-- Botón para agregar el símbolo de resta -->
+        </div>
+
+        <!-- Cuarta fila de botones: números del 7 al 9 y suma -->
+        <div class="fila-botones">
+            <input type="button" value="7" onclick="Agregar('7')"> <!-- Botón para el número 7 -->
+            <input type="button" value="8" onclick="Agregar('8')"> <!-- Botón para el número 8 -->
+            <input type="button" value="9" onclick="Agregar('9')"> <!-- Botón para el número 9 -->
+            <input type="button" value="+" onclick="Agregar('+')"> <!-- Botón para agregar el símbolo de suma -->
+        </div>
+
+        <!-- Quinta fila de botones: punto decimal, 0 y botón de igual -->
+        <div class="fila-botones">
+            <input type="button" value="." onclick="Agregar('.')"> <!-- Botón para el punto decimal -->
+            <input type="button" value="0" onclick="Agregar('0')"> <!-- Botón para el número 0 -->
+            <input type="button" value="=" onclick="Calcular()"> <!-- Botón para calcular el resultado -->
+        </div>
+    </div>
+    
+    <!-- Enlace al archivo JavaScript que controla la funcionalidad de la calculadora -->
+    <script src="calculadora.js"></script>
+</body>
+</html>
