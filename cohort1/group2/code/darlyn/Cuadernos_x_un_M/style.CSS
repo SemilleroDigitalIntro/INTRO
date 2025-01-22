@@ -1,0 +1,242 @@
+body{
+    margin: 0;
+}
+
+
+.azul{
+
+    color: rgb(16, 34, 190);
+
+}
+
+
+.Amarillo{
+
+    color: rgb(255, 0, 0);
+
+}
+
+
+.Naranja{
+
+    color: rgb(255, 153, 0);
+
+}
+
+.Menu {
+    flex: 1;
+    position: fixed;
+    margin: 0px 0px 0px 500px;
+}
+
+.Menu ul a{
+
+    text-decoration: none;
+
+    list-style-type: none;
+
+    list-style: none;
+
+    padding-right: 30px;
+
+    color: black;
+
+    margin-top: 20px;
+
+}
+.Menu ul a:hover{ 
+    color: rgb(255, 153, 0);
+    
+}
+
+.Menu ul{
+
+    list-style-type: none;
+
+    display: flex;
+
+    text-align: right;
+
+    justify-content: right;
+
+    margin-top: -45px;
+
+    font-size: 20px;
+    margin: 0;
+    margin-left: 100px;
+}
+
+.Logo{
+    padding: 0px 0px 0px 35px;
+    position: fixed;
+
+}
+.Logo a{
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+    height: 15px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.IMG1 img{
+    background-image: url(IMG1.jpg);
+    background-position: center;
+    width: 100%;
+    opacity: 50%;
+}
+
+.INFO{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: blue;
+    height: 550px;
+    align-items: center;
+    flex-direction: column;
+}
+#background{
+    background: url(IMG1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25cm;
+    opacity: 90%;
+}
+.INFO1{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 10px;
+    margin: 0px;
+}
+
+.Top-right{
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.INFO2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 15px;
+    margin: 0px;
+    color: rgb(255, 153, 0);
+}
+.Boton button{
+    background: rgb(255, 153, 0);;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    border-bottom: none;
+    bottom: 30px;
+}
+
+.Q{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 90px;
+}
+
+.Q #Parrafo{
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 100px;
+    height: 40px;
+}
+#Reciclaje img{
+    float: left;
+    height: 350px;
+    width: 600px;
+    margin: 50px;
+}
+
+#Reciclaje p{   
+    justify-content: center;
+    margin-left: 600px;
+    font-size: 30px;
+    justify-content: center;
+    height: 100px;
+    
+}
+
+#Reciclaje h3{
+    margin-left: 650px;
+    font-size: 40px;
+    margin-top: 200px;
+    padding-top: 100px;
+}
+#Educacion p{
+    justify-content: center;
+    margin-left: 600px;
+    font-size: 30px;
+    justify-content: center;
+    height: 100px;
+}
+
+#Educacion h3{
+    margin-left: 650px;
+    font-size: 40px;
+    margin-top: 200px;
+    padding-top: 100px;
+}
+
+#Educacion img{
+    float: left;
+    height: 350px;
+    width: 600px;
+    margin: 50px;
+}
+
+#Voluntariado p{    justify-content: center;
+    margin-left: 600px;
+    font-size: 30px;
+    justify-content: center;
+    height: 100px;
+}
+
+#Voluntariado h3{
+    margin-left: 650px;
+    font-size: 40px;
+    margin-top: 200px;
+    padding-top: 100px;
+}
+
+#Voluntariado img{
+    float: left;
+    height: 350px;
+    width: 600px;
+    margin: 50px;
+    margin-top: 50px;
+}
+
+.Cuadro1{
+    background-color: #007bff;
+    color: white;
+    padding: 0px 450px 0px 0px;
+    margin: 400px 0px 0px 0px;
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    margin-top: 400px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.Cuadro1 #pa{
+    font-size: 20px;
+    text-align: justify;
+    margin: 0px;
+}
