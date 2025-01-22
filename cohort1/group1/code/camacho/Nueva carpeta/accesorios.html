@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios - Tienda BOTY</title>
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="store-container">
+    <!-- Header -->
+    <header class="store-header">
+        <nav class="store-nav">
+            <div class="store-logo">
+                <a href="index.html">
+                    <div class="logo-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <span class="logo-text">BOTY</span>
+                </a>
+            </div>
+            <div class="store-menu">
+                <a href="novedades.html" class="store-menu-item">Novedades</a>
+                <a href="hombre.html" class="store-menu-item">Hombre</a>
+                <a href="mujer.html" class="store-menu-item">Mujer</a>
+                <a href="accesorios.html" class="store-menu-item">Accesorios</a>
+                <a href="ofertas.html" class="store-menu-item">Ofertas</a>
+            </div>
+            <div class="store-nav-actions">
+                <div class="store-user-section">
+                    <span class="store-user-name"></span>
+                    <a href="login.html" class="store-login-btn" id="loginBtn">
+                        <i class="fas fa-user"></i>
+                        <span>Iniciar Sesión</span>
+                    </a>
+                    <button class="store-logout-btn" id="logoutBtn" style="display: none;">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Cerrar Sesión</span>
+                    </button>
+                </div>
+                <a href="#" class="store-cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="store-cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="store-hero">
+        <div class="store-hero-content">
+            <h1>Accesorios</h1>
+            <p>Completa tu look con nuestros accesorios exclusivos</p>
+            <a href="#productos" class="store-btn store-btn-primary">Ver Accesorios</a>
+        </div>
+    </section>
+
+    <!-- Accesorios Section -->
+    <section id="productos" class="store-section">
+        <div class="store-section-header">
+            <h2>Accesorios Destacados</h2>
+            <p>Los mejores complementos para tu estilo</p>
+        </div>
+        <div class="store-products-grid" id="productsGrid">
+            <!-- Se cargará dinámicamente con JavaScript -->
+            <div class="product-card">
+                <img src="path/to/accesorio1.jpg" alt="Accesorio 1">
+                <h3>Reloj Elegante</h3>
+                <p>Precio: $70</p>
+                <button class="store-btn">Agregar al Carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="path/to/accesorio2.jpg" alt="Accesorio 2">
+                <h3>Gafas de Sol</h3>
+                <p>Precio: $50</p>
+                <button class="store-btn">Agregar al Carrito</button>
+            </div>
+            <!-- Agrega más accesorios según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Tienda BOTY. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/store.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Verificar autenticación
+        const token = localStorage.getItem('userToken');
+        const userName = localStorage.getItem('userName');
+        const loginBtn = document.getElementById('loginBtn');
+        const logoutBtn = document.getElementById('logoutBtn');
+        const userNameSpan = document.querySelector('.store-user-name');
+
+        if (token && userName) {
+            // Usuario autenticado
+            loginBtn.style.display = 'none';
+            logoutBtn.style.display = 'inline-flex';
+            userNameSpan.textContent = `¡Hola, ${userName}!`;
+        } else {
+            // Usuario no autenticado
+            loginBtn.style.display = 'inline-flex';
+            logoutBtn.style.display = 'none';
+            userNameSpan.textContent = '';
+        }
+
+        // Manejar cierre de sesión
+        logoutBtn.addEventListener('click', function() {
+            localStorage.removeItem('userToken');
+            localStorage.removeItem('userName');
+            window.location.reload();
+        });
+    });
+    </script>
+</body>
+</html>

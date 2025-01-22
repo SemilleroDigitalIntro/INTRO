@@ -1,0 +1,460 @@
+/* Variables globales */
+:root {
+    --primary-color: #ff0000;
+    --primary-dark: #cc0000;
+    --bg-dark: #111111;
+    --bg-light: #ffffff;
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+.auth-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Banner Styles */
+.auth-banner {
+    flex: 1;
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    max-width: 500px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/* Logo Styles */
+.logo-container {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.logo-text {
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-align: center;
+    background: linear-gradient(45deg, 
+        #ffffff 0%,
+        #ff0000 50%,
+        #cc0000 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+    position: relative;
+    display: inline-block;
+}
+
+.logo-text .clothing {
+    font-weight: 300;
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    margin-top: -5px;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Separadores de redes sociales */
+.social-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    color: var(--text-secondary);
+    position: relative;
+}
+
+.social-divider::before,
+.social-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent,
+        var(--border-color) 50%,
+        transparent
+    );
+}
+
+.social-divider span {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    color: var(--text-secondary);
+    background: var(--bg-dark);
+}
+
+/* Botones de redes sociales */
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.social-button {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Google Button */
+.social-button.google {
+    background: #ffffff;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.social-button.google:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background: #f5f5f5;
+}
+
+.social-button.google i {
+    color: #4285f4;
+    font-size: 1.2rem;
+}
+
+/* Facebook Button */
+.social-button.facebook {
+    background: #1877f2;
+    color: white;
+}
+
+.social-button.facebook:hover {
+    transform: translateY(-2px);
+    background: #1664d9;
+}
+
+.social-button.facebook i {
+    font-size: 1.2rem;
+}
+
+/* Twitter/X Button */
+.social-button.twitter {
+    background: #000000;
+    color: white;
+}
+
+.social-button.twitter:hover {
+    transform: translateY(-2px);
+    background: #1a1a1a;
+}
+
+.social-button.twitter i {
+    font-size: 1.2rem;
+}
+
+/* Efecto de onda al hacer click */
+.social-button::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: none;
+    pointer-events: none;
+}
+
+.social-button:active::after {
+    animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Benefits Styles */
+.benefits {
+    margin-top: 3rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.benefit-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.benefit-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+/* Form Styles */
+.auth-form-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background: #1a1a1a;
+}
+
+.auth-form-box {
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-form-box h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.auth-subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.input-field {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 2.75rem;
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.input-field i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+}
+
+.input-field .toggle-password {
+    right: 1rem;
+    left: auto;
+    cursor: pointer;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.forgot-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.auth-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--text-secondary);
+}
+
+.auth-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+    }
+
+    .auth-banner {
+        padding: 2rem;
+    }
+
+    .auth-form-container {
+        padding: 2rem;
+    }
+}
+
+/* Botón de regreso */
+.back-to-home {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.back-to-home i {
+    font-size: 1.1rem;
+}
+
+.back-to-home:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-5px);
+}
+
+/* Efecto de brillo al hover */
+.back-to-home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, 
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    background-size: 200% 100%;
+    animation: shine 1.5s linear infinite;
+    border-radius: 50px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-home:hover::before {
+    opacity: 1;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .back-to-home {
+        top: 1rem;
+        left: 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .back-to-home span {
+        display: none; /* Oculta el texto en móviles */
+    }
+    
+    .back-to-home i {
+        font-size: 1.2rem;
+    }
+}
+
+/* Asegúrate de que el botón sea visible en modo oscuro */
+@media (prefers-color-scheme: dark) {
+    .back-to-home {
+        background: rgba(255, 255, 255, 0.15);
+    }
+    
+    .back-to-home:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
+}
+  

@@ -1,0 +1,26 @@
+<!-- hola.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a la hoja de estilos -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Piedra, Papel o Tijera</h1>
+        <div class="choices">
+            <button class="button" onclick="playGame('piedra')">🪨 Piedra</button>
+            <button class="button" onclick="playGame('papel')">📄 Papel</button>
+            <button class="button" onclick="playGame('tijera')">✂️ Tijera</button>
+        </div>
+        <div class="result" id="resultDisplay"></div>
+        <div class="stats" id="statsDisplay">Victorias: 0 | Empates: 0 | Derrotas: 0</div>
+    </div>
+    <audio id="winSound" src="win.mp3"></audio>
+    <audio id="loseSound" src="lose.mp3"></audio>
+    <audio id="tieSound" src="tie.mp3"></audio>
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>

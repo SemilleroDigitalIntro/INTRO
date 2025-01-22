@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - BotyClothing</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("tsyCAtC2Ec_wmJ0Lp");
+        })();
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Panel Informativo (Izquierda) -->
+        <div class="info-panel">
+            <div class="info-content">
+                <div class="info-header">
+                    <div class="logo-container">
+                        <div class="logo-text">
+                            <span>Boty</span>
+                            <span class="clothing">Clothing</span>
+                        </div>
+                    </div>
+                    <h2>Únete a BotyClothing</h2>
+                    <p>Descubre una nueva forma de expresar tu estilo</p>
+                </div>
+
+                <div class="benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-tag"></i>
+                        <div class="benefit-text">
+                            <h3>Descuentos Exclusivos</h3>
+                            <p>Hasta 30% OFF en tu primera compra</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <i class="fas fa-truck"></i>
+                        <div class="benefit-text">
+                            <h3>Envío Express</h3>
+                            <p>Envío gratuito en compras +$50</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <i class="fas fa-gift"></i>
+                        <div class="benefit-text">
+                            <h3>Programa de Lealtad</h3>
+                            <p>2x Puntos en cada compra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel de Registro (Derecha) -->
+        <div class="login-box">
+            <div class="login-header">
+                <h2>Crear Cuenta</h2>
+                <p>Completa tus datos para registrarte</p>
+            </div>
+
+            <form class="login-form" onsubmit="register(event)">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="fullname" placeholder="Nombre completo" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Correo electrónico" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Contraseña" required>
+                        <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="confirm-password" placeholder="Confirmar contraseña" required>
+                        <i class="fas fa-eye toggle-password"></i>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" required>
+                        <span>Acepto los <a href="#">Términos y Condiciones</a></span>
+                    </label>
+                </div>
+
+                <button onclick="sendEmail()" type="submit" class="login-button">
+                    Crear Cuenta
+                </button>
+            </form>
+
+            <div class="login-footer">
+                <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar sesión</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mantenemos el JavaScript existente -->
+    <script>
+        document.querySelectorAll('.toggle-password').forEach(button => {
+            button.addEventListener('click', function() {
+                const input = this.previousElementSibling;
+                const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+                input.setAttribute('type', type);
+                this.classList.toggle('fa-eye');
+                this.classList.toggle('fa-eye-slash');
+            });
+        });
+
+        function register(event) {
+            event.preventDefault();
+            
+            // Validar que las contraseñas coincidan
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            
+            if (password !== confirmPassword) {
+                alert('Las contraseñas no coinciden');
+                return;
+            }
+            
+            sendEmail();
+        }
+
+        function sendEmail() {
+            const templateParams = {
+                from_name: document.getElementById('fullname').value,
+                to_name: document.getElementById('fullname').value,
+                user_email: document.getElementById('email').value,
+                message: 'Gracias por registrarte en BotyClothing'
+            };
+
+            emailjs.send('service_2rlzwzg', 'template_pcbxg9r', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('¡Registro exitoso! Te hemos enviado un correo de confirmación.');
+                    window.location.href = 'login.html';
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Hubo un error en el registro. Por favor, intenta nuevamente.');
+                });
+        }
+    </script>
+</body>
+</html> 

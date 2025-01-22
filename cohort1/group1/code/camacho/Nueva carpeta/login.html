@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - BotyClothing</title>
+    <link rel="stylesheet" href="css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('tsyCAtC2Ec_wmJ0Lp');
+        })();
+    </script>
+</head>
+<body>
+    <!-- Botón de regreso -->
+    <a href="index.html" class="back-to-home">
+        <i class="fas fa-arrow-left"></i>
+        <span>Volver a la tienda</span>
+    </a>
+
+    <div class="auth-container">
+        <!-- Panel Izquierdo -->
+        <div class="auth-banner">
+            <div class="banner-content">
+                <div class="logo-container">
+                    <div class="logo-text">
+                        <span>Boty</span>
+                        <span class="clothing">Clothing</span>
+                        <span class="clothing" style="display: block; font-size: 0.3em; margin-top: 2px; color: red;">By Brayan Camacho</span>
+                    </div>
+                </div>
+                <h1>Bienvenido de nuevo</h1>
+                <p>Tu estilo, tu identidad</p>
+
+                <!-- Beneficios con iconos modernos -->
+                <div class="benefits">
+                    <div class="benefit-item">
+                        <i class="fas fa-crown"></i>
+                        <div class="benefit-text">
+                            <h3>Miembro Premium</h3>
+                            <p>Acceso exclusivo a colecciones limitadas</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <i class="fas fa-percent"></i>
+                        <div class="benefit-text">
+                            <h3>Ofertas Especiales</h3>
+                            <p>Descuentos exclusivos para miembros</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <i class="fas fa-truck-fast"></i>
+                        <div class="benefit-text">
+                            <h3>Envío Express</h3>
+                            <p>Entrega prioritaria garantizada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel de Login -->
+        <div class="auth-form-container">
+            <div class="auth-form-box">
+                <div class="logo-container">
+                    <div class="logo-text">
+                        <span>Boty</span>
+                        <span class="clothing">Clothing</span>
+                    </div>
+                </div>
+
+                <h2>Iniciar Sesión</h2>
+                <p class="auth-subtitle">Accede a tu cuenta para continuar</p>
+
+                <!-- Botones de redes sociales -->
+                <div class="social-buttons">
+                    <button class="social-button google">
+                        <i class="fab fa-google"></i>
+                        <span>Google</span>
+                    </button>
+                    <button class="social-button facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </button>
+                    <button class="social-button twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </button>
+                </div>
+
+                <div class="social-divider">
+                    <span>o continúa con</span>
+                </div>
+
+                <form class="auth-form" id="loginForm" onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <div class="input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="••••••••" required>
+                            <i class="fas fa-eye toggle-password"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span>Recordarme</span>
+                        </label>
+                        <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <button type="submit" class="auth-button">
+                        <span>Iniciar Sesión</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <div class="auth-footer">
+                    <p>¿No tienes una cuenta? <a href="register.html">Regístrate ahora</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function handleLogin(event) {
+        event.preventDefault();
+        
+        // Obtener los valores del formulario
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Preparar los parámetros para emailJS
+        const templateParams = {
+            email: email,
+            password: password
+        };
+
+        // Mostrar indicador de carga
+        const submitButton = document.querySelector('.auth-button');
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Iniciando sesión...';
+        submitButton.disabled = true;
+
+        // Enviar con emailJS
+        emailjs.send('service_2rlzwzg', 'template_pcbxg9r', templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                // Muestra un mensaje de éxito
+                alert('Inicio de sesión exitoso');
+                // Redirige a la tienda
+                window.location.href = 'index.html';
+            })
+            .catch(function(error) {
+                console.error('FAILED...', error);
+                alert('Error al iniciar sesión. Por favor, intenta de nuevo.');
+                // Restaurar el botón
+                submitButton.innerHTML = '<span>Iniciar Sesión</span> <i class="fas fa-arrow-right"></i>';
+                submitButton.disabled = false;
+            });
+    }
+
+    // También actualizamos los botones de redes sociales
+    document.querySelectorAll('.social-button').forEach(button => {
+        button.addEventListener('click', function() {
+            // Aquí iría la lógica de autenticación de cada red social
+            // Después de la autenticación exitosa:
+            window.location.href = 'index.html';
+        });
+    });
+
+    // Opcional: Mostrar/ocultar contraseña
+    document.querySelector('.toggle-password').addEventListener('click', function() {
+        const passwordInput = document.getElementById('password');
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            this.classList.remove('fa-eye');
+            this.classList.add('fa-eye-slash');
+        } else {
+            passwordInput.type = 'password';
+            this.classList.remove('fa-eye-slash');
+            this.classList.add('fa-eye');
+        }
+    });
+    </script>
+</body>
+</html> 

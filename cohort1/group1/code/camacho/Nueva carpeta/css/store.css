@@ -1,0 +1,538 @@
+/* Variables y configuración global */
+:root {
+    --store-primary: #1a1a1a;
+    --store-primary-dark: #000000;
+    --store-primary-light: #2d2d2d;
+    --store-accent: #e31837;
+    --store-accent-dark: #b31212;
+    --store-accent-light: #ff1f1f;
+    --store-white: #ffffff;
+    --store-gray-light: #f5f5f5;
+    --store-gray: #808080;
+    --store-black: #121212;
+    --store-surface: #1e1e1e;
+    --store-border: #333333;
+    --store-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--store-white);
+    color: var(--store-black);
+    line-height: 1.6;
+}
+
+/* Header y Navegación */
+.store-header {
+    background: var(--store-white);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--store-shadow);
+}
+
+.store-nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.store-logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--store-black);
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+    color: var(--store-accent);
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Menú de navegación */
+.store-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.store-menu-item {
+    color: var(--store-black);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.store-menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--store-accent);
+    transition: width 0.3s ease;
+}
+
+.store-menu-item:hover {
+    color: var(--store-accent);
+}
+
+.store-menu-item:hover::after {
+    width: 100%;
+}
+
+/* Acciones de navegación */
+.store-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.store-user-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.store-login-btn,
+.store-logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.store-login-btn {
+    background: var(--store-accent);
+    color: var(--store-white);
+    border: none;
+}
+
+.store-logout-btn {
+    background: transparent;
+    color: var(--store-accent);
+    border: 1px solid var(--store-accent);
+}
+
+.store-cart-icon {
+    position: relative;
+    color: var(--store-black);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.store-cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--store-accent);
+    color: var(--store-white);
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
+}
+
+/* Hero Section */
+.store-hero {
+    margin-top: 80px;
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--store-white);
+}
+
+.store-hero-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.store-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.store-hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Secciones */
+.store-section {
+    padding: 4rem 2rem;
+}
+
+.store-section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.store-section-header h2 {
+    font-size: 2rem;
+    color: var(--store-black);
+    margin-bottom: 0.5rem;
+}
+
+/* Grid de categorías */
+.store-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.store-category-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.store-category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.store-category-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: var(--store-white);
+}
+
+/* Newsletter */
+.store-newsletter {
+    background: var(--store-primary);
+    color: var(--store-white);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.store-newsletter-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.store-newsletter-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.store-newsletter-form input {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Footer */
+.store-footer {
+    background: var(--store-primary);
+    color: var(--store-white);
+    padding: 4rem 2rem 2rem;
+}
+
+.store-footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.store-footer-section h3 {
+    margin-bottom: 1.5rem;
+}
+
+.store-footer-section ul {
+    list-style: none;
+}
+
+.store-footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.store-footer-section a {
+    color: var(--store-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.store-social-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.store-footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--store-border);
+}
+
+/* Carrito flotante */
+.store-cart-float {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--store-accent);
+    color: var(--store-white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--store-shadow);
+    transition: transform 0.3s ease;
+}
+
+.store-cart-float:hover {
+    transform: scale(1.1);
+}
+
+.store-cart-float-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--store-white);
+    color: var(--store-accent);
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
+    font-size: 0.75rem;
+}
+
+/* Botones */
+.store-btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.store-btn-primary {
+    background-color: #e31837; /* Color de fondo rojo */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+/* Efecto hover para el botón "Ver Productos" */
+.store-btn-primary:hover {
+    background-color: #b31212; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .store-menu {
+        display: none;
+    }
+
+    .store-nav {
+        padding: 1rem;
+    }
+
+    .store-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .store-newsletter-form {
+        flex-direction: column;
+    }
+
+    .store-footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.store-animate {
+    animation: fadeIn 1s ease-out;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 3rem;
+    margin: 0;
+}
+
+.login-form input {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.login-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--store-text);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.login-link:hover {
+    background: var(--store-gray-light);
+}
+
+.login-link i {
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .login-link span {
+        display: none;
+    }
+    
+    .login-link i {
+        font-size: 1.5rem;
+    }
+}
+
+/* Estilo general para la cuadrícula de productos */
+.store-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Espacio entre los productos */
+    padding: 20px;
+}
+
+/* Estilo para cada tarjeta de producto */
+.product-card {
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: hidden; /* Para evitar que el contenido se desborde */
+    transition: transform 0.2s; /* Transición suave para el efecto hover */
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Efecto hover para las tarjetas de producto */
+.product-card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+/* Estilo para las imágenes de los productos */
+.product-card img {
+    width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo para el título del producto */
+.product-card h3 {
+    font-size: 1.5em; /* Tamaño de fuente más grande para el título */
+    margin: 10px 0; /* Margen superior e inferior */
+    color: #333; /* Color del texto */
+    font-weight: 600; /* Negrita para el título */
+}
+
+/* Estilo para el precio del producto */
+.product-card p {
+    font-size: 1.2em; /* Tamaño de fuente para el precio */
+    color: #e31837; /* Color rojo para el precio */
+    margin: 5px 0; /* Margen superior e inferior */
+}
+
+/* Estilo para el botón de agregar al carrito */
+.store-btn {
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    font-size: 1em; /* Tamaño de fuente del botón */
+    font-weight: 500; /* Peso de fuente del botón */
+}
+
+/* Efecto hover para el botón */
+.store-btn:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #1e1e1e; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 20px 0; /* Espaciado interno */
+    position: relative; /* Para asegurar que el pie de página se mantenga en su lugar */
+    bottom: 0; /* Alinear al fondo */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilo para el texto de derechos de autor */
+footer p {
+    margin: 0; /* Eliminar márgenes */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+    opacity: 0.7; /* Opacidad para un efecto más sutil */
+}
