@@ -1,0 +1,142 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#buscarform {
+    padding: 0;
+    float: left;
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+#buscarform fieldset { float: left }
+
+#buscarform .search {
+    font-size: 20px;
+    top: 0px;
+    color: #FFF;
+    background: #33BCF2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 9px;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+}
+#buscarform fieldset { width: 100% }
+
+#s {
+    width: 100%;
+    background-color: #fff;
+    float: left;
+    padding: 8px 0;
+    text-indent: 10px;
+    color: #555555;
+    border: 1px solid #fff; 
+    box-sizing: border-box;
+    height: 42px;
+}
+
+.button{
+    right: 0;
+    top: 0;
+    padding: 9px 0;
+    float: right;
+    border: 0;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    color: #a4a4a4;
+    transition: all .25s linear;
+    background: transparent;
+    z-index: 10;
+    position: absolute;
+    border: 0;
+    vertical-align: top;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3f3(0, 0%, 99%);
+}
+h3 {
+    color: #c4c3c3;
+}
+/* Estilos del encabezado */
+header {
+    background-color: #6e2b2b;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.logo {
+    max-width: 400px;
+    background-color: #f5f3f3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #eaeaea;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    float: left;
+    margin-right: 15px;
+}
+.product img {
+    max-width: 300px;
+    width: 250px;
+    height: 250px;
+}
+.price {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.controls button {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #d5006d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.controls input {
+    width: 40px;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 2px solid #eaeaea;
+}
+.contact {
+    margin-top: 20px;
+    font-size: 18px;
+}

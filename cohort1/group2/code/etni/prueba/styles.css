@@ -1,0 +1,299 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.barra {
+    margin-top: 10px;
+}
+.cajabuscar {
+    float: none;
+    width: 150px;
+    height:30px;
+    padding: 5px;
+    font-size: 14px;
+    max-width: 350px;
+    margin-bottom: 25px;
+    margin-top: 29px;
+    margin-left: 350px;
+    margin-right: auto;
+    display: inline-block;
+    text-align: left;
+}
+
+#buscarform {
+    padding: 0;
+    float: left;
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+#buscarform fieldset { float: left }
+
+#buscarform .search {
+    font-size: 20px;
+    top: 0px;
+    color: #FFF;
+    background: #33BCF2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 9px;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+}
+#buscarform fieldset { width: 100% }
+
+#s {
+    width: 100%;
+    background-color: #fff;
+    float: left;
+    padding: 8px 0;
+    text-indent: 10px;
+    color: #555555;
+    border: 1px solid #fff; 
+    box-sizing: border-box;
+    height: 42px;
+}
+
+.button{
+    right: 0;
+    top: 0;
+    padding: 9px 0;
+    float: right;
+    border: 0;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    color: #a4a4a4;
+    transition: all 0.25s linear;
+    background: transparent;
+    z-index: 10;
+    position: absolute;
+    border: 0;
+    vertical-align: top;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3f3(0, 0%, 99%);
+}
+h3 {
+    color: #c4c3c3;
+}
+/* Estilos del encabezado */
+header {
+    background-color: #6e2b2b;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon,
+.cart-icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    max-width: 400px;
+    background-color: #f5f3f3;
+}
+
+/* Estilos de los productos destacados */
+.featured-products {
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.actions {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.favorite-btn,
+.add-to-cart-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #f5f3f3;
+    color: #070707;
+    padding: 10px;
+    text-align: center;
+    position: absolute
+    bottom 0;
+    width: 100%;
+}
+.precio1{
+    text-align: left;
+    flex: 1;
+}
+.precio2{
+    text-align: left;
+    flex: 1;
+}
+.precio3{
+    text-align: left;
+    flex: 1;
+}
+.precio4{
+    text-align: left;
+    flex: 1;
+}
+.product-card h3{margin: 19px 0px;}
+.flex_1 {
+    flex: 1;
+}
+.text_center {
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #eaeaea;
+}
+header h1 {
+    margin: 0;
+    color: #d5006d;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    float: left;
+    margin-right: 15px;
+}
+.product img {
+    max-width: 300px;
+    width: 250px;
+    height: 250px;
+}
+.price {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.controls button {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #d5006d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.controls input {
+    width: 40px;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 2px solid #eaeaea;
+}
+.contact {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.barra{
+    width: 90%;
+    height: 30px;
+    align-items: center;
+    padding-left: 30%;
+    padding-right: 20%;
+    color: #333;
+    
+   
+}
+#s{ 
+    background-color: #c4c3c3;
+    border-radius: 10px;
+    
+}
+
+.footer{
+background-color: #4e4c4c88;
+color: #FFF;
+text-align: center;
+padding: 20px 0;
+}
+
+.fotter a{
+    color: #961055;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.fotter a:hover{
+    text-decoration: underline;
+}
+
+.social.icons img{
+    width: 25px;
+    margin: 0 10px;
+}
+
+.ptc{
+    color: #961055;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
