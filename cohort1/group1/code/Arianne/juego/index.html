@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piedra, Papel o Miko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1 class="jersey-15-regular">La Roca, Alondra y Young Miko</h1>
+      <p id="vs">¡VS!</p>
+      <div class="choices">
+        <div class="choice" onclick="playGame('piedra')">
+          <img src="/rock.jpeg" alt="Piedra" />
+          <p>Piedra</p>
+        </div>
+        <div class="choice" onclick="playGame('papel')">
+          <img src="/alondra.jpeg" alt="Papel" />
+          <p>Papel</p>
+        </div>
+        <div class="choice" onclick="playGame('tijera')">
+          <img src="/miko.jpeg" alt="Tijera" />
+          <p>Tijera</p>
+        </div>
+      </div>
+      <p id="result">Elige una opción para jugar</p>
+      <p id="score">Tú: 0 | CPU: 0</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

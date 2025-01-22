@@ -1,0 +1,76 @@
+/* Estilo básico del juego */
+.jersey-15-regular {
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #dff3fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .game-container {
+    margin: 50px auto;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #444;
+  }
+  
+  #vs {
+    font-size: 2rem;
+    color: #ff6b6b;
+    margin: 10px 0;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .choice {
+    margin: 0 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .choice:hover {
+    transform: scale(1.1);
+  }
+  
+  .choice img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .choice p {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
+  #result {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  #score {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #444;
+  }
