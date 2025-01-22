@@ -1,0 +1,60 @@
+body{
+    min-height: 100vh;
+    background-image: url(gojo.jpg);
+    background-repeat: no-repeat;
+    display: grid;
+    background-size: cover;
+    background-position: center;
+    place-items: center;
+}
+
+#Calculadora{
+    width: 250px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+#visual{
+    width: 100%;
+    height: 56px;
+    font-size: 20px;
+    text-align: right;
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    color: #e0e1dd;
+    background-color: rgba(13, 27, 42, 0.3);
+    border: none;
+    box-sizing: border-box;
+}
+
+.operador{
+    color: #219ebc;
+}
+
+#ac{
+    color: #bf4d5d;
+}
+
+.igual{
+    width: calc(50% - 10px);
+}
+
+button{
+    width: calc(25% - 10px);
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    float: left;
+    background-color: rgb(13, 27, 42);
+    color: #e0e1dd;
+    
+}
+
+button:hover{
+    background-color: #bf4d5d ;
+}
