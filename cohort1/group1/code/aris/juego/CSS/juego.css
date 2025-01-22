@@ -1,0 +1,76 @@
+.marcadores,
+.figuras {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    text-align: center;
+    color: #000000;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.figuras>div {
+    font-size: 10rem;
+   
+}
+
+.figuras>div:nth-child(1) {
+    transform: rotate(90deg);
+}
+
+.figuras>div:nth-child(2) {
+    transform: rotate(-90deg) scaleX(-1);
+}
+.ct-btn-figuras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.btn-figuras {
+    font-size: 5.1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: #000000;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+
+    > span {
+        font-size: 3.1rem; 
+        color: red;
+    }
+}
+.ob2 , .ob1 {
+    
+    
+    > p{
+       
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #000000;
+        text-shadow: 1px 1px 1px rgb(255, 255, 255);
+        text-transform: uppercase;
+        text-align: center;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        letter-spacing: 4px;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+    }
+  
+}
+
+
+.ob2{
+  
+    .ct-btn-figuras{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+
+
+    }   
+}

@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+   overflow: hidden;
+ 
+    
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: transform 0.8s ease-in-out;
+    
+}
+
+#section1 {
+    transform: translateX(0%);
+}
+
+#section2 {
+    transform: translateX(100%);
+}
+
+#section3 {
+    transform: translateX(200%);
+}
+#section4 {
+    transform: translateX(300%);
+}
+
+.container {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    position: relative;
+    background-color: transparent;
+}
+
+.btn-p{
+    font-size: 3.1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    transform: scale(1);
+    transition: all 50ms ease;
+    background: rgba(255, 255, 255, 0.226);
+    backdrop-filter: blur(10px);
+}
+
+.btn-p-home{
+    font-size: 3.1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    transform: scale(1);
+    transition: all 50ms ease;
+    background: rgba(255, 255, 255, 0.226);
+    backdrop-filter: blur(10px);
+}
+.btn-p:hover{
+    transform: scale(1.07);
+}
+.btn-p:active{
+    transform: scale(1);
+}
+
+.pz-3{
+    font-size: 30px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+.oculto {
+    display: none !important;
+}
+
+.aurora-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(140deg, 
+    #7a0ae3,    /* Púrpura Neón */
+    #960296,    /* Rosa Neón */
+    #b70b0ba2,    /* Verde Lima Neón */
+    #1E90FF,    /* Azul Eléctrico */
+    #000000     /* Negro Profundo */
+);
+    background-size: 300% 300%;
+    animation: aurora-animation 10s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+.falling-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.shape {
+    position: absolute;
+    font-size: 5rem;
+    /* Tamaño de los íconos */
+    color: #000000;
+    filter: drop-shadow(0 1px 7px #00ffcc);
+    animation: fallAnimation 8s linear infinite;
+}
+
+/* Posiciones y delays diferentes para variar la animación */
+.stone {
+    top: -90px;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.paper {
+    top: -80px;
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.scissors {
+    top: -90px;
+    left: 50%;
+    animation-delay: 4s;
+}
+
+.stone:nth-child(4) {
+    top: -90px;
+    left: 70%;
+    animation-delay: 1s;
+}
+
+.paper:nth-child(5) {
+    top: -90px;
+    left: 90%;
+    animation-delay: 3s;
+}
+
+.scissors:nth-child(6) {
+    top: -90px;
+    left: 20%;
+    animation-delay: 5s;
+}
+
+@keyframes fallAnimation {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+@keyframes aurora-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 60%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 40%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

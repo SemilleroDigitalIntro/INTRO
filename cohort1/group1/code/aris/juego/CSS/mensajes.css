@@ -1,0 +1,33 @@
+#menu {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    text-align: center;
+    transform: translateY(1000%);
+    transition: transform 0.8s ease-in-out;
+}
+
+#menu>button {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#menu>div {
+    
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    letter-spacing: 4px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}

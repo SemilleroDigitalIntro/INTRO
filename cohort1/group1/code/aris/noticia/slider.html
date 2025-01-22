@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./noticia/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body">
+
+    <header class="encabesado">
+        <h2>Cinematografic</h2>
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Ultimos">Ultimos estrenos</a></li>
+            <li><a href="#Proximamente">Proximamente</a></li>
+            <li><a href="#Recientes">Tendencias</a></li>
+            <button><i onclick="abrir()" class="fa-solid fa-bars"></i></button>
+        </ul>
+    </header>
+
+    <aside class="lateral">
+        <div class="container-close">
+            <span><i onclick="cerrar()" class="fa-solid fa-xmark"></i></span>
+        </div>
+        <nav>
+            <a href="#Inicio">Inicio</a>
+            <a href="#Ultimos">Ultimos estrenos</a>
+            <a href="#Proximamente">Proximamente</a>
+            <a href="#Recientes">Tendencias</a>
+        </nav>
+    </aside>
+
+    <main>
+        <ul class='slider'>
+            <li class='item'
+                style="background-image: url('https://static.misionesonline.news/wp-content/uploads/2022/07/thor.jpg')">
+                <div class='content'>
+                    <h2 class='title'>"Love & Thunder"</h2>
+                    <p class='description'> Thor está buscando la paz interior, pero la irrupción de Gorr, el asesino de
+                        dioses, le obliga a volver al combate. Thor recluta a la Reina Valkiria, Korg y su exnovia, Jane
+                        Foster, para que lo ayuden a evitar la extinción de los dioses. </p>
+                    <button>Leer Más</button>
+                </div>
+            </li>
+            <li class='item' style="background-image: url('https://i.ytimg.com/vi/QRvAttZoGuM/maxresdefault.jpg')">
+                <div class='content'>
+                    <h2 class='title'>" Guardians of the Galaxy 3"</h2>
+                    <p class='description'> Aunque sigue afectado por la pérdida de Gamora, Peter Quill debe reunir a su
+                        equipo para defender el universo de una nueva amenaza o, en caso de fracasar, será el final de
+                        los Guardianes.</p>
+                    <button>Leer Más</button>
+                </div>
+            </li>
+            <li class='item'
+                style="background-image: url('https://www.thebanner.org/sites/default/files/styles/article_detail_header/public/2024-01/MM-1317%20Mission%20Impossible%20Dead%20Reckoning.png?itok=mArNDJfi')">
+                <div class='content'>
+                    <h2 class='title'>"Mission: Impossible – Dead Reckoning Part One"</h2>
+                    <p class='description'>Ethan debe detener a una inteligencia artificial que todas las potencias
+                        mundiales codician, la cual se ha vuelto tan poderosa que se rebeló contra sus creadores y ahora
+                        es una amenaza en sí misma. </p>
+                    <button>Leer Más</button>
+                </div>
+            </li>
+            <li class='item'
+                style="background-image: url('https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/18BDEBDB3B792A8C41C6A2C392BA2E8EF5D576046CDE7B8C52F8F0707B351DEB/scale?width=1200&aspectRatio=1.78&format=webp')">
+                <div class='content'>
+                    <h2 class='title'>"The Marvels"</h2>
+                    <p class='description'> La guerra civil de los kree provoca una alteración en el espacio-tiempo. La
+                        Capitana Marvel va a investigar qué ha sucedido, pero la alteración cuántica hace que sus
+                        poderes se entremezclen con los de otras dos superheroínas.</p>
+                    <button>Leer Más</button>
+                </div>
+            </li>
+            <li class='item'
+                style="background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*WllMDALgblujLnj9QCAAxA.jpeg')">
+                <div class='content'>
+                    <h2 class='title'>"Aquaman and the Lost Kingdom"</h2>
+                    <p class='description'> Arthur se ve obligado a sacar de prisión a su hermanastro, Orm, para que lo
+                        ayude a detener a Kane, quien ha atacado Atlantis tras encontrar un tridente negro que lo posee
+                        y le da la fuerza para vengar la muerte de su padre.</p>
+                    <button>Leer Más</button>
+                </div>
+            </li>
+            <li class='item'
+                style="background-image: url('https://www.sopitas.com/wp-content/uploads/2023/08/A24-anuncio-una-secuela-de-Talk-to-Me-1.jpg')">
+                <div class='content'>
+                    <h2 class='title'>"Talk to Me"</h2>
+                    <p class='description'> Mia piensa cada día en la muerte de su madre, fallecida en circunstancias
+                        poco claras. Un día, ella y su grupo de amigos encuentran una mano embalsamada que permite
+                        invocar a los espíritus, pero hay puertas que, una vez abiertas, no se pueden cerrar.</p>
+                    <button>Leer Más</button>
+                </div>
+            </li>
+        </ul>
+        <nav class='nav'>
+            <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+            <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+        </nav>
+    </main>
+    <!--Ultimos Estrenos-->
+    <section>
+        <h2 class="tittle-section">Próximamente
+            <span></span>
+            <span></span>
+        </h2>
+        <div class="container-card">
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/18BDEBDB3B792A8C41C6A2C392BA2E8EF5D576046CDE7B8C52F8F0707B351DEB/scale?width=1200&aspectRatio=1.78&format=webp"
+                        alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">The Marvels<br><span>2h 13min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/aTy0YYepMh8?si=XNyOEP_QZIfWj38M&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">The Marvels</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Aventura.</li>
+                        <li class="genero">Ciencia Ficción.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>Nia DaCosta.</p>
+                        <p><span>Reparto: </span>Brie Larson, Iman Vellani, Teyonah Parris.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>La guerra civil kree altera el espacio-tiempo, provocando que los poderes de tres
+                            superheroínas
+                            se entrelacen, obligándolas a trabajar juntas para resolver este misterioso fenómeno.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*WllMDALgblujLnj9QCAAxA.jpeg" alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Aquaman and the Lost Kingdom<br><span>2h 25min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/M8W_y0mmJEc?si=jKNOUpUsxOrt9AWi&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Aquaman and the Lost Kingdom</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Aventura.</li>
+                        <li class="genero">Fantástico.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>James Wan.</p>
+                        <p><span>Reparto: </span>Jason Momoa, Amber Heard, Patrick Wilson.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Arthur debe aliarse con su hermano para detener a Kane, quien con un tridente maldito amenaza
+                            con
+                            destruir Atlantis y desatar el caos.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://static.misionesonline.news/wp-content/uploads/2022/07/thor.jpg" alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Thor: Love & Thunder<br><span>2h 5min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/9jrffoywRUU?si=mtd-8YfONPRYlmTQ&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Thor: Love & Thunder</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Aventura.</li>
+                        <li class="genero">Fantasía.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>Taika Waititi.</p>
+                        <p><span>Reparto: </span>Chris Hemsworth, Natalie Portman, Christian Bale.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Thor debe regresar al combate para enfrentar a Gorr, el asesino de dioses, con la ayuda de
+                            aliados inesperados.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://www.thebanner.org/sites/default/files/styles/article_detail_header/public/2024-01/MM-1317%20Mission%20Impossible%20Dead%20Reckoning.png?itok=mArNDJfi"
+                        alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Mission: Impossible Dead Reckoning<br><span>2h 45min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/3kM40dT0WdY?si=KiZ8gv61nSNZ9_af&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Mission: Impossible – Dead Reckoning</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Suspenso.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>Christopher McQuarrie.</p>
+                        <p><span>Reparto: </span>Tom Cruise, Hayley Atwell, Ving Rhames.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Ethan Hunt debe detener una poderosa inteligencia artificial que amenaza con desestabilizar
+                            el
+                            orden mundial.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://i.ytimg.com/vi/QRvAttZoGuM/maxresdefault.jpg" alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Guardians of the Galaxy 3<br><span>2h 30min</span></h2>
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/9SfnkovRye8?si=GX9VYlY3mGlC-u8E&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Guardians of the Galaxy 3</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Aventura.</li>
+                        <li class="genero">Ciencia Ficción.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>James Gunn.</p>
+                        <p><span>Reparto: </span>Chris Pratt, Zoe Saldaña, Dave Bautista.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Peter Quill reúne a los Guardianes para enfrentar una nueva amenaza que podría significar el
+                            fin
+                            de su equipo y del universo.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://www.sopitas.com/wp-content/uploads/2023/08/A24-anuncio-una-secuela-de-Talk-to-Me-1.jpg"
+                        alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Talk to Me<br><span>1h 35min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/kMOk2xrbuOo?si=bZ76QbShh_OOVjX3&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Talk to Me</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Terror.</li>
+                        <li class="genero">Suspenso.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Directores: </span> Danny Philippou, Michael Philippou.</p>
+                        <p><span>Reparto: </span>Sophie Wilde, Joe Bird, Alexandra Jensen.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Mia y sus amigos descubren una mano embalsamada que invoca espíritus. Sin embargo, abrir esa
+                            puerta traerá consecuencias irreparables.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Próximamente -->
+    <section>
+        <h2 class="tittle-section">Próximamente
+            <span></span>
+            <span></span>
+        </h2>
+        <div class="container-card">
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/18BDEBDB3B792A8C41C6A2C392BA2E8EF5D576046CDE7B8C52F8F0707B351DEB/scale?width=1200&aspectRatio=1.78&format=webp"
+                        alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">The Marvels<br><span>2h 13min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/aTy0YYepMh8?si=XNyOEP_QZIfWj38M&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">The Marvels</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Aventura.</li>
+                        <li class="genero">Ciencia Ficción.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>Nia DaCosta.</p>
+                        <p><span>Reparto: </span>Brie Larson, Iman Vellani, Teyonah Parris.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>La guerra civil kree altera el espacio-tiempo, provocando que los poderes de tres
+                            superheroínas
+                            se entrelacen, obligándolas a trabajar juntas para resolver este misterioso fenómeno.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*WllMDALgblujLnj9QCAAxA.jpeg" alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Aquaman and the Lost Kingdom<br><span>2h 25min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/M8W_y0mmJEc?si=jKNOUpUsxOrt9AWi&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Aquaman and the Lost Kingdom</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Aventura.</li>
+                        <li class="genero">Fantástico.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>James Wan.</p>
+                        <p><span>Reparto: </span>Jason Momoa, Amber Heard, Patrick Wilson.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Arthur debe aliarse con su hermano para detener a Kane, quien con un tridente maldito amenaza
+                            con
+                            destruir Atlantis y desatar el caos.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://static.misionesonline.news/wp-content/uploads/2022/07/thor.jpg" alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Thor: Love & Thunder<br><span>2h 5min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/9jrffoywRUU?si=mtd-8YfONPRYlmTQ&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Thor: Love & Thunder</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Aventura.</li>
+                        <li class="genero">Fantasía.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>Taika Waititi.</p>
+                        <p><span>Reparto: </span>Chris Hemsworth, Natalie Portman, Christian Bale.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Thor debe regresar al combate para enfrentar a Gorr, el asesino de dioses, con la ayuda de
+                            aliados inesperados.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://www.thebanner.org/sites/default/files/styles/article_detail_header/public/2024-01/MM-1317%20Mission%20Impossible%20Dead%20Reckoning.png?itok=mArNDJfi"
+                        alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Mission: Impossible Dead Reckoning<br><span>2h 45min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/3kM40dT0WdY?si=KiZ8gv61nSNZ9_af&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Mission: Impossible – Dead Reckoning</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Suspenso.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>Christopher McQuarrie.</p>
+                        <p><span>Reparto: </span>Tom Cruise, Hayley Atwell, Ving Rhames.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Ethan Hunt debe detener una poderosa inteligencia artificial que amenaza con desestabilizar
+                            el
+                            orden mundial.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://i.ytimg.com/vi/QRvAttZoGuM/maxresdefault.jpg" alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Guardians of the Galaxy 3<br><span>2h 30min</span></h2>
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/9SfnkovRye8?si=GX9VYlY3mGlC-u8E&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Guardians of the Galaxy 3</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Aventura.</li>
+                        <li class="genero">Ciencia Ficción.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>James Gunn.</p>
+                        <p><span>Reparto: </span>Chris Pratt, Zoe Saldaña, Dave Bautista.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Peter Quill reúne a los Guardianes para enfrentar una nueva amenaza que podría significar el
+                            fin
+                            de su equipo y del universo.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://www.sopitas.com/wp-content/uploads/2023/08/A24-anuncio-una-secuela-de-Talk-to-Me-1.jpg"
+                        alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Talk to Me<br><span>1h 35min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/kMOk2xrbuOo?si=bZ76QbShh_OOVjX3&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Talk to Me</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Terror.</li>
+                        <li class="genero">Suspenso.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Directores: </span> Danny Philippou, Michael Philippou.</p>
+                        <p><span>Reparto: </span>Sophie Wilde, Joe Bird, Alexandra Jensen.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Mia y sus amigos descubren una mano embalsamada que invoca espíritus. Sin embargo, abrir esa
+                            puerta traerá consecuencias irreparables.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Tendencias -->
+    <section>
+        <h2 class="tittle-section">Tendencias
+            <span></span>
+            <span></span>
+        </h2>
+        <div class="container-card">
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/18BDEBDB3B792A8C41C6A2C392BA2E8EF5D576046CDE7B8C52F8F0707B351DEB/scale?width=1200&aspectRatio=1.78&format=webp"
+                        alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">The Marvels<br><span>2h 13min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/aTy0YYepMh8?si=XNyOEP_QZIfWj38M&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">The Marvels</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Aventura.</li>
+                        <li class="genero">Ciencia Ficción.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>Nia DaCosta.</p>
+                        <p><span>Reparto: </span>Brie Larson, Iman Vellani, Teyonah Parris.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>La guerra civil kree altera el espacio-tiempo, provocando que los poderes de tres
+                            superheroínas
+                            se entrelacen, obligándolas a trabajar juntas para resolver este misterioso fenómeno.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*WllMDALgblujLnj9QCAAxA.jpeg" alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Aquaman and the Lost Kingdom<br><span>2h 25min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/M8W_y0mmJEc?si=jKNOUpUsxOrt9AWi&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Aquaman and the Lost Kingdom</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Aventura.</li>
+                        <li class="genero">Fantástico.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>James Wan.</p>
+                        <p><span>Reparto: </span>Jason Momoa, Amber Heard, Patrick Wilson.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Arthur debe aliarse con su hermano para detener a Kane, quien con un tridente maldito amenaza
+                            con
+                            destruir Atlantis y desatar el caos.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://static.misionesonline.news/wp-content/uploads/2022/07/thor.jpg" alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Thor: Love & Thunder<br><span>2h 5min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/9jrffoywRUU?si=mtd-8YfONPRYlmTQ&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Thor: Love & Thunder</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Aventura.</li>
+                        <li class="genero">Fantasía.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>Taika Waititi.</p>
+                        <p><span>Reparto: </span>Chris Hemsworth, Natalie Portman, Christian Bale.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Thor debe regresar al combate para enfrentar a Gorr, el asesino de dioses, con la ayuda de
+                            aliados inesperados.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://www.thebanner.org/sites/default/files/styles/article_detail_header/public/2024-01/MM-1317%20Mission%20Impossible%20Dead%20Reckoning.png?itok=mArNDJfi"
+                        alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Mission: Impossible Dead Reckoning<br><span>2h 45min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/3kM40dT0WdY?si=KiZ8gv61nSNZ9_af&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Mission: Impossible – Dead Reckoning</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Suspenso.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>Christopher McQuarrie.</p>
+                        <p><span>Reparto: </span>Tom Cruise, Hayley Atwell, Ving Rhames.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Ethan Hunt debe detener una poderosa inteligencia artificial que amenaza con desestabilizar
+                            el
+                            orden mundial.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://i.ytimg.com/vi/QRvAttZoGuM/maxresdefault.jpg" alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Guardians of the Galaxy 3<br><span>2h 30min</span></h2>
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/9SfnkovRye8?si=GX9VYlY3mGlC-u8E&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Guardians of the Galaxy 3</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Acción.</li>
+                        <li class="genero">Aventura.</li>
+                        <li class="genero">Ciencia Ficción.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Director: </span>James Gunn.</p>
+                        <p><span>Reparto: </span>Chris Pratt, Zoe Saldaña, Dave Bautista.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Peter Quill reúne a los Guardianes para enfrentar una nueva amenaza que podría significar el
+                            fin
+                            de su equipo y del universo.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="container-multimedia">
+                    <img src="https://www.sopitas.com/wp-content/uploads/2023/08/A24-anuncio-una-secuela-de-Talk-to-Me-1.jpg"
+                        alt="">
+                    <button class="btn"><i class="fa-regular fa-circle-play play"></i></button>
+                    <h2 class="tittle">Talk to Me<br><span>1h 35min</span></h2>
+
+                    <div id="videoContenedor">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube-nocookie.com/embed/kMOk2xrbuOo?si=bZ76QbShh_OOVjX3&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <button class="btn closes"><i class="fa-regular fa-circle-xmark"></i></button>
+
+                    </div>
+                </div>
+                <div class="container-info">
+                    <h2 class="tittle">Talk to Me</h2>
+                    <ul>
+                        <li class="genero"><span>Género:</span></li>
+                        <li class="genero">Terror.</li>
+                        <li class="genero">Suspenso.</li>
+                    </ul>
+                    <div class="prosedencia">
+                        <p><span>Directores: </span> Danny Philippou, Michael Philippou.</p>
+                        <p><span>Reparto: </span>Sophie Wilde, Joe Bird, Alexandra Jensen.</p>
+                    </div>
+                    <div class="container-descripcion">
+                        <p>Mia y sus amigos descubren una mano embalsamada que invoca espíritus. Sin embargo, abrir esa
+                            puerta traerá consecuencias irreparables.</p>
+                    </div>
+                    <div class="container-btn">
+                        <button class="btn ver_mas">Ver más</button>
+                        <button class="btn close"><i
+                                class="fa-solid fa-arrow-up-from-bracket fa-rotate-270"></i></button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="card footer">
+                <div class="section footer-top">
+
+                    <div class="footer-brand">
+
+                        <p class="footer-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur magnam explicabo ducimus
+                            alias qui reprehenderit ad et esse quod id.
+                        </p>
+
+                    </div>
+
+                    <div class="footer-list">
+
+                        <p class="footer-list-title">Categorias</p>
+
+                        <ul>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Accion</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Negocios</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Aventura</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Misterio</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Fantacia</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer-link hover-2">Historia</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer-list">
+
+                        <p class="footer-list-title">Boletin informativo</p>
+
+                        <p class="footer-text">
+                            Regístrese para ser el primero en recibir las últimas historias que nos inspiran, estudios
+                            de casos y la industria.
+                            noticias.
+                        </p>
+
+                        <div class="input-wrapper">
+                            <input type="text" name="name" placeholder="Nombre" required class="input-field"
+                                autocomplete="off">
+
+                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="email" name="email_address" placeholder="Emaill" required class="input-field"
+                                autocomplete="off">
+
+                            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                        </div>
+
+                        <button class="cta">
+                            <span class="hover-underline-animation"> Registrarse </span>
+                            <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10"
+                                viewBox="0 0 46 16" class="svg-icon">
+                                <path id="Path_10" data-name="Path 10"
+                                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                    transform="translate(30)"></path>
+                            </svg>
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+
+                    <p class="copyright">
+                        &copy; Todos los derechos reservados <a href="#" class="copyright-link">DEVBOOM</a>
+                    </p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+
+                                <span class="span">Twitter</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+
+                                <span class="span">LinkedIn</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+
+                                <span class="span">Instagram</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="./js/funciones.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
