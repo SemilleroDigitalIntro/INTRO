@@ -1,0 +1,80 @@
+/* See Your Story Section */
+.see-your-story {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.see-your-story h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.story-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.option {
+    text-align: center;
+}
+
+.option .icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(255, 120, 0);
+}
+
+.option p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Wattpad Studios */
+.wattpad-studios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.wattpad-studios .image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.wattpad-studios .text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.wattpad-studios .text h3 {
+    font-size: 28px;
+    color: rgb(255, 120, 0);
+    margin-bottom: 10px;
+}
+
+.wattpad-studios .text p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.wattpad-studios .partners {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.wattpad-studios .partners img {
+    max-width: 80px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.wattpad-studios .partners img:hover {
+    filter: grayscale(0%);
+}

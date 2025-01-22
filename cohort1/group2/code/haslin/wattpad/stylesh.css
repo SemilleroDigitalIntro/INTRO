@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+
+h1, h2, p {
+    margin: 0;
+    color: #f8630c;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1000;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+.a{
+    text-decoration: none;
+    color:#f8630c ;
+    margin-left: 20px;
+}
+
+
+.header .greeting {
+    font-size: 18px;
+    margin-left: 70px;
+}
+
+.header .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    background: none;
+    color: gray;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.tabs button.active {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.grid img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.recently-played, .from-followed-artists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recently-played img, .from-followed-artists img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.artist-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.artist-card img {
+    margin-right: 10px;
+}
+
+.see-more {
+    color: orangered;
+    font-size: 14px;
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Login Flow</title>
+    <link rel="stylesheet" href="styley.css">
+</head>
+<body>
+    <input type="checkbox" id="modal1Toggle" class="modal-checkbox">
+    <input type="checkbox" id="modal2Toggle" class="modal-checkbox">
+
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <label for="modal1Toggle" class="close">&times;</label>
+            <h2>Sign up to write on Wattpad</h2>
+            <button class="social-btn google-btn">
+                <label for="modal2Toggle">Sign up with Google</label>
+            </button>
+            <button class="social-btn facebook-btn">Sign up with Facebook</button>
+            <p>or</p>
+            <button class="email-btn">Sign up with email</button>
+            <p><a href="#">I already have an account</a></p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <label for="modal2Toggle" class="close">&times;</label>
+            <h2>Log in to your Wattpad account</h2>
+            <form class="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="login-btn"><a class="link-a" href="./home.html">Log In</a></button> 
+            </form>
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+
+    <label for="modal1Toggle" class="open-modal-btn">Open Sign Up Modal</label>
+</body>
+</html>
+

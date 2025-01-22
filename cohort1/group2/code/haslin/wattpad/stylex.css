@@ -1,0 +1,60 @@
+.how-it-works {
+    background-color: #f7f7f7;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.how-it-works p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ff7f32; 
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.step:hover {
+    background-color: #ff6232; 
+    color: white; 
+    transform: scale(1.05);
+
+    .step:hover .step-number {
+        color: white; 
+    }

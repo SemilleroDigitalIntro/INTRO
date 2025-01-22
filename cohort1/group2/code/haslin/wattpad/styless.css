@@ -1,0 +1,65 @@
+.wattpad-books {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.wattpad-books .text-content {
+    flex: 1;
+    max-width: 50%;
+    margin-top: 50px;
+}
+
+.wattpad-books h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff7f32; 
+}
+
+.wattpad-books p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.wattpad-books .partners {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.wattpad-books .partners img {
+    max-width: 100px;
+    margin-bottom: 50px;
+}
+
+.wattpad-books .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7f32;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.wattpad-books .btn:hover {
+    background-color: #e76f2f;
+}
+
+.wattpad-books .book-covers {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+}
+
+.wattpad-books .book-cover {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
