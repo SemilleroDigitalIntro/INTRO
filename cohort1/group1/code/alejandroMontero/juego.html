@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        #marcador {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            background: white;
+            color: #0072ff;
+            border: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 15px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background: #0072ff;
+            color: white;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        @media (max-width: 600px) {
+            button {
+                font-size: 1rem;
+                padding: 10px 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            #resultado {
+                font-size: 1.2rem;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>¡Vamos a jugar Piedra, Papel o Tijera!</h1>
+
+    <p id="marcador">
+        Jugador: 0 | PC: 0 | Empates: 0
+    </p>
+    <div>
+        <button id="btnpiedra" onclick="jugar(0)">
+            Piedra 💎
+        </button>
+        <button id="btnpapel" onclick="jugar(1)">
+            Papel 📋
+        </button>
+        <button id="btntijera" onclick="jugar(2)">
+            Tijera ✂️
+        </button>
+    </div>
+    <p id="resultado">
+        ¡Haz tu elección para comenzar el juego!
+    </p>
+
+    <script>
+        let jugadorPuntos = 0;
+        let pcPuntos = 0;
+        let empates = 0;
+
+        function jugar(jugador) {
+            let pc = Math.floor(Math.random() * 3); // Elección aleatoria de la PC
+            let opciones = ["💎", "📋", "✂️"];
+            let resultado = "<h2>Elegiste: " + opciones[jugador] + " y el PC eligió: " + opciones[pc] + ". ";
+
+            if (jugador == pc) {
+                resultado += "¡Empate! 😂</h2>";
+                empates++;
+            } else if (
+                (jugador == 0 && pc == 1) || // Piedra vs Papel
+                (jugador == 1 && pc == 2) || // Papel vs Tijera
+                (jugador == 2 && pc == 0)    // Tijera vs Piedra
+            ) {
+                resultado += "Perdiste 😭</h2>";
+                pcPuntos++;
+            } else {
+                resultado += "¡Ganaste 😊🥇!</h2>";
+                jugadorPuntos++;
+            }
+
+            // Actualizar el marcador
+            document.getElementById("marcador").innerHTML =
+                "Jugador: " + jugadorPuntos + " | PC: " + pcPuntos + " | Empates: " + empates;
+
+            // Mostrar el resultado
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+</body>
+
+</html>
