@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imágenes/3625050.png" type="imagen/x-icon">
+</head>
+<body>
+    <!--Esta es una clase para que los elementos tomen la forma de una calculadora-->
+    <div class="calculator">
+        <!--El cuadro donde veremos todas las interaciones del usuario con la calculadora,
+         dígase donde se veran los numeros y el resultado de las operaciones-->
+        <input type="text" id="display" disabled>
+        <!--Los botones para escribir los números-->
+        <div class="buttons">
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="setOperation('+')">+</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="setOperation('-')">-</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="setOperation('*')">*</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="setOperation('/')">/</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <!--Esto hace lo mismo del que los buttons pero permite usar el teclado directamente-->
+    <script>
+           document.addEventListener('keydown', function(event) {
+            var keyCode = event.code;
+            switch (keyCode) {
+                case "Digit1":
+                    appendNumber('1')
+                    break;
+                    case "Digit2":
+                    appendNumber('2')
+                    break;
+                    case "Digit3":
+                    appendNumber('3')
+                    break;
+                    case "Digit4":
+                    appendNumber('4')
+                    break;
+                    case "Digit5":
+                    appendNumber('5')
+                    break;
+                    case "Digit6":
+                    appendNumber('6')
+                    break;
+                    case "Digit7":
+                    appendNumber('7')
+                    break;
+                    case "Digit8":
+                    appendNumber('8')
+                    break;
+                    case "Digit9":
+                    appendNumber('9')
+                    break;
+                    case "Digit0":
+                    appendNumber('0')
+                    break;
+                    case "NumpadAdd":
+                    setOperation('+')
+                    break;
+                     case "NumpadSubtract":
+                    setOperation('-')
+                    break;
+                    case "NumpadMultiply":
+                    setOperation('*')
+                    break;
+                    case "NumpadDivide":
+                    setOperation('/')
+                    break;
+                    case "Backspace":
+                    clearDisplay()
+                    break;
+                    case "Enter":
+                    calculateResult()
+                    break;
+                    default:
+
+            }
+        });
+    </script>
+</body>
+</html>

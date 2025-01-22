@@ -1,0 +1,132 @@
+.header-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: -1px;
+    top: -10px;
+    padding: 50px; /* Espaciado interno alrededor del logo */ 
+
+}
+
+.logo {
+    margin-right: 10px; /* Espacio entre el logo y el título */
+    width: 110px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+h1#pr {
+    font-size: 30px; /* Ajusta el tamaño del título según sea necesario */
+    margin: 0;
+    color: #614509;
+    margin-right: 500px;
+}
+.RD-logo {
+height: auto;
+width: 250px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+#search-bar {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+button.bt-busc{
+    padding: 11px;
+    border: none;
+    background-color: #e6f5e9;
+    color: #614509;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button.bt-busc:hover {
+    background-color: #171618;
+}
+nav {
+    background-color:#614509;
+    padding: 20px 0;
+    width: 100% 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color:#e6f5e9;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+   height:450px ;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button.prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button.next {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.PS{
+    display: contents;
+    }
+    h3{
+        color: #614509;
+    }

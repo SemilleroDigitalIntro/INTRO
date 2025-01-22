@@ -1,0 +1,56 @@
+<!--Esta pagina web pertenece a Hector Yandel Astacio Mendez estudiante del grupo 2-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--El titulo de la pagina tiene el apellido "Navarro" porque la hice pensado en mi amigo del grupo 1 al que le intresa ser doctor-->
+    <title>Hospital Dr.Navarro</title>
+    <!--Estos links se usan para añadir el favicon y el estilo en css-->
+    <link rel="shortcut icon" href="imagenes/Favicon Navarro1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./homework.css">
+</head>
+<body>
+    <header> 
+        <!--El class header-content es para organizar el la posicion del logo y el H1-->
+        <div class="header-content"> 
+         <img src="imagenes/Untitled.png" alt="Logo de la Página" class="logo"> 
+         <h1 id="pr">Hospital Dr.Navarro</h1>
+         <!--Esta parte del codigo es para una barra de busquedas que hice tomando en cuenta el formato estandar de las paginas de hospitales-->
+        <div class="search-elements">
+            <img src="imagenes/repdomheader.png" alt="Logo de el buscador"  class="RD-logo">
+            <div class="search-container">
+                <input type="text" placeholder="Buscar..." id="search-bar">
+                <button class="bt-busc" type="submit">Buscar</button>
+        </div>
+        </div>
+        </div> 
+        <!--Esto es para la barra de navegación-->
+        <nav>
+            <ul>
+                <li><a href="Hospital.html">Inicio</a></li>
+                <li><a href="Sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--Aquí decidi hacer uso de Javascript para hacer un carrucel de imagenes 
+        que fuera moviendose constantemente pero tambien se puede manipular manualmente con unas flechas,
+         requiere de mejoras porque las imagenes se mueven incluso si usas las flechas pero por ahora esto es lo que conseguí-->
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="imagenes/98.webp" alt="Imagen 1">
+                <img src="imagenes/untitled_1500_540_px_1_1.avif" alt="Imagen 2">
+                <img src="imagenes/download.jpeg" alt="Imagen 3">
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <script src="prueba.js"></script>
+        <div class="PS">
+            <h2>Nuestros Servicios</h2>
+        </div>
+        
+    </header>
+</body>
+</html>
