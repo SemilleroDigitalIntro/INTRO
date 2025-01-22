@@ -1,0 +1,71 @@
+.contenedor-jugadores{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 800px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    > .item-jugador{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        height: 300px;
+        border-radius: 7px;
+        background: rgb(80, 41, 41);
+        padding: 10px;
+        border: 4px solid rgb(226, 83, 83);
+        gap: 20px;
+
+        width: 300px;
+        flex-grow: 1;
+
+        i{
+            font-size: 128px;
+            color: white;
+            transition: all 200ms ease;
+        }
+
+        .inactive-icon{
+            font-size: 0px;
+            transition: all 200ms ease;
+        }
+
+        > input{   
+            width: 100%;
+            max-width: 100px;
+            padding: 7px;
+            font-size: 18px;
+            border: 4px solid dodgerblue;
+            pointer-events: none;
+            border-radius: 7px;
+        }
+    }
+
+    .player1{
+        background:rgb(0, 119, 255);
+        border-color: rgb(23, 58, 99);
+
+        > input{
+            border-color: rgb(41, 69, 104);
+        }
+    }
+
+    .player2{
+        background:rgb(207, 75, 75);
+        border-color: rgb(109, 36, 36);
+
+        > input{
+            border-color: rgb(88, 43, 43);
+        }
+    }
+}

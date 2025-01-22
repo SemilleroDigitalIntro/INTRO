@@ -1,0 +1,105 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    height: auto;
+
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: all 100ms ease;
+
+    &::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: rgba(0, 0, 0, 0.363);
+    }
+}
+
+main{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.title{
+    position: relative;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.player1-mode{
+    box-shadow: inset 0px 0px 50px 10px rgb(0, 119, 255);
+}
+
+.player2-mode{
+    box-shadow: inset 0px 0px 50px 10px rgb(207, 75, 75);
+}
+
+#indicador-barra{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    z-index: 3;
+    transition: all 10ms linear;
+}
+
+/* animation barra */
+body:has(> .player1-mode){
+    #indicador-barra{
+        height: 100%;
+    }
+
+    .contenedor-barra{
+        .barra{
+            background: rgb(0, 119, 255);
+            max-width: 500px;
+
+            animation: 10s ani-barra ease alternate;
+        }
+    }
+}
+
+body:has(> .player2-mode){
+    #indicador-barra{
+        height: 100%;
+    }
+
+    .contenedor-barra{
+        .barra{
+            background: rgb(207, 75, 75);
+            max-width: 500px;
+
+            animation: 10s ani-barra2 ease alternate;
+        }
+    }
+}
+
+@keyframes ani-barra {
+    0%{
+        max-width: 500px;
+    }100%{
+        max-width: 10px; 
+    }
+}
+
+@keyframes ani-barra2 {
+    0%{
+        max-width: 500px;
+    }100%{
+        max-width: 10px; 
+    }
+}

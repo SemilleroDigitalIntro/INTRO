@@ -1,0 +1,1 @@
+document.getElementById("reiniciar").addEventListener("click" , () =>  window.location.reload());

@@ -1,0 +1,194 @@
+header{
+    width: 100%;
+    height: max-content;
+    position: relative;
+    padding: 10px;
+    
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    z-index: 5;
+
+    > .logo{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        > h1{
+            color: white;
+        }
+
+        > img{
+            width: 64px;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+        }
+    }
+
+    > .lista{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .button-with-icon {
+        overflow: hidden;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #0f988e;
+        font-family: "Istok Web", sans-serif;
+        letter-spacing: 1px;
+        padding: 0 12px;
+        text-align: center;
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: normal;
+        border-radius: 3px;
+        outline: none;
+        user-select: none;
+        cursor: pointer;
+        transform: translateY(0px);
+        position: relative;
+        box-shadow:
+        inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 1px 20px rgba(0, 0, 0, 0),
+        0 3px 0 #0f988e,
+        0 3px 2px rgba(0, 0, 0, 0.2),
+        0 5px 10px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 0, 0, 0.1);
+        background: #15ccbe;
+        color: white;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+        transition: 150ms all ease-in-out;
+    }
+    
+    .button-with-icon .icon {
+        margin-right: 8px;
+        width: 24px;
+        height: 24px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .button-with-icon:active {
+        transform: translateY(3px);
+        box-shadow:
+        inset 0 16px 2px -15px rgba(0, 0, 0, 0),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+        inset 0 1px 20px rgba(0, 0, 0, 0.1),
+        0 0 0 #0f988e,
+        0 0 0 2px rgba(255, 255, 255, 0.5),
+        0 0 0 rgba(0, 0, 0, 0),
+        0 0 0 rgba(0, 0, 0, 0);
+    }
+    
+    .button-with-icon:hover .text {
+        transform: translateX(80px);
+    }
+    .button-with-icon:hover .icon {
+        transform: translate(23px);
+    }
+    
+    .text {
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    /* From Uiverse.io by gharsh11032000 */ 
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 28px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 14px;
+    background-color: inherit;
+    border-radius: 20px;
+    color: greenyellow;
+    box-shadow: 0 0 0 2px greenyellow;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: greenyellow;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 10px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -50%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: #212121;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px greenyellow;
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  
+  
+}

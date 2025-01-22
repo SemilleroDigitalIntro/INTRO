@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra , papel y tijera</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/other.css">
+    <link rel="stylesheet" href="css/barra.css">
+    <link rel="stylesheet" href="css/jugador.css">
+    <link rel="stylesheet" href="css/mensaje.css">
+    <link rel="stylesheet" href="css/confetti.css">
+    <link rel="stylesheet" href="css/intruccion.css">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/7881bda97f.js" crossorigin="anonymous"></script>
+
+    <!-- logo -->
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+</head>
+<body class="vic">
+
+    <!-- ELEMENTO QUE AYUDA POSICIONAR EL ENFOQUE AL JUGADOR QUE ESTE JUGANDO -->
+    <span id="indicador-barra"></span>
+
+    <!-- MENSAJE -->
+    <span class="mensaje" id="mensaje">
+        <h2 id="title-mensaje">¡Victoria lograda! 🎉 ¡Un jugador ha ganado! 🏆</h2>
+
+        <div class="fondo">
+            <!-- Generar spans con diferentes propiedades -->
+            <script>
+                // variables
+                const fondo = document.querySelector('.fondo');
+                const colors = ['#FF5733', '#FFC300', '#DAF7A6', '#581845', '#33FFCE', '#C70039', '#900C3F', '#FF5733'];
+    
+                // bucle para generar los cuadros en posiciones random
+                for (let i = 0; i < 300; i++) {
+                    // creando el elemento
+                    const span = document.createElement('span');
+
+                    // colocando sus propiedades random
+                    span.style.setProperty('--pos-x', Math.random()); // Posición horizontal aleatoria
+                    span.style.setProperty('--duration', `${Math.random() * 2 + 0.5}s`); // Duración aleatoria entre 3-5 segundos
+                    span.style.setProperty('--color', colors[Math.floor(Math.random() * colors.length)]); // Color aleatorio
+
+                    // para al final agregarlo
+                    fondo.appendChild(span);
+                }
+            </script>
+        </div>
+    </span>
+
+    <!-- <i class="fa-solid fa-hand fa-bounce"></i> MANO -->
+    <!-- <i class="fa-regular fa-hand-scissors fa-bounce"></i> TIJERAS -->
+    <!-- <i class="fa-solid fa-hand-back-fist fa-bounce"></i> PIEDRA -->
+
+
+    <!-- HEADER -->
+    <header>
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+            <h1>Juego de Gesture Wars</h1>
+        </div>
+
+        <!-- BOTONES -->
+        <div class="lista">
+            <button class="button-with-icon" id="btn-play">
+                <svg class="icon" id="Play" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path class="color000000 svgShape" fill="#ffffff"
+                        d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z">
+                    </path>
+                </svg>
+                <span class="text">Play</span>
+            </button>
+    
+    
+            <button class="animated-button" id="reiniciar">
+              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">Reiniciar</span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
+        </div>        
+    </header>
+
+    <main>
+        <!-- TITULO -->
+        <h2 class="title">¡Vamos a jugar!</h2>
+
+        <!-- INDICADORES DEL JUEGO -->
+        <section class="contenedor-barra">
+            <p class="title" id="title">10</p>
+
+            <div class="barra" id="barra">
+            </div>
+
+            <div class="puntuacion" id="puntuacion">
+            </div>
+        </section>
+
+        <!-- VISUALIZACION DE JUGADAS -->
+        <section class="contenedor-jugadores">
+            <div class="item-jugador player1">
+                <i class="fa-solid fa-hand inactive-icon" id="icon_player1"></i>
+
+                <input type="password" id="player1" value="">
+            </div>
+            <div class="item-jugador player2">
+                <i class="fa-regular fa-hand-scissors fa-bounce inactive-icon" id="icon_player2"></i>
+
+                <input type="password" id="player2">
+            </div>
+        </section>
+
+        <!-- INSTRUCCIONES -->
+        <section class="intruccion">
+            <h3><i class="fa-solid fa-scroll"></i> Instrucciones</h3>
+            <p>¡Aventúrate! 🚀 Aquí están las teclas para dominar el juego. 🎮</p>
+
+            <div class="subcontenedor-deciciones">
+                <div class="item">
+                    <p>1</p>
+                    <i class="fa-solid fa-hand fa-bounce"></i>
+                </div>
+                <div class="item">
+                    <p>2</p>
+                    <i class="fa-regular fa-hand-scissors fa-bounce"></i>
+                </div>
+                <div class="item">
+                    <p>3</p>
+                    <i class="fa-solid fa-hand-back-fist fa-bounce"></i>
+                </div>
+            </div>
+
+            <p style="margin-top: 40px;">¡Cuidado! ⚠️ Solo puedes elegir números entre 1 y 3. Si te arriesgas con otro valor, ¡un número aleatorio será tu destino! 🎲</p>
+        </section>
+    </main>
+
+    <!-- CUSTOM JS -->
+    <script src="js/times-players.js"></script>
+    <script src="js/time-indicate.js"></script>
+    <script src="js/win.js"></script>
+    <script src="js/input-focus.js"></script>
+    <script src="js/icon-view.js"></script>
+    <script src="js/page-restore.js"></script>
+</body>
+</html>
