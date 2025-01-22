@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* ************************************************ */
+/*                      HEADER                      */
+/* ************************************************ */
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.btn-register {
+    background-color: transparent;
+    font-size: 12px;
+    padding: 0.5rem 1rem;
+    color: #000;
+    border: 1px solid #000;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} 
+
+.btn-register:hover {
+    background-color: #c4c4c4;
+}
+
+.navbar a {
+    margin: 0 10px;
+    font-size: 12px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #000;
+}
+
+
+
+
+.hero {
+    background-color: #0078D7;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us, .mission-vision, .team {
+    margin-bottom: 20px;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.mission, .vision {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.team {
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    gap: 20px;
+}
+
+.team-members article {
+    text-align: center;
+    flex: 1;
+}
+
+.team-members img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
