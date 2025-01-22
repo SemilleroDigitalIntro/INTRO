@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="display" disabled>
+            </div>
+            <div class="buttons">
+                <!-- Botones de la calculadora básica -->
+                <button onclick="appendNumber('1')">1</button>
+                <button onclick="appendNumber('2')">2</button>
+                <button onclick="appendNumber('3')">3</button>
+                <button onclick="appendOperator('+')">+</button>
+                <button onclick="appendNumber('4')">4</button>
+                <button onclick="appendNumber('5')">5</button>
+                <button onclick="appendNumber('6')">6</button>
+                <button onclick="appendOperator('-')">-</button>
+                <button onclick="appendNumber('7')">7</button>
+                <button onclick="appendNumber('8')">8</button>
+                <button onclick="appendNumber('9')">9</button>
+                <button onclick="appendOperator('*')">*</button>
+                <button onclick="appendNumber('0')">0</button>
+                <button onclick="appendOperator('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="appendOperator('/')">/</button>
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="toggleScientific()">Sci</button>
+                <button onclick="plotGraph()">Plot</button>
+                <button onclick="saveCalculation()">Save</button>
+            </div>
+        </div>
+        <div class="scientific-buttons" id="scientific-buttons">
+            <!-- Botones de la calculadora científica -->
+            <button onclick="appendFunction('sin')">sin</button>
+            <button onclick="appendFunction('cos')">cos</button>
+            <button onclick="appendFunction('tan')">tan</button>
+            <button onclick="appendFunction('sqrt')">√</button>
+            <button onclick="appendFunction('pow')">^</button>
+            <button onclick="appendFunction('log')">log</button>
+            <button onclick="appendFunction('exp')">exp</button>
+            <button onclick="appendFunction('abs')">abs</button>
+            <button onclick="appendFunction('asin')">asin</button>
+            <button onclick="appendFunction('acos')">acos</button>
+            <button onclick="appendFunction('atan')">atan</button>
+            <button onclick="appendFunction('PI')">π</button>
+            <button onclick="appendFunction('E')">e</button>
+        </div>
+        <button class="theme-switcher" onclick="toggleTheme()">🌙</button>
+    </div>
+    <canvas id="graphCanvas" width="400" height="400"></canvas>
+    <div class="saved-calculations">
+        <h3>Saved Calculations</h3>
+        <div class="saved-calculations-list" id="savedCalculationsList"></div>
+        <button class="clear-saved" onclick="clearSavedCalculations()">Clear Saved</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+</body>
+</html>

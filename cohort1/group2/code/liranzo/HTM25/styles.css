@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.calculator-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--calc-bg-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px;
+    transition: all 0.3s ease;
+}
+
+.calculator:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.display input {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--display-bg-color);
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.scientific-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 20px;
+    display: none;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    background-color: var(--button-bg-color);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    color: var(--button-text-color);
+}
+
+button:hover {
+    background-color: var(--button-hover-bg-color);
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: var(--button-active-bg-color);
+}
+
+.theme-switcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+:root {
+    --bg-color: #333;
+    --calc-bg-color: #444;
+    --display-bg-color: #555;
+    --button-bg-color: #666;
+    --button-hover-bg-color: #777;
+    --button-active-bg-color: #888;
+    --button-text-color: #fff;
+    --text-color: #fff;
+}
+
+.light-theme {
+    --bg-color: #f0f0f0;
+    --calc-bg-color: #fff;
+    --display-bg-color: #e0e0e0;
+    --button-bg-color: #f0f0f0;
+    --button-hover-bg-color: #d0d0d0;
+    --button-active-bg-color: #b0b0b0;
+    --button-text-color: #000;
+    --text-color: #000;
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+#graphCanvas {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.saved-calculations {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 320px;
+    background-color: var(--calc-bg-color);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.saved-calculations h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.saved-calculations-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.saved-calculations-list div {
+    padding: 5px 0;
+    color: var(--text-color);
+}
+
+.clear-saved {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: var(--button-bg-color);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    color: var(--button-text-color);
+}
+
+.clear-saved:hover {
+    background-color: var(--button-hover-bg-color);
+    transform: scale(1.05);
+}
+
+.clear-saved:active {
+    background-color: var(--button-active-bg-color);
+}
