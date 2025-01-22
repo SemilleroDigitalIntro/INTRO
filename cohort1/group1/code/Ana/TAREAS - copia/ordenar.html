@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="ordenar.css">
+<body>
+    <div class="cart-container">
+      
+        <div class="cart-header">
+          <h1>Tu Carrito</h1>
+        </div>
+    
+        <div class="cart-item">
+          <div class="item-image">
+            <img src="https://img.freepik.com/psd-gratis/deliciosa-taza-cafe-aislada_23-2151806499.jpg" alt="Brownie de Chocolate">
+          </div>
+          <div class="item-details">
+            <h2>Cafe Expreso</h2>
+            <p>Precio/u: $3.75</p>
+          </div>
+          <div class="item-quantity">
+            <button>-</button>
+            <input type="number" value="1" min="1">
+            <button>+</button>
+          </div>
+          
+
+              <!-- Total -->
+    <div class="total-container">
+        Total: $<span id="total">3.75</span>
+      </div>
+      <div style="text-align: center; padding: 20px;">
+        <button class="pay-button">Pagar</button>
+      </div>
+    </div>
+          </div>
+        </div>
+    
+    
+        <div class="payment-section">
+          <label for="payment-method">Forma de pago:</label>
+          <div class="payment-options">
+            <select id="payment-method">
+              <option value="tarjeta">Tarjeta de crédito/débito</option>
+              <option value="efectivo">Efectivo</option>
+              <option value="paypal">PayPal</option>
+            </select>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

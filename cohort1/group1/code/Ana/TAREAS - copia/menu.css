@@ -1,0 +1,149 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  color: black;
+  text-align: center;
+  background-image: url("imagen.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px 0;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+}
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 15%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 0;
+  color: rgb(19, 19, 19);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.sidebar img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item-details {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.item-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.item-details p {
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.order-btn {
+  background-color:#73df59;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  background-color: #45a049;
+}
+
+.item-image {
+  flex: 0 0 150px;
+}
+
+.item-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-details {
+    padding-right: 0;
+  }
+
+  .item-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
