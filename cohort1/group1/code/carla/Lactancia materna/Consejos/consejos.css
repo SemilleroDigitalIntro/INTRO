@@ -1,0 +1,277 @@
+body {
+    display: flex;
+    background-image: url(fondo3.avif);
+    background-repeat: 2;
+    background-position: center;
+    background-size: 100%;
+    background-color: white;
+    margin: 0;
+    height: 265em;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 {
+    background-color:  rgba(255, 255, 255, 0.712);
+    box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    height: 97%;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+nav{
+    font-size: 1.2em;
+    justify-content: center;
+    background-color: pink;
+    display: flex;
+    padding-top: 30px;
+    padding: 30px 15px;
+    margin-top:2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li .a{
+    margin-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+
+
+}
+
+nav li a{
+    text-decoration: none;
+    background-color: #72bee2;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: transform 0.1s ease, background-color 0.1s ease;
+    color: #ffffff;
+}
+
+nav li a:hover {
+    background-color: #0056b3;
+    transform: scale(0.1);
+
+}
+
+li{
+    margin-right: 56px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+    list-style-type: none;
+    
+}
+
+ol a {
+    color: #dd26c5;
+    text-decoration: none;
+}
+
+img {
+    width: 35px;
+    height: auto;
+
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+    color: #333333;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3em;
+    color: #72bfe2;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+
+h2 {
+    font-size: 2.3rem;
+    color: pink;
+    border-bottom: 2px dashed #f3bef3;
+    padding-bottom: 5px;
+}
+
+h3 {
+    justify-content:baseline;
+    font-size: 1.5rem;
+    color: #88e5f1;
+    font-weight: 500;
+    text-transform:uppercase;
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+}
+
+h1:hover, h2:hover, h3:hover {
+    color:#555555;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444444;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+section .iniciar {
+    background-color: rgba(255, 255, 255, 0.712);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    width: 75em;
+    position: relative;
+    left: 2.2em;
+    height: 60em;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#img1 {
+    position:relative;
+    bottom:7em;
+}
+
+#buscar {
+    height: 11em;
+}
+
+#h3_2 {
+    padding-bottom: 2px;
+}
+
+#aprende {
+    height: 6em;
+}
+
+#img2 {
+    position: relative;
+    bottom: 7.3em;
+}
+
+#img3 {
+    position: relative;
+    bottom: 7.3em;
+}
+
+#asegurar {
+    height: 11em;
+}
+
+#confiar {
+    height: 7em;
+}
+
+#h3_4 {
+    padding-bottom: 2px;
+}
+
+section .mantener {
+    background-color: rgba(255, 255, 255, 0.712);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    width: 75em;
+    position: relative;
+    top:2em;
+    left: 2.2em;
+    height: 65em;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+#amamanta, #descansar, #usar {
+    height: 9em;
+}
+
+#hidratar, #evitar {
+    height: 11em;
+}
+
+
+
+#img4, #img5, #img8, #img9, #img10{
+    position: relative;
+    bottom: 5em;
+}
+
+
+#img7, #img6, #img11, #img12{
+    position: relative;
+    bottom: 7em;
+}
+
+#img13, #img14{
+    position: relative;
+    bottom: 5.7em;
+}
+
+section .problemas {
+    background-color: rgba(255, 255, 255, 0.712);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    width: 75em;
+    position: relative;
+    top: 3.5em;
+    left: 2.2em;
+    height: 64em;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.problemas li{
+    height: 10em;
+}
+
+#img21, #img22, #img18 {
+    position: relative;
+    bottom: 5em;
+}
+
+#img15, #img16, #img17, #img19, #img20, #img30 {
+    position: relative;
+    bottom: 7em;
+}
+
+
+section .prolongar {
+    background-color: rgba(255, 255, 255, 0.712);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    width: 75em;
+    position: relative;
+    top: 5em;
+    left: 2.2em;
+    height: 39em;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.prolongar li {
+    height: 9em;
+}
+
+.prolongar img {
+    position: relative;
+    bottom: 5em;
+}

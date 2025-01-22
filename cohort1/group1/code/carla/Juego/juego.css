@@ -1,0 +1,146 @@
+#cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100hv;
+    margin-top: 10em;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+
+}
+
+#titulo {
+    font-size: 5em;
+
+    color: #ffcc00;
+}
+
+#jugar {
+    margin-top: 100px;
+    padding: 10px 20px;
+    font-size: 3em;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#jugar:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+
+
+
+@font-face {
+    font-family: 'PixelFont';
+    src: url('https://fonts.gstatic.com/s/pixelfjverdana/v1/pixelfjverdana.woff2') format('woff2');
+}
+
+#cuerpo2 {
+
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #1e1e2f;
+    color: #ffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#titulo2 {
+    font-family: 'PixelFont', sans-serif;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px #000000;
+    margin-top: 1em;
+    font-size: 5rem;
+}
+
+
+.perfiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    gap: 8em;
+}
+
+.perfil {
+    background: radial-gradient(circle, #2e2e44, #1e1e2f);
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0px 8px 15px rgba(177, 169, 169, 0.863);
+    text-align: center;
+}
+
+.perfil h2 {
+    font-family: 'PixelFont', sans-serif;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.eleccion {
+    margin: 40px 0;
+}
+
+.boton {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 8px 15px rgba(151, 140, 39, 0.863);
+}
+
+.boton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+.boton:nth-child(1) {
+    background-color: #c73c1c;
+    color: #fff;
+}
+
+.boton:nth-child(1):hover {
+    background-color: #701201;
+}
+
+.boton:nth-child(2) {
+    background-color: #3296c0;
+    color: #fff;
+}
+
+.boton:nth-child(2):hover {
+    background-color: #0056b3;
+}
+
+.boton:nth-child(3) {
+    background-color: #47c767;
+    color: #fff;
+}
+
+.boton:nth-child(3):hover {
+    background-color: #1e5806;
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #bdbaba;
+}
+
+.result span {
+    color: #ffcc00;
+}
