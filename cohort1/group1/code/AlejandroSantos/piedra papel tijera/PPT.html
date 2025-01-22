@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piedra, Papel o Tijeras</title>
+  <link rel="stylesheet" href="PPT.css">
+  <link href="https://fonts.cdnfonts.com/css/arco" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7881bda97f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Piedra, <span class="paper">Papel</span> <span class="scissors">o Tijeras</span></h1>
+    <div class="choices">
+      <button id="piedra"><i class="fa-regular fa-hand-back-fist"></i></button>
+      <button id="papel"><i class="fa-regular fa-hand"></i></button>
+      <button id="tijeras"><i class="fa-regular fa-hand-scissors"></i></button>
+    </div>
+    <div class="result">
+      <p id="resultado">¡Haz tu elección!</p>
+    </div>
+    <div class="scoreboard">
+      <p>Jugador: <span id="player-score">0</span></p>
+      <p>Computadora: <span id="computer-score">0</span></p>
+    </div>
+  </div>
+  <script src="PPT.JS"></script>
+</body>
+
+</html>

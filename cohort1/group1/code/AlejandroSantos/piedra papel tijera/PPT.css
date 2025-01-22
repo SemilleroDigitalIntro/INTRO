@@ -1,0 +1,55 @@
+body {
+  font-family: "ARCO", sans-serif;
+  text-align: center;
+  background-image: url(https://i.pinimg.com/236x/7f/1c/62/7f1c626d8badb3912b40c22931062697.jpg);
+  margin: 0;
+  padding: 0;
+}
+
+.paper {
+  color: #ffffff;
+}
+
+.scissors {
+  color: #4f80a8;
+}
+
+.container {
+  margin: 50px 300px 0;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: #39434b;
+}
+
+h1 {
+  color: #201f1f;
+}
+
+.choices {
+  margin: 20px 0;
+}
+
+button {
+  font-size: 50px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: black;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.scoreboard {
+  margin-top: 20px;
+  font-size: 18px;
+}

@@ -1,0 +1,288 @@
+/* Fuentes */
+.jaini-regular {
+  font-family: "Jaini", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
+}
+
+.jaini-regular span {
+  color: #05ff05;
+}
+
+.jaro-font {
+  font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.imbue {
+  font-family: "Imbue", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Ajustes del scrollbar */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #838080;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #7d0a0a;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #932121;
+}
+
+/* Estilos del header */
+header {
+  background-color: #932121;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 45px;
+  height: 70px;
+  margin: 0%;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.Inicio {
+  text-decoration: none;
+  color: black;
+}
+
+.Selectors {
+  display: flex;
+  gap: 59px;
+}
+
+.Selectors a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+
+.Selectors a:hover {
+  color: #ff000056;
+}
+
+.Searcher {
+  display: flex;
+  align-items: center;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 76px;
+  width: 263px;
+}
+
+.Searcher input {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  outline: none;
+}
+
+#Last_news {
+  color: #7d0a0a;
+  text-decoration: underline;
+  font-size: 45px;
+}
+
+/* contenido */
+main {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+
+.left-content {
+  flex: 3;
+}
+
+.right-content {
+  flex: 1;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.tag {
+  background-color: #932121;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tag:hover {
+  background-color: #7d0a0a;
+}
+
+.noticias {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.noticias a {
+  text-decoration: none;
+  color: black;
+}
+
+.noticias img {
+  width: 150px;
+  height: 150px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.noticias .news_text {
+  flex: 1;
+}
+
+.noticias h3 a {
+  font-size: 18px;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+.noticias p {
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
+.Side_content {
+  display: flex;
+  border-radius: 10px;
+  align-items: flex-end;
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+}
+
+#N1 {
+  background-image: url(https://files.idyllic.app/files/static/299069?width=256&optimizer=image);
+}
+
+#N2 {
+  background-image: url(https://public.blenderkit.com/thumbnails/assets/97574ba23bd045cf9e8d2ee773c9b19f/files/thumbnail_14ded64e-cd48-4ab1-bc0b-bb801bd0cec8.png.256x256_q85.png.webp?webp_generated=1649970994);
+}
+
+#N3 {
+  background-image: url(https://www.infinit.com.uy/imgs/productos/productos31_24023.jpg);
+}
+
+#N4 {
+  background-image: url(https://dlaudio.fineshare.net/cover/soundboard-cover/streamer-soundboard.webp);
+}
+
+#N5 {
+  background-image: url(https://singifyai.fineshare.com/soundboard-cover/twitch-soundboard.webp);
+}
+
+.sidebar {
+  width: 200px;
+  height: 120px;
+  align-content: flex-end;
+}
+
+.sidebar h4 {
+  margin-bottom: 0;
+}
+
+.right-content a {
+  text-decoration: none;
+  color: black;
+}
+
+/* footer */
+.footer {
+  background-color: #932121;
+  color: white;
+  padding: 0;
+}
+
+.footer_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+.social .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 40px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #7d0a0a;
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  flex-wrap: wrap;
+}
+
+.footer_bottom .jaini-regular {
+  color: black;
+  font-size: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
