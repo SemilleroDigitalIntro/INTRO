@@ -1,0 +1,24 @@
+/* centrando los textos */
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: rgb(91, 106, 119);
+}
+/* Cambiandole el tamaño las imagenes y espacio entre ellas */
+.foto img {
+    height: 80px;
+    width: auto;
+    padding: 10PX;
+}
+/* poniendo el tamaño a los botones y el numero de fuente */
+.opc button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16x;
+}
+/* Poniendole en color resaltado oscuro las letras del resultado y una transicion */
+.resultado {
+    font-weight: bold;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}

@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2015/03/1427722341-lykan-hypersport-2.jpg?resize=750%2C400&ssl=1');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #666;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 297px;
+    padding: 10px;
+    margin: 20px 0;
+    border: 3px solid #ccc;
+    border-radius: 26px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* parte 2 */
