@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definición del conjunto de caracteres para la página -->
+    <meta charset="UTF-8">
+    <!-- Configuración para la visualización adecuada en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparecerá en la pestaña del navegador -->
+    <title>juego</title>
+    <!-- Vinculamos el archivo CSS para el estilo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Título principal de la página -->
+    <h1>Piedra , Papel o Tijeras</h1>
+    
+    <!-- Contenedor principal de la batalla, donde se muestra la selección del jugador y de la PC -->
+    <div id="batalla-camp" class="batalla-camp">
+        <!-- Contenedor para mostrar la elección del jugador -->
+        <div id="imagen-jugador" class="caja-batalla caja-img"></div>
+
+        <!-- Contenedor que muestra "VS" en el centro -->
+        <div class="caja-batalla"><p class="menjase-vs">VS</p></div>
+
+        <!-- Contenedor para mostrar la elección de la PC -->
+        <div id="imagen-pc" class="caja-batalla caja-img"></div>
+    </div>
+
+    <!-- Sección donde se muestra el mensaje de la batalla -->
+    <div class="msj">
+        <!-- Aquí se mostrará el resultado de la batalla -->
+        <p id="msj-batalla" class="menjase-vs"></p>
+    </div>
+
+    <!-- Subtítulo indicando que el usuario debe elegir una opción -->
+    <h2 class="subti">Elige una opcion</h2>
+
+    <section>
+        <!-- Sección con las imágenes de las opciones del juego (Piedra, Papel, Tijera) -->
+        
+        <!-- Botón para elegir Piedra -->
+        <img src="img/botao-pedra.png" alt="Piedra" id="bt-piedra" class="bt-ataque">
+
+        <!-- Botón para elegir Papel -->
+        <img src="img/botao-papel.png" alt="Papel" id="bt-papel" class="bt-ataque">
+
+        <!-- Botón para elegir Tijera -->
+        <img src="img/botao-tesoura.png" alt="Tijera" id="bt-tijera" class="bt-ataque">
+         
+    </section>
+
+    <!-- Enlace al archivo JavaScript que maneja la lógica del juego -->
+    <script src="javascrip.js"></script>
+</body>
+</html>

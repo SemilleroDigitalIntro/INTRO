@@ -1,0 +1,85 @@
+/* Estilo global para todos los elementos de la página */
+* {
+    font-family: 'Times New Roman', Times, serif; /* Define la fuente para todo el contenido */
+    color: aliceblue; /* Color del texto (blanco con un tono azul claro) */
+    background-color: rgb(0, 0, 0); /* Fondo negro para toda la página */
+}
+
+/* Estilos para el body de la página */
+body {
+    display: flex; /* Usamos Flexbox para la distribución del contenido */
+    flex-direction: column; /* Disposición vertical de los elementos */
+    align-items: center; /* Centra los elementos horizontalmente */
+
+    /* Personalización de la barra de desplazamiento */
+    &::-webkit-scrollbar {
+        background: transparent; /* Fondo transparente para la barra de desplazamiento */
+        width: 7px; /* Ancho de la barra de desplazamiento */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: darkblue; /* Color de la parte deslizante de la barra */
+        border-radius: 7px; /* Bordes redondeados en la parte deslizante */
+    }
+}
+
+/* Estilos para el contenedor principal de la batalla */
+.batalla-camp {
+    display: flex; /* Usamos Flexbox para organizar las opciones de batalla */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    border: 3px solid rgb(255, 255, 255); /* Borde blanco alrededor del contenedor */
+    padding: 20px; /* Espaciado interno del contenedor */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+/* Estilos para las imágenes dentro del contenedor de la batalla */
+.caja-img {
+    /* Estilo para las imágenes dentro de .caja-img */
+    > img {
+        width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+        max-width: 180px; /* Limita el tamaño máximo de la imagen */
+        aspect-ratio: 1/1; /* Mantiene una relación de aspecto cuadrada */
+        object-fit: cover; /* La imagen se ajusta cubriendo el área sin distorsionarse */
+    }
+}
+
+/* Estilos para las cajas que contienen las opciones de batalla */
+.caja-batalla {
+    margin: 20px; /* Espaciado entre las diferentes cajas de batalla */
+}
+
+/* Estilo para el texto que muestra "VS" en el medio */
+.menjase-vs {
+    font-size: 30px; /* Tamaño de la fuente para el texto "VS" */
+}
+
+/* Estilo para los botones de ataque (piedra, papel, tijera) */
+.bt-ataque {
+    width: 150px; /* Ancho de los botones */
+    border-radius: 50%; /* Hace que los botones tengan forma circular */
+    margin: 20px; /* Espaciado entre los botones */
+}
+
+/* Efecto al pasar el ratón por encima de los botones */
+.bt-ataque:hover {
+    border: 3px solid rgb(255, 255, 255); /* Borde blanco cuando se pasa el ratón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    margin: 17px; /* Reduce el margen cuando se pasa el ratón */
+}
+
+/* Estilo para los subtítulos, como "Elige una opción" */
+.subti {
+    display: flex; /* Usamos Flexbox para alinear los elementos dentro del subtítulo */
+    margin-top: 5px; /* Espaciado superior */
+    margin-bottom: 5px; /* Espaciado inferior */
+}
+
+/* Estilos para el contenedor de mensajes */
+.msj {
+    > p {
+        display: flex; /* Usamos Flexbox para alinear los párrafos de mensajes */
+        margin-top: 10px; /* Espaciado superior en los mensajes */
+        margin-bottom: 10px; /* Espaciado inferior en los mensajes */
+    }
+}
