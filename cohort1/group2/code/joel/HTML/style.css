@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Asegura que padding y border no incrementen el tamaño total del elemento */
+}
+
+/* Estilo general del cuerpo */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    /* Fuente predeterminada para todo el documento */
+    background-color: #f8f8f8;
+    /* Color de fondo suave */
+}
+
+/* Sección: Encabezado esquina superior derecha */
+.top-right-corner {
+    display: flex;
+    flex-direction: row;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.top-right {
+    color: black;
+    flex-direction: row;
+    display: flex;
+    min-width: 600px;
+    /* Tamaño mínimo fijo */
+}
+
+.top-right-corner h4 {
+    flex: 1;
+    /* Se expande para ocupar espacio disponible */
+    color: aliceblue;
+}
+
+/* Sección: Contenedor de imagen principal */
+.imagine-container {
+    position: relative;
+    width: 100%;
+    /* Ocupa el ancho completo */
+    height: 80vh;
+    /* Ocupa el 80% del alto del viewport */
+    overflow: hidden;
+    /* Oculta el contenido desbordante */
+    z-index: -2;
+    /* Se coloca detrás de otros elementos */
+    top: 0;
+}
+
+.imagine-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Asegura que la imagen cubra todo el espacio */
+    margin: 0;
+}
+
+/* Sección: Fondo marrón */
+.background-brown {
+    color: rgb(255, 255, 255);
+    /* Texto blanco */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    display: flex;
+    /* Centra el contenido horizontalmente */
+    background-color: rgb(63, 49, 32);
+    /* Fondo marrón */
+    font-size: 20px;
+    background-size: 80px;
+    /* Define el tamaño del fondo (si se aplica una imagen) */
+    position: fixed;
+    bottom: 45px;
+    width: 1400px;
+    height: 90px;
+    align-items: center;
+    /* Ancho fijo */
+}
+.background-brown .H3{
+    justify-content: center;
+}
+/* Sección: Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #361818;
+    /* Fondo oscuro */
+    padding: 15px 30px;
+    /* Espaciado interno */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Colocada encima de otros elementos */
+}
+
+/* Logo en la barra de navegación */
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    /* Texto blanco */
+    text-decoration: none;
+    padding-right: 500;
+}
+
+/* Icono de menú hamburguesa */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    /* Bordes redondeados */
+}
+
+/* Menú de navegación */
+.menu ul {
+    list-style: none;
+    /* Elimina los puntos de lista */
+    display: flex;
+    gap: 20px;
+    /* Espacio entre elementos del menú */
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    /* Texto blanco */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Efecto suave al interactuar */
+}
+
+.menu a:hover {
+    color: #f4a300;
+    /* Color en hover */
+    transform: scale(1.1);
+    /* Agranda el texto ligeramente */
+}
+
+/* Menú desplegable (móvil) */
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Estilo del menú activo (hamburguesa) */
+.menu.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    /* Fondo oscuro */
+    width: 100%;
+    height: 100vh;
+    /* Ocupa toda la altura del viewport */
+    padding: 50px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra sutil */
+}
+
+.menu.active ul {
+    flex-direction: column;
+    text-align: center;
+    /* Centra los elementos en la vista móvil */
+}
+
+.menu.active li {
+    margin: 20px 0;
+}
