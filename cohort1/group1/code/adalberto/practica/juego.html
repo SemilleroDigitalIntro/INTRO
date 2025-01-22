@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="css/juego.css">
+
+</head>
+<body>
+    <h1 class="letra">"Los Tres Poderes"</h1>
+    <div class="game-container">
+        <h1>¡Juguemos a Piedra, Papel o Tijera!</h1>
+        <div class="choices">
+            <div class="choice" onclick="playGame('piedra')">🪨 Piedra</div>
+            <div class="choice" onclick="playGame('papel')">📄 Papel</div>
+            <div class="choice" onclick="playGame('tijera')">✂️ Tijera</div>
+        </div>
+        <div class="result" id="result">Haz tu elección para comenzar.</div>
+        <footer>
+            <a href="index.html"><button>regresar al principio</button></a>
+        </footer>
+    </div>
+
+    <script src="js/juego.js"></script>
+    
+</body>
+</html>

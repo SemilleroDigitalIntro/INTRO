@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+
+}
+
+.img_fondo {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.logo_form {
+    display: grid;
+}
+
+.logo_logi {
+    margin-top: 70px;
+    margin-left: 170px;
+}
+
+.login {
+    display: flex;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    width: 1000px;
+    height: 750px;
+    border-radius: 20px;
+    margin-top: 110px;
+    margin-bottom: 100px;
+    margin-left: 520px;
+    box-shadow: 0 0 10px rgb(168, 168, 168);
+}
+
+
+
+.form_login {
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.campo_email {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.campo_email input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 200px;
+}
+
+.campo_pass input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 200px;
+
+}
+
+.campo_pass {
+
+    display: flex;
+
+}
+
+.campo_email img {
+    opacity: 0.8;
+}
+
+.campo_pass img {
+    opacity: 0.8;
+}
+
+
+
+.olvidate h6 {
+    margin: 0;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.olvidate h6:hover {
+    transform: scale(1.1);
+
+}
+
+.olv_pass {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.olv_pass input {
+    margin: 0;
+    margin-right: 2px;
+}
+
+.olv_pass h6 {
+    margin: 0;
+}
+
+
+.acceder {
+    margin: 0;
+    background-color: #125790;
+    width: 240px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.acceder:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ccc;
+}
+
+.acceder h3 {
+    color: white;
+    margin: 0;
+}
+
+
+.tienes_cu {
+    margin-right: 10px;
+    margin: 0;
+    margin-left: 30px;
+    margin-right: 5px;
+}
+
+.registr {
+    display: flex;
+    margin: 0;
+}
+
+
+.btn_c_registr h6 {
+    margin: 0;
+    transition: transform 0.3s;
+}
+
+.btn_c_registr h6:hover {
+    transform: scale(1.1);
+}
+
+.opcion {
+    margin-left: 110px;
+}
+
+.btn_google {
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    width: 240px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.btn_google:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ccc;
+}
+
+.img_gogle {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.polit_condi {
+    display: flex;
+    margin-top: 50px;
+}
+
+.ver {
+    margin-left: 150px;
+    margin-right: 5px;
+}
+
+.pyc {
+    margin-right: 5px;
+}

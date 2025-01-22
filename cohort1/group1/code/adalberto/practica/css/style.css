@@ -1,0 +1,94 @@
+body {
+    
+    background-image: url('/img/openart-image_PLlYowAX_1737029670610_raw.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0; 
+    height: 100vh;
+  }
+
+  .botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #1e1e1e;
+    margin: 0;
+  }
+
+  a.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #222;
+    border: 2px solid #3cb8f1;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none; /* Para quitar el subrayado */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  a.button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+
+  a.button:active {
+    transform: scale(0.95);
+  }
+
+  .button .arrows {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .button .arrow {
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    background-color: #3cb8f1;
+  }
+
+  /* Variaciones de intensidad */
+  .button .arrow-1 {
+    background-color: #3cb8f1; /* Color base */
+  }
+  .button .arrow-2 {
+    background-color: #64c5f3; /* Más claro */
+  }
+  .button .arrow-3 {
+    background-color: #94d5f6; /* Aún más claro */
+  }
+  .titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #1e1e1e;
+    margin: 0;
+    color: #3cb8f1;
+    font-size: 60px;
+    font-family: garamond;
+  }
+  .parrafo{
+    color: #94d5f6;
+    background-color: #1e1e1e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40PX;
+  }
+  .fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    border-radius: 50px;
+  }

@@ -1,0 +1,75 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292B2C;
+    color: white;
+    padding: 10px 20px;}
+
+
+.car-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;}
+
+        .car-item {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;}
+    
+.car-item img {
+        width: 100%;
+        height: auto;
+    }
+    
+.car-item h3 {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+.car-item button {
+        margin: 5px;
+        padding: 10px;
+        border: none;
+        background-color: #292B2C;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+.contenido{
+        display: flex;}
+
+.imagenes{
+    transition: all .5;
+}
+
+.imagenes:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: yellowgreen;
+}
+
+.btn_login{
+    align-items: end;
+}
+

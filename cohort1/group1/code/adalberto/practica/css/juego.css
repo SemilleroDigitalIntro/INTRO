@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #001510, #00bf8f);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .letra{
+    margin: 20px;
+  }
+  
+  .game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 700px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .choice {
+    font-size: 2rem;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .choice:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .result h2 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
+  }
+  
+  .result{
+    margin-top: 20px;
+  }
+  
+  footer {
+    margin-top: 20px;
+  }
+  
+  footer button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  footer button:hover {
+    background: #ff9900;
+  }
