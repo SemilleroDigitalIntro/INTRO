@@ -19,4 +19,4 @@ Descarga el repo, moverse al directorio 'INTRO' y servir la coleccion con un ser
 
 ```python3 -m http.server```
 
-Para visualizar el directorio de proyectos entra por el navegador de tu preferencia a ```http://localhost:8000/```
+Finalmente, para visualizar el directorio de proyectos entra por el navegador de tu preferencia a ```http://localhost:8000/```
