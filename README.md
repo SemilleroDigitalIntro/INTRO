@@ -7,7 +7,7 @@ Este repositorio contiene una colección de prácticas, ejercicios y proyectos d
 # Navega la galeria de proyectos
 
 Para navegar y servir localmente la galeria de proyectos en tu computadora puedes correr los siguientes comandos en la terminal.
-Descarga el repo, moverse al directorio 'INTRO' y servir la coleccion con un servidor web. 
+Descarga el repo, moverse al directorio 'INTRO' y servir la coleccion con un servidor web. A continuacion te facilito los comandos necesarios para estos pasos.
 
 ```git clone https://github.com/SemilleroDigitalIntro/INTRO.git```
 
