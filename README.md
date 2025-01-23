@@ -10,7 +10,7 @@ Siéntete libre de explorar los contenidos, iterar, mejorar y generar nuevas ide
 
 # Navega la galeria de proyectos
 
-Para navegar y servir localmente la galeria de proyectos en tu computadora puedes correr los siguientes comandos en la terminal.
+Para navegar y servir localmente la galeria de proyectos en tu computadora puedes seguir las siguientes instrucciones.
 Descarga el repo, moverse al directorio 'INTRO' y servir la coleccion con un servidor web. A continuacion te facilito los comandos necesarios para estos pasos.
 
 ```git clone https://github.com/SemilleroDigitalIntro/INTRO.git```
