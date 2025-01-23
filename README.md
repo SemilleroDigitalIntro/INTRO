@@ -14,11 +14,10 @@ Para navegar y servir localmente la galeria de proyectos en tu computadora puede
 Descarga el repo, moverse al directorio 'INTRO' y servir la coleccion con un servidor web. A continuacion te facilito los comandos necesarios para estos pasos.
 
 ```
-git clone https://github.com/SemilleroDigitalIntro/INTRO.git```
+git clone https://github.com/SemilleroDigitalIntro/INTRO.git
 cd INTRO 
 python3 -m http.server
 ```
 
 Finalmente, para visualizar el directorio de proyectos entra por el navegador de tu preferencia a:
-
 ```http://localhost:8000/```
