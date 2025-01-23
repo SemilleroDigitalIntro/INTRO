@@ -9,5 +9,7 @@ Este repositorio contiene una colección de prácticas, ejercicios y proyectos d
 Para navegar y servir localmente la galeria de proyectos en tu computadora puedes correr los siguientes comandos en la terminal.
 
 ```git clone https://github.com/SemilleroDigitalIntro/INTRO.git```
+
 ```cd INTRO``` 
+
 ```python3 -m http.server```
