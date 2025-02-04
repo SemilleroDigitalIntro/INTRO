@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johaas Inked</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Johaas_Inked</div>
+        <div class="menu-icon">☰</div>
+        <button class="cta-button">Agendar cita</button>
+    </header>
+    
+    <main>
+        <div class="welcome-text">
+            <h1>BIENVENIDOS<br>A<br>JOHAAS INKED</h1>
+        </div>
+    </main>
+</body>
+</html>

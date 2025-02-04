@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Aston Script', serif;
+    background-color: #fcfcfc;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Aston Script', cursive;
+    font-size: 24px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+main {
+    font-family:  'old_london' ;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+   
+    position: left;
+    font-size: 35px; 
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;   
+    background-image: url(WhatsApp\ Image\ 2024-11-13\ at\ 1.47.08\ AM.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+}
+.logo {
+    font-size: 24px;
+    color: white;
+}
+.cta-button {
+    margin-right: 20px;
+    align-items: right;
+
+
+}
+.botnss {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.welcome-text {
+    text-align: center;
+    color: white;
+    font-family: '' ;
+}
+
+
+  h1 {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 100%);
+  }
+
+  h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+  }
+
+body {
+    font-family: aston script ;
+    background-color: #f5f5f5;
+    margin: 0;
+  }
+
+  .dropdown-menu {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+ 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+  }
+ 
+  .menu-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+  }
+  
+
+  .menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    right: 0; 
+    width: 200px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .menu-item:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .menu-item i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .menu-item span {
+    font-size: 18px;
+  }
+  
+  .menu-container.active .dropdown-menu {
+    display: block;
+  }
+ 
+.description-section {
+  font-family: 'Times New Roman', Times, serif;
+  size: 130px;
+  text-align: center;
+
+}
