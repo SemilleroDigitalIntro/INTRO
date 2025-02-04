@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:  aquamarine;
+    background-size:cover;
+}
+nav{
+   background-color: rgb(209, 231, 231);
+   margin-top: 40px;
+   padding: 15px;
+   align-items: center;
+   display: flex;
+   height: 60px;
+   
+
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    justify-content: right;
+    padding: 20px;
+
+}
+a:hover{
+color: cornflowerblue; /*etiqueta para ponerle un color a los link antes de darle*/
+
+}
+h1{
+    color: black;
+    font-size: 40px;
+    padding:5px;
+    
+}
+#iconos{
+ margin-left:auto; /*con esta etiqueta logre despues de mil quinientos intento poner los iconos de lado derecho*/
+  padding: 20px;
+  margin-right: px;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  display: flex;
+ 
+}
+h2{
+  padding:20px;
+    text-align: center;
+}
+
+
+.carro-maclaren{
+    display: grid;
+    flex-wrap: wrap;
+    overflow: hidden; /* ojo*/
+    border:2px solid rgb(5, 5, 5);
+    grid-template-columns: 35% 65%; /*etiqueta por  */
+    margin: 30px;
+    width: 95%;
+    height: 250px;  
+  }
+  .carro-audi{
+    display: grid;
+    flex-wrap: wrap;
+    overflow: hidden; /* ojo*/
+    border:2px solid rgb(5, 5, 5);
+    grid-template-columns: 35% 65%; /*etiqueta por  */
+    margin: 30px;
+    width: 95%;
+    height: 250px;  
+  } 
+  .carro-ferrari{
+    display: grid;
+    flex-wrap: wrap;
+    overflow: hidden; /* ojo*/
+    border:2px solid rgb(5, 5, 5);
+    grid-template-columns: 35% 65%; /*etiqueta por  */
+    margin: 30px;
+    width: 95%;
+    height: 250px;  
+  }
+  .carro-mercedes{
+    display: grid;
+    flex-wrap: wrap;
+    overflow: hidden; /* ojo*/
+    border:2px solid rgb(5, 5, 5);
+    grid-template-columns: 35% 65%; /*etiqueta por  */
+    margin: 30px;
+    width: 95%;
+    height: 250px;  
+
+    
+
+  }
+   
+  img{
+    height:100%;
+    width: 100%;
+  }
+
+
+
+p{
+  font-size: 20px;
+  padding: 50px;
+ font-family: Georgia, 'Times New Roman', Times, serif; 
+  text-align: center; 
+ color: rgb(3, 3, 3);
+ justify-items: center;
+ 
+ 
+}
+
+
+
+    footer{
+        background-color: rgb(209, 231, 231);
+        color: rgb(243, 243, 235);
+        text-align: center;
+        font-size: 15px;
+        margin: 1px;
+        padding: 60px;
+        color:rgb(243, 239, 239);
+        
+    }
+    .parafo{
+      color: aliceblue;
+    }
+    h3{
+      color: black;
+    }
