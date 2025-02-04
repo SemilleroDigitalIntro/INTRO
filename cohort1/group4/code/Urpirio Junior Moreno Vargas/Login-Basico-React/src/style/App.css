@@ -1,0 +1,84 @@
+:root{
+  background: linear-gradient(140deg,#1b263b,#023047,#219ebc);
+}
+
+.Login-boby{
+  height: 18cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", serif;
+  animation: anim1 1s;
+}
+@keyframes anim1 {
+  from{
+    transform: translateY(-10cm);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+.Login-boby2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  height: 10cm;
+  width: 8cm;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border:none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 2px gray;
+}
+.Confirmacion-img{
+  display: flex;
+  animation: anim2 1s;
+}
+@keyframes anim2 {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.Login-boby .form .formulario{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.Login-boby .form div input{
+  height: 0.5cm;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  font-size: 18px;
+}
+.Login-boby .form div input::placeholder{
+  font-family: "Oswald", serif;
+  font-size: 18px;
+}
+.Login-boby .form div button{
+  height: 1cm;
+  width: 3.2cm;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 2px rgba(128, 128, 128, 0.241);
+  background-color: #1b263b;
+  font-weight: 600;
+  color: white;
+  transition: 300ms;
+}
+.Login-boby .form div button:hover{
+  height: 1.1cm;
+  width: 3.3cm;
+  background-color: #1b263be8;
+  border: 2px solid gray;
+}

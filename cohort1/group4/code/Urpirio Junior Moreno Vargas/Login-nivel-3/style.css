@@ -1,0 +1,395 @@
+
+body{
+    margin: 0;
+    height: 19cm;
+    font-family: "Poppins", sans-serif;
+    background-color: #0d1321;
+}
+main{
+    display: flex;
+    height: 100%;
+}
+.main-section1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1321;
+}
+
+.main-section1-section1{
+    height: 18cm;
+    width: 10cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #3b0086;
+    box-shadow: 1px 1px 20px 2px #3b0086;
+    background-color: #33415c;
+    color: white;
+    border-radius: 20px;
+    animation: Entrada 1S;
+}
+@keyframes Entrada {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+.main-section1-section1 div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-section1-section1-h{
+    display: flex;
+    justify-content: left;
+    flex-flow: column;
+    width: 7cm;
+}
+
+
+.URPSPACE{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    margin: 0;
+    background: linear-gradient(-90deg,#eff6e0,#aec3b0,#7b2cbf,#aec3b0,#eff6e0);
+    background-clip: text;
+    background-size: 500%;
+    color: transparent;
+    animation: color1 4s linear infinite ;
+}
+.section1-section1-H1-H3{
+    display: flex;
+    flex-flow:column ;
+}
+.section1-section1-H1-H3 h1{
+    margin: 0;
+    font-size: 25px;
+}
+.section1-section1-H1-H3 h3{
+    margin: 0;
+    font-size: 16px;
+    opacity: 0.6;
+}
+.section1-section1-H1-H3-2{
+    display: none;
+    flex-flow: column;
+}
+#section1-section1-H1-H3-2{
+    animation: none;
+}
+@keyframes header-form {
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1
+        ;
+        transform: translateY(0px);
+    }
+}
+.section1-section1-H1-H3-2 h1{
+    margin: 0;
+    font-size: 25px;
+}
+.section1-section1-H1-H3-2 h3{
+    margin: 0;
+    font-size: 16px;
+    opacity: 0.6;
+}
+.main-section1-section1-form form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section1-section1-form form div input{
+    height: 0.7cm;
+    width: 7cm;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    color: white;
+    outline: none;
+}
+.main-section1-section1-form form div input::placeholder{
+    color: rgba(255, 255, 255, 0.81);
+}
+#Name{
+    animation: none;
+}
+@keyframes animacion_input {
+    from{
+        transform: translateY(-30px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.main-section1-section1-form form div button{
+    height: 1cm;
+    width: 7cm;
+    margin-bottom: -10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 300ms;
+    background: linear-gradient(-90deg,#7765e3,#6200b3,#3b0086,#6200b3,#7765e3);
+    background-size: 500%;
+    animation: color1 10s linear infinite ;
+}
+#Create_Account{
+    animation: none;
+}
+#login-Account{
+   animation: none; 
+}
+@keyframes animacion_button {
+    from{
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.main-section1-section1-form form div button:hover{
+    height: 1.1cm;
+    width: 7.1cm;
+    background: linear-gradient(-90deg,#eff6e0,#aec3b0,#aec3b0,#eff6e0);
+    background-size: 500%;
+    border: 3px solid #b39cd1;
+    animation: color1 3s linear infinite ;
+}
+@keyframes color1 {
+    from{
+        background-position: 0% 250%;
+    }
+    to{
+        background-position: 250% 500%;
+    }
+}
+.main-section1-section1-btns{
+  margin: 0;
+}
+.login-Account{
+    display: none;
+}
+#SignUp{
+    display: none;
+}
+.main-section1-section1-btns div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1cm;
+    width: 7cm;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 300ms;
+    background: linear-gradient(-90deg,#7765e3,#6200b3,#7765e3);
+    background-size: 500%;
+    animation: color1 10s linear infinite ;
+}
+.main-section1-section1-btns div button:hover{
+    height: 1.1cm;
+    width: 7.1cm;
+    border: 3px solid #cdcfd4;
+    transform: translateY(-5px);
+}
+.main-section1-section1-btns div button i{
+    font-size: 18px;
+}
+.main-section1-section1-a p{
+    font-weight: 300;
+}
+.main-section1-section1-a button{
+    background: linear-gradient(-90deg,white,gray,white);
+    background-size: 500%;
+    background-clip: text;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    color: transparent;
+    transition: 300ms;
+    animation: color1 10s linear infinite ;
+}
+.main-section1-section1-a button:hover{
+    font-size: 18px;
+    text-decoration: underline;
+    color: gray;
+}
+.main-section2{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0e1722;
+}
+#main-section2{
+    animation: background-info 1s;
+}
+
+.main-section2-div1{
+    width: 95%;
+    height: 92%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: last baseline;
+    background-image: url("./src/5818397.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: 2px solid #3b0086;
+    box-shadow: 1px 1px 20px 2px #3b0086;
+}
+.main-section2-div1 article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-section2-div1 article h1{
+    margin: 0;
+}
+.main-section2-div1 div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: white;
+    transition: 300ms;
+}
+.main-section2-div1 div button:hover{
+    font-size: 45px;
+}
+
+/*Ventana numero dos*/
+.main-section3{
+    width: 70%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #0e1722;
+}
+#main-section3{
+    animation: background-info 1s;
+}
+@keyframes background-info {
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+        
+    }
+}
+.main-section3-div1{
+    width: 95%;
+    height: 92%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: last baseline;
+   background-image: url("./src/5818651.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-top-left-radius: 40px;
+   border-bottom-right-radius: 40px;
+   border: 2px solid #f77f00;
+   box-shadow: 1px 1px 20px 2px #f77f00;
+}
+.main-section3-div1 article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-section3-div1 article h1{
+    width: 18cm;
+    margin: 0;
+    text-align: center;
+}
+.main-section3-div1 div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: white;
+    transition: 300ms;
+}
+.main-section3-div1 div button:hover{
+    font-size: 45px;
+}
+@media (max-width: 1180px ) and (min-width:844px)  {
+    .main-section2{
+       display: none;
+    }
+    .main-section1{
+        width: 100%;
+        height: 19.5cm;
+        background-image: url("./src/5818397.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main-section1-section1{
+        height: 18cm;
+        width: 60%;
+}
+}
+@media (max-width:844px) and (min-width:667px){
+    .main-section2{
+        display: none;
+     }
+     .main-section1{
+        width: 100%;
+        height: 19.5cm;
+        background-image: url("./src/5818397.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main-section1-section1{
+        height: 18cm;
+        width: 60%;
+}
+}
+
+
+@media (max-width:667px)  {
+    .main-section2{
+        display: none;
+     }
+     .main-section1{
+        width: 100%;
+        height: 19.5cm;
+        background-image: url("./src/5818397.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main-section1-section1{
+        height: 18cm;
+        width: 90%;
+}
+}
