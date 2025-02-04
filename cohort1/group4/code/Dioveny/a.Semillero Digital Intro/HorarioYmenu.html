@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios y Menú</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #00d4ff;
+            text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .box {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00d4ff;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #00d4ff;
+        }
+
+        .box span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5rem;
+            color: #00d4ff;
+            text-shadow: 0 0 10px #00d4ff;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 400px;
+            background: rgba(0, 0, 0, 0.95);
+            border: 2px solid #00d4ff;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            z-index: 10;
+            box-shadow: 0 0 20px #00d4ff;
+        }
+
+        .popup h2 {
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+            color: #00d4ff;
+        }
+
+        .popup ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .popup ul li {
+            margin: 10px 0;
+        }
+
+        .close {
+            margin-top: 15px;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00d4ff;
+            color: #000428;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .close:hover {
+            background: white;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Horarios y Menú</h1>
+        <div class="box" id="horariosBox">
+            <span>Horarios</span>
+        </div>
+        <div class="box" id="menuBox">
+            <span>Menú</span>
+        </div>
+    </div>
+
+    <div class="popup" id="horariosPopup">
+        <h2>Horarios</h2>
+        <ul>
+            <li>Lunes: 9:00 AM - 5:00 PM</li>
+            <li>Martes: 9:00 AM - 5:00 PM</li>
+            <li>Miércoles: 9:00 AM - 5:00 PM</li>
+            <li>Jueves: 9:00 AM - 5:00 PM</li>
+            <li>Viernes: 9:00 AM - 5:00 PM</li>
+        </ul>
+        <button class="close" onclick="closePopup('horariosPopup')">Cerrar</button>
+    </div>
+
+    <div class="popup" id="menuPopup">
+        <h2>Menú</h2>
+        <ul>
+            <li>Lunes: Pasta y ensalada</li>
+            <li>Martes: Pollo asado con arroz</li>
+            <li>Miércoles: Sopa de lentejas</li>
+            <li>Jueves: Pescado al horno</li>
+            <li>Viernes: Pizza</li>
+        </ul>
+        <button class="close" onclick="closePopup('menuPopup')">Cerrar</button>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+        document.getElementById('horariosBox').addEventListener('click', function() {
+            openPopup('horariosPopup');
+        });
+
+        document.getElementById('menuBox').addEventListener('click', function() {
+            openPopup('menuPopup');
+        });
+
+        function openPopup(id) {
+            document.getElementById(id).style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo 1</title>
+    <link rel="stylesheet" href="Grupo1.css">
+</head>
+<body>
+    <header>
+        <h1>Grupo 1</h1>
+    </header>
+
+    <main class="grid-container">
+
+       <div class="card" onclick="showModal('Camacho', 'Camacho es un apasionado diseñador y programador web experto en lenguajes como Html y js ..', 'img/persona2.jpg')">
+        <img src="img/persona2.jpg" alt="Camacho">
+        <p>Camacho</p>
+    </div>
+        
+        <div class="card" onclick="showModal('Ana Caravallo', 'Ana es diseñadora gráfica y ama la fotografía.', 'img/persona2.jpg')">
+            <img src="img/persona2.jpg" alt="Ana caravallo">
+            <p>Ana Caravallo</p>
+        </div>
+        <div class="card" onclick="showModal('Carlos U ', 'Carlos U  es un analista de datos con habilidades en Python y SQL.', 'img/persona3.jpg')">
+            <img src="img/persona3.jpg" alt="Carlos U">
+            <p>Carlos U</p>
+        </div>
+        <div class="card" onclick="showModal('Angerfi ', 'Angerfi es escritora y le apasiona contar historias.', 'img/persona4.jpg')">
+            <img src="img/persona4.jpg" alt="Angerfi ">
+            <p>Angerfi</p>
+        </div>
+        <div class="card" onclick="showModal('Bebo ', 'Bebo trabaja en marketing digital y es fanático del SEO.', 'img/persona5.jpg')">
+            <img src="img/persona5.jpg" alt="bebo">
+            <p>Bebo</p>
+        </div>
+        <div class="card" onclick="showModal('Abdias Diaz', 'Abdias es un apasionado diseñador y programador web experto en lenguajes como Html y js ..', 'img/persona2.jpg')">
+            <img src="img/persona2.jpg" alt="Abdias Diaz">
+            <p>Abdias Diaz</p>
+        </div>
+        <div class="card" onclick="showModal('Javier Gonzales', 'Javier es un apasionado diseñador y programador web experto en lenguajes como Html y js ..', 'img/persona2.jpg')">
+            <img src="img/persona2.jpg" alt="Javier Gonzales">
+            <p>Javier Gonzales</p>
+        </div>
+        <div class="card" onclick="showModal('Alejandro Ezequiel', 'Alejandro es un apasionado diseñador y programador web experto en lenguajes como Html y js ..', 'img/persona2.jpg')">
+            <img src="img/persona2.jpg" alt="Alejandro Ezequiel">
+            <p>Alejandro Ezequiel</p>
+        </div>
+        <div class="card" onclick="showModal('Jose Alvarez', 'Jose es un apasionado diseñador y programador web experto en lenguajes como Html y js ..', 'img/persona2.jpg')">
+            <img src="img/persona2.jpg" alt="Jose Alvarez">
+            <p>Jose Alvarez</p>
+        </div>
+        <div class="card" onclick="showModal('Ari Cortico', 'Aries un apasionado diseñador y programador web experto en lenguajes como Html y js ..', 'img/persona2.jpg')">
+            <img src="img/persona2.jpg" alt="Ari Cortico">
+            <p>Ari Cortico</p>
+        </div>
+        <div class="card" onclick="showModal('Alondra Galva', 'Alondra un apasionado diseñador y programador web experto en lenguajes como Html y js ..', 'img/persona2.jpg')">
+            <img src="img/persona2.jpg" alt="Alondra Galva">
+            <p>Alondra Galva</p>
+
+
+
+
+
+
+
+            
+        </div>
+
+    </main>
+
+   
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="Imagen">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="Grupo1.js"></script>
+   
+        
+      
+</body>
+</html>

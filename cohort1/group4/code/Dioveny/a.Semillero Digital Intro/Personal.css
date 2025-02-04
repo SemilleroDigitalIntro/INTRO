@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(145deg, #6d2fe0, #03173d);
+  color: white;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.grupo {
+  margin-bottom: 40px;
+}
+
+.grupo-titulo {
+  font-size: 1.8em;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grupo-perfiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.perfil {
+  width: 250px;
+  background: linear-gradient(145deg, #2a5298, #1e3c72);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(60, 128, 253);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.perfil:hover {
+  transform: scale(1.05);
+}
+
+.perfil-imagen {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+.perfil-contenido {
+  text-align: center;
+  padding: 10px;
+}
+
+.perfil-nombre {
+  font-size: 1.2em;
+  color: #ddd;
+  margin: 10px 0;
+}
+
+.perfil-descripcion {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 0.9em;
+  color: #bbb;
+  padding: 0 10px;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.perfil-descripcion p {
+  margin: 0;
+}
+
+.perfil-descripcion.mostrar {
+  max-height: 100px;
+  padding: 10px;
+}
+
+

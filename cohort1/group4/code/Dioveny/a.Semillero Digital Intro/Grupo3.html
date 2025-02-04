@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo 3</title>
+    <link rel="stylesheet" href="Grupo3.css">
+</head>
+<body>
+    <header>
+        <h1>Grupo 3</h1>
+    </header>
+
+    <main class="grid-container">
+       
+        <div class="card" onclick="showModal('Luis ', 'Luis es programador especializado en desarrollo de apps móviles.', 'img/mujer1.jpg')">
+            <img src="img/mujer1.jpg" alt="Luis Almanzar ">
+            <p>Luis Almanzar</p>
+        </div>
+        <div class="card" onclick="showModal('Miguel  ', 'Miguel es ingeniero en software con experiencia en sistemas en la nube.', 'img/hombre1.jpg')">
+            <img src="img/hombre1.jpg" alt="Miguel Angel">
+            <p>Miguel Angel </p>
+        </div>
+        <div class="card" onclick="showModal('Luz', 'Luz es diseñadora UI con un enfoque en accesibilidad digital.', 'img/mujer2.jpg')">
+            <img src="img/mujer2.jpg" alt="Luz ">
+            <p>Luz </p>
+        </div>
+        <div class="card" onclick="showModal('Jhon Omailin ', 'Javier es experto en desarrollo web full-stack con React y Node.js.', 'img/hombre2.jpg')">
+            <img src="img/hombre2.jpg" alt="Jhon Omailin ">
+            <p>Jhon Omailin</p>
+        </div>
+        <div class="card" onclick="showModal('Johandry Cabrera ', 'Johandry es desarrolladora front-end con maestría en diseño responsivo.', 'img/mujer3.jpg')">
+            <img src="img/mujer3.jpg" alt="Johandry Cabrera  ">
+            <p>Johandry Cabrera  </p>
+        </div>
+        <div class="card" onclick="showModal('Josue Natanael', 'Natanael es programador backend especializado en arquitectura de APIs.', 'img/hombre3.jpg')">
+            <img src="img/hombre3.jpg" alt="Josue Natanael ">
+            <p>Josue Natanael </p>
+        </div>
+        <div class="card" onclick="showModal('Keily Balbuena ', 'Keily es diseñadora de experiencia de usuario con enfoque en apps financieras.', 'img/mujer4.jpg')">
+            <img src="img/mujer4.jpg" alt="Keily Balbuena ">
+            <p>Keily Balbuena </p>
+        </div>
+        <div class="card" onclick="showModal('Yoivel Alexander ', 'Yoivel es desarrollador de videojuegos con experiencia en Unreal Engine.', 'img/hombre4.jpg')">
+            <img src="img/hombre4.jpg" alt="Yoivel Alexander ">
+            <p>Yoivel Alexander</p>
+        </div>
+        <div class="card" onclick="showModal('Kiara ', 'Kiara es especialista en diseño gráfico y marketing digital.', 'img/mujer5.jpg')">
+            <img src="img/mujer5.jpg" alt="Kiara ">
+            <p>Kiara</p>
+        </div>
+        <div class="card" onclick="showModal('Manuel Montas ', 'Manuel es analista de datos y experto en visualización con Python.', 'img/hombre5.jpg')">
+            <img src="img/hombre5.jpg" alt="Manuel Montas ">
+            <p>Manuel Montas </p>
+        </div>
+        
+    </main>
+
+   
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="Imagen">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="Grupo3.js"></script>
+    <footer class="footer">
+        <p>&copy; 2024 Semillero Digital. Todos los derechos reservados.</p>
+      </footer>
+</body>
+</html>

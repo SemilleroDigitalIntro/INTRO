@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo 2</title>
+    <link rel="stylesheet" href="Grupo2.css">
+</head>
+<body>
+    <header>
+        <h1>Grupo 2</h1>
+    </header>
+
+    <main class="grid-container">
+       
+        <div class="card" onclick="showModal('Laura ', 'Laura es diseñadora UX con maestría en Experiencia de Usuario.', 'img/mujer1.jpg')">
+            <img src="img/mujer1.jpg" alt="Laura ">
+            <p>Laura </p>
+        </div>
+        <div class="card" onclick="showModal('Carlos ', 'Carlos es programador backend experto en Node.js y bases de datos.', 'img/hombre1.jpg')">
+            <img src="img/hombre1.jpg" alt="Carlos ">
+            <p>Carlos </p>
+        </div>
+        <div class="card" onclick="showModal('Ana Torres', 'Ana es diseñadora gráfica con especialización en branding.', 'img/mujer2.jpg')">
+            <img src="img/mujer2.jpg" alt="Ana ">
+            <p>Ana </p>
+        </div>
+        <div class="card" onclick="showModal('Luis ', 'Luis es programador frontend con experiencia en React.js.', 'img/hombre2.jpg')">
+            <img src="img/hombre2.jpg" alt="Luis">
+            <p>Luis</p>
+        </div>
+        <div class="card" onclick="showModal('María', 'María es desarrolladora full-stack con un enfoque en aplicaciones móviles.', 'img/mujer3.jpg')">
+            <img src="img/mujer3.jpg" alt="María López">
+            <p>María </p>
+        </div>
+        <div class="card" onclick="showModal('Jorge', 'Jorge es programador especializado en inteligencia artificial.', 'img/hombre3.jpg')">
+            <img src="img/hombre3.jpg" alt="Jorge ">
+            <p>Jorge </p>
+        </div>
+        <div class="card" onclick="showModal('Sofía ', 'Sofía es diseñadora UI con un enfoque en diseño responsivo.', 'img/mujer4.jpg')">
+            <img src="img/mujer4.jpg" alt="Sofía ">
+            <p>Sofía </p>
+        </div>
+        <div class="card" onclick="showModal('Ricardo ', 'Ricardo es especialista en seguridad informática y ciberseguridad.', 'img/hombre4.jpg')">
+            <img src="img/hombre4.jpg" alt="Ricardo ">
+            <p>Ricardo </p>
+        </div>
+        <div class="card" onclick="showModal('Valeria ', 'Valeria es desarrolladora de videojuegos con experiencia en Unity.', 'img/mujer5.jpg')">
+            <img src="img/mujer5.jpg" alt="Valeria ">
+            <p>Valeria </p>
+        </div>
+        <div class="card" onclick="showModal('José ', 'José es ingeniero de software con experiencia en DevOps.', 'img/hombre5.jpg')">
+            <img src="img/hombre5.jpg" alt="José ">
+            <p>José </p>
+        </div>
+       
+    </main>
+
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="Imagen">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="Grupo2.js"></script>
+    <footer class="footer">
+        <p>&copy; 2024 Semillero Digital. Todos los derechos reservados.</p>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background: rgba(0, 0, 0, 0.85);
+            border: 1px solid #00d4ff;
+            border-radius: 12px;
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 0 20px #00d4ff;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #00d4ff;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #00b8e6;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #00b8e6;
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #00d4ff;
+            box-shadow: 0 0 10px #00d4ff;
+        }
+
+        .action-links {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .action-links a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        .action-links a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background: #00d4ff;
+            border: none;
+            border-radius: 8px;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #00b8e6;
+        }
+
+        .help {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .help a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        .help a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Iniciar sesión</h2>
+            <form action="SDI.html" method="POST">
+                <div class="input-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="action-links">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <a href="#">¿No tienes cuenta? Regístrate</a>
+                </div>
+                <button id="ctaButton" class="button" type="submit">Iniciar sesión</button>
+            </form>
+            <div class="help">
+                <a href="#">Ayuda</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
