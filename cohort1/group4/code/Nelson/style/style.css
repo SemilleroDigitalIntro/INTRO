@@ -1,0 +1,449 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html{
+
+    font-family: 'Times New Roman', Times, serif;
+    color: #e9ecef;
+    background: 
+        url(natural-black-marble-texture-for-skin-tile-wallpaper-luxurious-background-for-design-art-work-free-photo.jpg) no-repeat;
+    background-size: cover;
+    height: 300vh;
+    
+    
+}
+#hola nav{
+    width: 15%;
+    margin-top: 20px;
+    background-size: cover;
+
+
+   
+
+}
+#hola nav ol{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+#hola nav ol  li {
+    margin-top: 10px auto;
+    list-style: none;
+    margin-left: 10px;
+    text-decoration: none;
+}
+#hola nav ol li a {
+    list-style: none;
+    color: #e9ecef;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    transition: all 0.3s;
+}
+#hola nav ol li a:hover{
+    color: #FAA407;
+    
+
+}
+ #inicio {
+    cursor: pointer;
+}
+
+
+#inicio{
+    background-color: #b17f23;
+
+}
+#inicio:hover{
+    background-color: #000000;
+}
+ header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(1, 1,1 , 0.12);
+    position: fixed;
+    width: 100%;
+    top: 22px;  
+
+
+}
+nav{
+    width: 100%;
+    margin-top: 20px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+
+}
+nav ul li{
+    margin: 0 15px;
+    transition: all 0.3s;
+    transform: matrix(1.1);
+
+}
+nav ul li:hover{
+transform: scale(1.1);
+}
+
+nav ul li a {
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+
+
+}
+a:hover{
+    color: #FAA407; 
+    transition: all 0.3s;
+}
+h1{
+    margin-left: 22px;
+    background-color: #b17f23;
+    transition: all 0.3;
+
+}
+
+    
+
+ #h1:hover,#h11:hover{
+    color: #000000;
+    background-image: url(pan.webp);
+}
+#hola h3{
+    margin-bottom: 2rem;
+}
+#hola{
+    
+    margin-top: 7rem;
+
+}
+#hola h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+#hola  h1{
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+ #hola p{
+    display: flex;
+    margin-top: 60px;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    background-color: rgba(1, 1,1 , 0.12);
+    cursor: pointer;
+
+ }
+ #hola button{
+    color: black;
+    background-color: #b17f23;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+   border: none;
+   padding: 2px;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transform: matrix(1.1);
+    transition: all 0.3s;
+    cursor: pointer;
+    
+    
+ }
+   #hola button:hover{
+    transform: scale(1.1);
+   color: #ffffff; 
+ }
+ #hola h1{
+    font-size: 10rem;
+ }
+#contendores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#contenedores h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #b17f23;
+    font-size: 3rem;
+}
+.cajas{
+    width: 200px;
+    height: 300px;
+    background: rgb(20, 20, 20);
+    display: grid;
+    grid-template-columns:repeat( 4, 1fr);
+    grid-template-rows: repeat(2,1fr) ;
+    gap: 30px;
+    align-items: center;
+    margin-left: 300px;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    box-shadow:2 88px 16px rgb(255, 254, 254);
+    transform: matrix(1.1);
+
+}
+.items1:hover, .items2:hover,.items3:hover, .items4:hover, .items5:hover , .items6:hover, .items7:hover, 
+.items8:hover {
+    color: #000000;
+    transform: scale(1.1);
+    background-color: #b17f23;
+   
+}
+.items1,.items2,.items3, .items4,.items5,.items6,.items7,.items8{
+    width: 200px;
+    height: 350px;
+    background: rgb(20, 20, 20);
+    transition:  all 0.3s;
+    ;
+
+}
+.items1:hover,.items2:hover,.items3:hover, .items4:hover, .items5:hover , .items6:hover, .items7:hover, 
+.items8:hover{
+    background-color: #b17f23;
+        background-size: 100%; 
+        background-repeat: no-repeat;
+        background-position: center; 
+        background:url(papel-tapiz-textura-roca_23-2151890670.avif) ;
+}
+video{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+.items1{
+    width: 200px;
+    height: 350px;
+    background: rgb(20, 20, 20);
+    display: grid;
+    grid-template-columns: auto;
+
+    
+    
+}
+.items1 button{
+    background-color: #e9ecef;
+    border: 0;
+    padding-bottom: 1rem;
+
+
+}
+.items1 button:hover{
+    background-color: rgb(20, 20, 20);
+    color: #e9ecef;
+     
+}
+.items2{
+    width: 200px;
+    height: 350px;
+    background: rgb(20, 20, 20);
+    display: grid;
+    grid-template-columns:auto;
+}
+.items2 button{
+    background-color: #e9ecef;
+    border: 0;
+    padding-bottom: 1rem;
+}
+
+.items2 button:hover{
+    background-color: rgb(20, 20, 20);
+    color: #e9ecef;
+}
+.items3{
+    width: 200px;
+    height: 350px;
+    background: rgb(20, 20, 20);
+    display: grid;
+    grid-template-columns:auto;
+
+}
+.items3 button{
+    background-color: #e9ecef;
+    border: 0;
+    padding-bottom: 1rem;
+
+}
+.items3 button:hover{
+    background-color: rgb(20, 20, 20);
+    color: #e9ecef;
+}
+.items4{
+    width: 200px;
+    height: 350px;
+    background: rgb(20, 20, 20);
+    display: grid;
+    grid-template-columns:auto;
+}
+.items4 button{
+    background-color: #e9ecef;
+    border: 0;
+    padding-bottom: 1rem;
+
+}
+.items4 button:hover{
+    background-color: rgb(20, 20, 20);
+    color: #e9ecef;
+
+}
+.items5{
+    width: 200px;
+    height: 350px;
+    background: rgb(20, 20, 20);
+    display: grid;
+    grid-template-columns:auto;
+}
+.items5 button{
+    background-color: #e9ecef;
+    border: 0;
+    padding-bottom: 1rem;
+
+}
+.items5 button:hover{
+    background-color: rgb(20, 20, 20);
+    color: #e9ecef;
+}
+.items6{
+    width: 200px;
+    height: 350px;
+    background: rgb(20, 20, 20);
+    display: grid;
+    grid-template-columns:auto;
+
+}
+.items6 button{
+    background-color: #e9ecef;
+    border: 0;
+    padding-bottom: 1rem;
+
+}
+.items6 button:hover{
+    background-color: rgb(20, 20, 20);
+    color: #e9ecef;
+}
+.items7{
+    width: 200px;
+    height: 350px;
+    background: rgb(20, 20, 20);
+    display: grid;
+    grid-template-columns:auto;
+}
+.items7 button{
+    background-color: #e9ecef;
+    border: 0;
+    padding-bottom: 1rem;
+
+}
+.items7 button:hover{
+    background-color: rgb(20, 20, 20);
+    color: #e9ecef;
+}
+.items8{
+    width: 200px;
+    height: 350px;
+    background: rgb(20, 20, 20);
+    display: grid;
+    grid-template-columns:auto;
+}
+.items8 button{
+    background-color: #e9ecef;
+    border: 0;
+    padding-bottom: 1rem;
+
+}
+.items8 button:hover{
+    background-color: rgb(20, 20, 20);
+    color: #e9ecef;
+}
+.items1,.items2,.items2,.items3,.items4,.items5,.items6,.items7,.items8{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+#adios button{
+    color: #ffffff;
+    background: #b17f23;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 500px;
+    margin-left: 690px;
+    width: 8rem;
+    height: 1.5rem;
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+    transform: matrix(1.1);
+    transition: all 0.3s;
+}
+#adios button:hover{
+    color: #ffffff;
+    background-color: rgb(20, 20, 20);
+    transform: scale(1.1);
+}
+
+
+
+
+.cajas img{
+ width: 300px;
+ height: auto;
+ margin: 0 auto;
+ display: block;
+  
+
+
+}
+.cajas h5{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.cajas p{
+    color: #b17f23;
+}
+
+.cajas button{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+.cajas a{
+    color: #e9ecef;
+    margin-right: 6px;
+}
+
+
+    footer {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(20, 20, 20);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12rem;
+        color: #ffffff;
+    
+
+}

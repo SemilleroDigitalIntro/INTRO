@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body{
+
+    background-color: black;
+}
+#inicio{
+    width: 100%;
+    height: 100%;
+    background:url(63e51e0602b22__KIWXSp9o.webp) no-repeat;
+    background-size: cover;
+    margin-bottom: 0 0 ;
+  
+}
+    
+
+#inicio nav{
+    width: 100%;
+    height: 20px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+
+
+}
+
+#inicio nav ul li{
+    text-decoration: none;
+   
+}
+#inicio nav ul{
+    text-decoration: none;
+     list-style: none;
+     display: flex;
+     justify-content: center;
+
+    
+     
+     margin: 10px;
+}
+#inicio nav ul li a{
+     text-decoration: none;
+     margin-left: 10px;
+     color: aliceblue;
+     margin:15px;
+     transition: all 0.3s;
+     transform: matrix(1.1);
+}
+.inicio nav ul li a:hover{
+    color: #bb9143;
+    transform: scale(1.1);
+}
+#inicio p{
+    color: aliceblue;
+    display: flex;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 25rem;
+}
+#boton{
+    background: #bb9143;
+    display: flex;
+    justify-content: center;
+    font-size: 1.55rem;
+    border-radius: 15px;
+    color: white;
+    margin-top: 20rem;
+    margin-left: 15rem;
+    margin-bottom: 5rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+    top: -21rem;
+    
+}
+#boton:hover{
+background: white;
+color: black;
+
+    
+}
+.color{
+    position: relative;
+    bottom: -7rem;
+
+}
+.color  button {
+    left: 10rem;
+
+}
+.color p{
+    left: 10rem;
+
+}
+.color h2{
+    color: white;
+    font-size: 7rem;
+}
+
+ #inicio h1{
+    font-size: 1.5rem;
+    color: white;
+ }
+#segunda {
+    background: #bb9143;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -9rem;
+    margin-bottom: -10rem;
+}
+.items1 h1{
+    color: white;
+}
+.items1{
+    display: flex;
+    flex-direction: row;
+    text-decoration:none;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    margin: 300px;
+    margin-top: 100px;
+}
+.items1 p{
+    width: 20rem;
+}
+#tercera{
+    background:url(natural-black-marble-texture-for-skin-tile-wallpaper-luxurious-background-for-design-art-work-free-photo.jpg) ;
+    width: 100%;
+    height: 100%;
+
+}
+.items2 h1{
+    color: #bb9143;
+}
+.items2 h2{
+    color: white;
+}
+.items2 p{
+    color: white;
+    margin-bottom: 110px;
+    margin-top: 5rem;
+    text-align: center;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#cuarta{
+    background: burlywood;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+}
+.subheader{
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+.subheader nav{
+    width: 100%;
+}
+.subheader nav ul{
+    list-style: none;
+    text-decoration: none;
+
+}
+.subheader nav ul li {
+    display: flex;
+    justify-content: center;
+}
+.subheader nav ul li a {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: -5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.35rem;
+    
+}
+.subheader nav ul li a:hover{
+    color: #bb9143;
+
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1 id="inicio">Artesanal</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#delivery">delivery</a></li>
+                <li><a href="#location">locations</a></li>
+                <li><a href="#contact ">contact</a></li>
+              
+                
+            </ul>
+        </nav>
+       
+    </header>
+     <section id="hola">
+        <nav>
+                <ol>
+                    
+                    <a href="#polostre">polostre</a>
+                    <a href="#fetuchi">fetuchi</a>
+                    <a href="#osonoi">osonoi</a>
+                
+                </ol>
+            </nav>
+        <h3>country <br>
+            sondogh
+        </h3>
+        <h1 id="h1">Artesanal  </h1>
+        
+        <h1 id="h11"> Traditional</h1>
+       <p>  Lorem ipsum dolor sit amet consectetur,<br>
+         adipisicing elit. Ipsum minima distinctio, voluptatembr <br>
+          inventore, vel deleniti quam laudantium <br>
+          ratione ab cum eveniet repellendus libero dolore? <br>
+           Ullam officiis minus temporibus tempora debitis? <br></p>
+           <button>shop new</button>
+
+     </section>
+     <section id="contenedores">
+        <h2>customer <br>
+            favorites
+        </h2> 
+        <div class="cajas">
+            <div class="items1">
+                <video autoplay mote loop id="video">
+                  <source src="index/252951_small.mp4" type="video/mp4">
+                </video>
+                <p><a>$</a>6.00</p>
+                <h5>whole</h5>
+                <button>add</button>
+            </div>
+              <div class="items2" >
+                <video autoplay mote loop id="video">
+                  <source src="index/252951_small.mp4" type="video/mp4">
+                </video>
+                
+                <p> <a>$</a>6.00</p>
+                <h5>moulgrain</h5>
+                <button>add</button>
+
+              </div>
+                  <div class="items3">
+                    <video autoplay mote loop id="video">
+                      <source src="index/252951_small.mp4" type="video/mp4">
+                    </video>
+                    
+                    <p><a>$</a>5.00</p>
+                    <h5>four seel <br> 
+                    whole wheat</h5>
+                    <button>add</button>
+                  </div>
+
+                  <div class="items4">
+                    <video autoplay mote loop id="video">
+                      <source src="index/252951_small.mp4" type="video/mp4">
+                      </video>
+                    <p><a>$</a>3.00</p>
+                    <h5>bagel</h5>
+                    <button>add</button>
+                  </div>
+             <div class="items5">
+              <video autoplay mote loop id="video">
+                <source src="index/252951_small.mp4" type="video/mp4">
+              </video>                
+                <p><a>$</a>3.00</p>
+                <h5>bagel <br> 
+                sesame</h5>
+                <button>add</button>
+             </div>
+             <div class="items6">
+              <video autoplay mote loop id="video">
+                <source src="index/252951_small.mp4" type="video/mp4">
+                </video>
+                      
+                      <p><a>$</a>6.00</p>
+                      <h5>puff<br> 
+                        pastry</h5>
+                    <button>add</button>
+                  </div>
+                  <div class="items7">
+                    <video autoplay mote loop id="video">
+                      <source src="index/252951_small.mp4" type="video/mp4">
+                    </video>
+                
+                    <p><a>$</a>6.00</p>
+                    <h5>frech <br> 
+                    baguette</h5>
+                    <button>add</button>
+                  </div>
+             <div class="items8">
+              <video mote loop id="video">
+                <source src="index/252951_small.mp4" type="video/mp4">
+              </video>
+              
+                <p><a>$</a>3.00</p>
+                <h5> puff <br> 
+                pastry</h5>
+                <button>add</button></div>
+        </div>
+     </section>
+     <section id="adios">
+        <button>view all </button>
+     </section>
+     <footer>&copy;gracias por visitar</footer>
+     <script>
+      document.querySelectorAll('.items1, .items2, .items3, .items4, .items5, .items6, .items7, .items8').forEach(item => {
+          item.addEventListener('click', function() {
+              const video = this.querySelector('video');
+              if (video.paused) {
+                  video.play();
+              } else {
+                  video.pause();
+              }
+          });
+      });
+  </script>
+
+     
+     
+
+    
+    
+      
+      
+</body>
+</html>
