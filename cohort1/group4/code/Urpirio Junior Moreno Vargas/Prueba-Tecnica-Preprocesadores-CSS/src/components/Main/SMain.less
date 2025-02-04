@@ -1,0 +1,56 @@
+:root{
+    font-family: "Poppins", serif;
+}
+.Justify_flex{
+    display: flex;
+    justify-content: center;
+}
+.JustifySpaceR_flex{
+    display: flex;
+    justify-content: space-around;
+}
+.SMain1{
+    .Justify_flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    .SMain__div1{
+        .Justify_flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        span{
+            font-weight: 600;
+            color: #403f3f;
+        }
+        h1{
+            font-size: 55px;
+            font-weight: 300;
+            text-align: center;
+            margin: 0;
+        }
+        img{
+            border-radius: 10px;
+        }
+    }
+    .SMain__div2{
+        .Justify_flex;
+        gap: 80px;
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            h4{
+                font-size: 30px;
+                margin: 0;
+            }
+            p{
+                margin: 0;
+            }
+        }
+        
+    }
+};

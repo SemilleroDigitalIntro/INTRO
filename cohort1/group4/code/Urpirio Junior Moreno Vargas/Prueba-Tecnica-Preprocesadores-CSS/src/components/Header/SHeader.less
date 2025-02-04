@@ -1,0 +1,140 @@
+@h1: 30px;
+.JusC__AlimC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AlimC{
+display: flex;
+align-items: center;
+}
+
+
+
+
+
+body{
+    margin: 0;
+}
+
+header{
+    top: 0;
+    position: sticky;
+}
+.SHeader1{
+    .AlimC;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 1px 1px 10px 5px #80808024;
+}
+.SHeader1__div1{
+    .AlimC;
+}
+.SHeader1__div1 i{
+    font-size: @h1;
+}
+.SHeader1__div1 h1{
+    font-size: @h1;
+}
+.SHeader1__div2{
+    .AlimC;
+    gap: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #808080c0;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 5px #80808019;
+    background-color: white;
+    transition: 1s;
+    nav{
+        display: flex;
+        gap: 20px;
+    }
+    a{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+    }
+    button{
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        border: none;
+        background: none;
+        .JusC__AlimC;
+        font-size: 30px
+    }
+    input{
+        width: 12cm;
+        border-radius: 20px;
+        border: 1px solid gray;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        outline: none;
+       &::placeholder{
+        padding: 1px;
+       }
+    }
+}
+.SHeader1__div3{
+    .AlimC;
+    position: relative;
+    transition: 4s;
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: white;
+    }
+    a{
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        transition: 300ms;
+        &:hover{
+            color: gray;
+        }
+    }
+    button{
+        height: 1cm;
+        width: 4cm;
+        border: 1px solid grey;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .btn{
+        width: 1cm;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div1{
+        .JusC__AlimC;
+        gap: 10px;
+    }
+    .SHeader1__div3_btn{
+        background: none;
+        border: none;
+        font-size: 16px;
+        .AlimC;
+        
+    }
+    .SHeader1__div3_btn i{
+        font-size: 18px;
+    }
+}
