@@ -1,0 +1,310 @@
+body{
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+.header-section1{
+   height: 1.2cm;
+   display: flex;
+   justify-content: space-around; 
+   align-items: center;
+   background-color: #252422;
+   z-index: 3;
+}
+.header-section1-div1{
+    width: 14cm;
+    display: flex;
+    justify-content: space-around;
+
+}
+.header-section1-div2{
+    width: 6cm;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-section1-div2 a{
+    font-size: 20px;
+    transition: 300ms;
+}
+.header-section1-div2 a:hover{
+    font-size: 24px;
+    
+}
+.header-section1 a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header-section2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ccc5b9;
+    z-index: 3;
+}
+.header-section2 div h1{
+    font-size: 25px;
+    text-shadow: 5px 5px #e9ecef;
+}
+.header-section2-div2{
+    width: 28cm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.F-Buscador{
+    display: none;
+    justify-content: center;
+    animation: header 1s;
+}
+.F-Buscador input{
+    height: 0.9cm;
+    width: 8cm;
+    border: 1px solid gray;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.F-Buscador button{
+ height: 0.98cm;
+ width: 2cm;
+ background-color: #ccc5b9;
+ border: 1px solid gray;
+ border-top-right-radius: 10px;
+ border-bottom-right-radius: 10px;
+}
+.header-section2-div2 nav a{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(60, 60, 60);
+    transition: 300ms;
+    font-size: 18px;
+}
+.header-section2-div2 nav a:hover{
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn2{
+    width: 4cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn2 button{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+}
+#btn-guardar{
+    display: none;
+}
+.header-section3{
+    height: 2cm;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 55, 55);
+    border-bottom: 1px solid black;
+    animation: header 1s;
+    z-index: 1;
+}
+@keyframes header {
+    from{
+    opacity: 0;
+    }
+    to{
+     opacity: 1;
+    }
+}
+.header-section3 div{
+    width: 20cm;
+    display: flex;
+    justify-content: space-around;
+}
+.header-section3 a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 300ms;
+}
+.header-section3 a:hover{
+    font-size: 18px;
+}
+.main-section1{
+    height: 35cm;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.main-section1 h1{
+    margin: 0;
+    font-size: 70px;
+    background: linear-gradient(-90deg,#6c757d,#495057,#252422,#495057,#6c757d);
+    background-size: 500%;
+    background-clip: text;
+    color: transparent;
+    animation: color1 3s linear infinite;
+}
+@keyframes color1 {
+    from{
+        background-position: 0% 250%;
+    }
+    to{
+        background-position: 250% 500%;
+    }
+    
+}
+.main-section1-div2{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.main-section1-div2 article{
+    display: flex;
+    flex-direction: column;
+    width: 14cm;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c757d;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 1px 10px 2px #6c757d7e;
+}
+
+.article-div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.article-div2 p{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main-section1-div2 .article1 img{
+    height: 9.6cm;
+    width: 100%;
+ border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+}
+.main-section1-div2 .article2 img{
+    height: 9.6cm;
+    width: 100%;
+    border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+}
+.main-section1-div3{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-section1-div3 article{
+    display: flex;
+    flex-direction: column;
+    width: 14cm;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c757d;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 1px 10px 2px #6c757d7e;
+}
+.main-section1-div3 article img{
+    height: 9cm;
+    width: 100%;
+    border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+}
+.footer-sectio1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+.footer-sectio1 nav{
+    display: flex;
+    justify-content: space-around;
+    width: 15cm;
+}
+.footer-sectio1 a{
+    text-decoration: none;
+    color: transparent;
+    transition: 300ms;
+    background: linear-gradient(-90deg,#e9ecef,#6c757d,#e9ecef);
+    background-size: 500%;
+    background-clip: text;
+    animation: color1 3s linear infinite;
+    
+}
+.footer-sectio1 a:hover{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.footer-redes a{
+    font-size: 25px;
+    background: linear-gradient(-90deg,#6c757d,#495057,#252422,#495057,#6c757d);
+    background-size: 500%;
+    background-clip: text;
+    animation: color1 3s linear infinite;
+}
+.footer-redes a:hover{
+    font-size: 28px;
+    
+}
+.footer-section2{
+    height: 6cm;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6c757d;
+}
+.footer-section2 div{
+    display: flex;
+    justify-content: center;
+}
+.footer-section2 h1{
+    font-size: 50px;
+    color: aliceblue;
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
+.footer-section2 input{
+    height: 1.35cm;
+    width: 8cm;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 10px 2px rgba(128, 128, 128, 0.738);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.footer-section2 button{
+    height: 1.45cm;
+    width: 4cm;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ccc5b9;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 10px 2px rgba(128, 128, 128, 0.582);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.footer-section2 button:hover{
+    background-color: #9a9a99;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+}

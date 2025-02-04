@@ -1,0 +1,272 @@
+:root{
+    font-family: "Poppins", serif;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: #000814;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    box-shadow: 1px 1px 20px 5px rgba(128, 128, 128, 0.411);
+}
+.Header-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Header-section div{
+    height: 2cm;
+    width: 14cm;
+    display: flex;
+}
+
+.Logo{
+    justify-content: center;
+    align-items: center;
+}
+.Header-section div img{
+    height: 50px;
+}
+.Header-section nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.Gen-m-Section1{
+    background-color:#e5e5e5;
+}
+.main-Section1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5cm;
+}
+.main-Section1 img{
+    height: 600px;
+}
+.main-Section1-div1{
+    width: 12cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.main-Section1-div1 button{
+    height: 1cm;
+    width: 4cm;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    background-color: #000814;
+}
+.main-Section1-div1 article{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+}
+.main-Section1-div1 article h1{
+    font-size: 35px;
+    margin: 0;
+}
+.main-Section1-div1 article p{
+    text-align: left;
+    font-size: 20px;
+}
+.main-section2{
+    height: 15cm;
+    display: flex;
+    flex-flow: column;
+    background-color: #0d1b2a;
+}
+
+.Color2{
+    background-color: #e5e5e5;
+    height: 6cm;
+}
+.main-section2-Card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    position: absolute;
+}
+
+.card{
+    height: 10cm;
+    width: 8cm;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 30px 2px #b1b1b130;
+    background-color: #eff6e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column; 
+}
+.card p{
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.card img{
+    height: 100px;
+    width: 100px;
+}
+.main-section2-S2{
+    height: 18cm;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    color: white;
+    background-color: #0d1b2a;
+    margin-top: 6cm;
+}
+.main-section2-divCont{
+    display: flex;
+    flex-flow: column;    
+    align-items: center;
+}
+.main-section2-divCont h1{
+    font-size: 25px;
+    margin: 0;
+}
+.main-section2-divCont p{
+    font-size: 15px;
+    text-align: center;
+    padding-left: 6cm;
+    padding-right: 6cm;
+    margin-top: 10px;
+}
+.DivDataList{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.DivDataList div{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.DivDataList div h3{
+    font-size: 25px;
+    margin: 0;
+} 
+.DivDataList div p{
+    margin: 0;
+}
+.main-section3{
+    height: 32cm;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #e5e5e5;
+}
+.main-section3-OurResults{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6cm;
+}
+.main-section3-OurResults img{
+    height: 400px;
+}
+.section3-OurResults{
+    width: 12cm;
+    display: flex;
+    flex-flow: column;
+}
+.section3-OurResults h1{
+    font-size: 30px;
+    margin: 0;
+}
+.section3-OurResults p{
+    font-size: 18px;
+}
+.section3-OurResults button{
+    height: 0.9cm;
+    width: 4cm;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    background-color: #000814;
+}
+.main-section3-info{
+    width: 80%;
+    display: flex;
+    gap: 4cm;
+}
+.main-section3-info img{
+    height: 400px;
+   width: 500px;
+}
+.section3-info{
+    width: 14cm;
+} 
+.section3-info ul{
+list-style: decimal-leading-zero;
+}
+.section3-info ul li h1{
+    margin: 0;
+}
+
+.main-section4{
+    height: 10cm;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    color: white;
+    background-color: #000814;
+}
+.main-section4 div{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.main-section4 div h1{
+    margin: 0;
+    font-size: 25px;
+}
+.main-section4 div button{
+    height: 1cm;
+    width: 4cm;
+    box-shadow: 1px 1px 10px 5px rgba(128, 128, 128, 0.099);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: #39414a;
+}
+footer{
+display: flex;
+justify-content: center;
+background-color: #000610;
+border-top: 1px solid #0d1b2a;
+}
+footer a{
+display: flex;
+align-items: baseline;
+text-decoration: none;
+color: white;
+font-weight: 700;
+}
+footer a h1{
+    color: #003572;
+    font-size: 30px;
+}
