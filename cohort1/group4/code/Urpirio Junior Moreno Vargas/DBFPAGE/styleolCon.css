@@ -1,0 +1,101 @@
+body{
+    font-family: "Jersey 20", sans-serif;
+    background-image: url("Recursos for Dr4gron b4ll F (b4ckground)/dragon-ball-goku-basquiat-art-style-desktop-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+.LogoB{
+    height: 50px;
+    transition: all 300ms ease;
+}
+.LogoB:hover{
+    height: 55px;
+}
+.LogoH{
+    height: 50px;
+    transition: all 300ms ease;
+}
+.LogoH:hover{
+    height: 55px;
+}
+.Logo{
+    height: 150px;margin-top: 1cm;position: relative;
+}
+header{
+    justify-content: space-between;
+    display: flex;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+}
+
+form{
+    background-color: rgba(240, 248, 255, 0.425); 
+    height: 5cm;
+    width: 8cm;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    margin-top: -1cm;
+}
+.Form1{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.Textbox{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(245, 245, 220, 0);
+}
+::placeholder{
+    color: rgb(62, 62, 62);
+}
+.Brecuperar{
+    height: 1cm;
+    width: 5cm;
+    border-radius: 40px;
+    font-size: 20px;
+    font-family: "Jersey 20", sans-serif;
+    background-color:  #ff6600;
+    border: none;
+    transition: all 300ms ease;
+}
+.Brecuperar:hover{
+    height: 1.2cm;
+    width: 5.2cm;
+    font-size: 22.5px;
+}
+
+footer{
+    background-color: black;
+    height: 4cm;
+    margin-top: 9cm;
+    display: flex;
+    justify-content: center;
+    
+}
+.sectionfooter{
+    color: aqua;
+}
+.Fh{
+    text-decoration: none;
+    color: white; 
+    font-size: 30px;
+    transition: all 300ms ease;
+}
+.Fh:hover{
+    font-size: 35px;
+    color: aliceblue;
+     margin-top: 0.8cm;
+}
+

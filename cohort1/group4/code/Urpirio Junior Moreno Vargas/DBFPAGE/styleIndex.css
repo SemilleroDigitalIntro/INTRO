@@ -1,0 +1,164 @@
+body{
+    margin: 0; 
+    background-image: url("Recursos for Dr4gron b4ll F (b4ckground)/Pagina de inicio.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    font-family: "Jersey 20", sans-serif;
+   
+}
+
+main{
+    flex-direction: column; 
+    justify-items: center;
+}
+.H1{
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    stroke:  #000000;
+    stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+    text-align: center;
+}
+.P1{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    padding-left: 5cm;
+    padding-right: 5cm;
+    text-align: center;
+
+}
+
+
+.LogoDragon{
+    height: 150px;
+    width: 250px;
+    margin-top: -1cm;
+}
+.Iniciar{
+    color: rgb(255, 255, 255);
+    margin-right: 1cm;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    transition: all 300ms ease;
+}
+.Iniciar:hover{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    margin-top: 20px;
+}
+.HLT{
+    display: flex; 
+    justify-content: space-between; 
+    background-color: #207ba5;
+    height: 2cm;
+    transition: all 300ms ease;
+}
+.HLT:hover{
+    background-color: #207ba5;
+}
+
+.navegacion{
+    display: flex; 
+    justify-content: space-evenly; 
+    background-color: #ff6600;
+    height: 1cm;
+    align-items: center;
+    transition: all 300ms ease;   
+}
+.navegacion:hover{
+    opacity: 1;
+}
+
+.N1{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+.N1:hover{
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    font-size: 30px;
+}
+.Series{
+    border: none;
+    background-color: #ff770000;
+    font-size: 20px;
+    outline: none;
+    font-family: "Jersey 20", sans-serif;
+    color: white;
+    
+}
+.SeriesOP{
+    color: #000000;
+}
+.Mangas{
+    border: none;
+    background-color: #ff770000;
+    font-size: 20px;
+    outline: none;
+    font-family: "Jersey 20", sans-serif;
+    color: white;
+}
+.MangasOP{
+    color: #000000;
+}
+.Peliculas{
+    border: none;
+    background-color: #00000000;
+    font-size: 20px;
+    outline: none;
+    font-family: "Jersey 20", sans-serif;
+    color: white;
+}
+.PeliculasOP{
+    color: #000000;
+}
+button{
+    height: 100px;
+    width: 400px;
+    border-radius: 50px;
+    margin-top: 2cm;
+    border: 1px solid #000000;
+    background-color: #FF7700;
+    transition: all 300ms ease;
+   
+}
+button:hover{
+    margin-top: 2cm;
+    height: 110px;
+    width: 410px;
+    background-color: #e76d02;
+    
+}
+.Unirse{
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    font-family: "Jersey 20", sans-serif;
+}
+.ULPRT{
+    display: flex; 
+    justify-content: center; 
+    background-color: #207ba5;
+    height: 2cm;
+    margin-top: 8cm;
+}
+.Fh{
+    text-decoration: none;
+    color: white; 
+    font-size: 30px;
+    transition: all 300ms ease;
+}
+.Fh:hover{
+    font-size: 35px;
+    color: aliceblue;
+     margin-top: 0.8cm;
+}

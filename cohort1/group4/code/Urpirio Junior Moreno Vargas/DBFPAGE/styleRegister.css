@@ -1,0 +1,115 @@
+body{
+    font-family: "Jersey 20", sans-serif;
+    background-image: url("Recursos for Dr4gron b4ll F (b4ckground)/3dd598ab-5dc2-41c8-922e-16d6e69071a2-goku-moving-wallpaper.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+header{
+    justify-content: flex-end;
+}
+.logoH{
+    height: 50px;
+    transition: all 300ms ease;
+}
+.logoH:hover{
+    height: 55px;
+}
+
+form{
+   
+     width: 8cm;
+     height: 16cm;
+      background-color: rgba(232, 242, 250, 0.427); 
+      border-radius: 30px;
+      justify-content: center;
+      padding-left: 2cm;
+      padding-top: 1cm;
+      margin-top: -2cm;
+}
+
+.sectionF{
+    justify-content: center; 
+    margin-right: 2cm;
+}
+.textbox{
+    width: 7.5cm;
+    height: 1cm;
+    font-size: 20px; 
+    opacity: 1;
+    background-color: rgba(240, 248, 255, 0); 
+    outline: none;
+    border: none;
+}
+::placeholder{
+    color: rgb(62, 62, 62);
+}
+
+.Bregistro{
+    height: 1cm;
+    width: 5cm;
+    background-color: #ff6600;
+    color: rgb(0, 0, 0);
+    font-family: "Jersey 20", sans-serif; 
+    border-radius: 40px; 
+    font-size: 20px;
+    margin-top: 0.5cm;
+    border: none;
+    transition: all 300ms ease;
+    
+}
+
+.Bregistro:hover{
+    background-color: #ee6f0e; 
+    height: 1.2cm;
+    width: 5.2cm;
+}
+.RRegritrar{
+    margin-left: 0.3cm;
+}
+.TeCuenta{
+margin-left: 1.40cm;
+margin-top: 0.8cm; 
+color: rgb(0, 0, 0);
+transition: all 300ms ease;
+}
+.TeCuenta:hover{
+    margin-left: 1.37cm;
+margin-top: 0.8cm; 
+    color: rgb(42, 42, 42);
+    font-size: 18px;
+}
+main{
+    justify-items: center;
+    margin-bottom: 1cm;
+}
+header{
+    justify-items: center;
+}
+.logo{
+    height: 150px;
+}
+footer{
+    margin-top: 1cm;
+    border: 1px solid #307BEA;
+    height: 5cm;
+background-color: #307BEA;
+display: flex;
+justify-content: center;
+
+}
+
+.Fh{
+    text-decoration: none;
+    color: white; 
+    font-size: 30px;
+    transition: all 300ms ease;
+}
+.Fh:hover{
+    font-size: 35px;
+    color: aliceblue;
+    margin-top: 0.8cm;
+}
+
+
