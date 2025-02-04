@@ -1,0 +1,33 @@
+body {
+    background-color: #88A29E;
+}
+
+.i {
+font-size: 80px; 
+font-weight: bold;
+color: black;
+align-items: center;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 100%); 
+
+
+}
+
+.j {
+    font-size: 50px;
+    color: black;
+}
+
+.q {
+font-size: 10px; 
+font-weight: bold;
+color: black;
+position: relative;
+    
+}
+
+.line {
+width: 50%;
+height: 2px; 
+background-color: black; 
+align-items: left;
+}
