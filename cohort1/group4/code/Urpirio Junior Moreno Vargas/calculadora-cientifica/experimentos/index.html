@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadurp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <header>
+        <section>
+            <div class="Logo">
+                <img src="" alt="">
+                <h1>CalculaDurp</h1>
+            </div>
+            <nav>
+                <a href="">Suma</a>
+                <a href="">Resta</a>
+                <a href="">Multiplicacion</a>
+                <a href="">Division</a>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section id="seccion">
+            <div>
+                <label>
+                    Num1:
+                </label>
+                <input type="number" name="" id="Num1">
+            </div>
+            <div>
+                <label>
+                    Num2:
+                </label>
+                <input type="number" name="" id="Num2">
+            </div>
+            <div >
+                <button onclick="Sumar()" id="Sumar">
+                    Sumar
+                </button>
+            </div>
+            
+            <p  >
+                Resultado =
+                <span id="Resultado" ></span>
+            </p>
+        </section>
+        <button onclick="Cambiarcolor()" >
+            Cambiar color
+        </button>
+        <button id="Borrar" onclick="Borrar()">
+            Borrar seccion
+        </button>
+        <button id="Aparece" onclick="aparece()">
+            Aparece
+        </button>
+    </main>
+    <script src="suma.js"></script>
+</body>
+</html>
