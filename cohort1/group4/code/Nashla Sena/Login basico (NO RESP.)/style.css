@@ -1,0 +1,84 @@
+body{
+    background-image: url(sky-7328573.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(4px)
+}
+
+.titulo{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size:medium;
+    font-style: normal;
+    display: flex;
+    justify-content: center;  /* ETO NO SILVE PA NA NO FUNCIONA SIN DISPLAY FLEX */
+    align-content: center; 
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    background-color: white;
+    height: 500px;
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 60px;
+
+}
+
+.main-move {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-submit {
+    background-color: #0096c7;
+    border: none;
+    margin: none;
+    height: 40px;
+    width: 200px;
+    font-family: sans-serif;
+    border-radius: 20px;
+}
+
+.submit-box{
+    display: flex;
+    margin-top: 0px;
+margin-left: 30px;
+}
+
+.inputs-formularios { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom:solid #6c757d;
+    border-width: 1px;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+.email-box{
+    display: flex;
+    margin: 35px;
+    margin-bottom: 0px;
+}
+
+.password-box{
+    display: flex;
+    margin: 35px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.form-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
