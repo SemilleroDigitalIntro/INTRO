@@ -1,0 +1,57 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: darkblue;
+    display: flex;
+    min-height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+   
+    
+}
+.logo img{
+    height: 3vw;
+    display: flex;
+    margin-right: 10px;
+   
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.nom-web :hover{
+    color: chartreuse;
+}
+
+
+.links{
+   display: flex;
+   
+   justify-content: space-around;
+}
+
+
+.links a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.links a :hover{
+    color: chartreuse;
+}

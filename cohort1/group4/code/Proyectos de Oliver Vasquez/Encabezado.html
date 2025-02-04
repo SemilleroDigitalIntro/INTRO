@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0;
+         }
+        header{
+            display: flex;
+            min-height: 70px;
+            background-color: rgb(65, 102, 125);
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            
+        }
+
+
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img{
+            height: 50px;
+            margin-right: 10px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        nav a{
+            font-weight: 600;
+            padding-right: 10px;
+        }
+        
+        nav a:hover{
+        color: chartreuse;
+        }
+
+
+        @media (max-width:700px){
+            header{
+                flex-direction: column;
+            }
+            nav{
+                padding: 10px 0px;
+            }
+
+        }
+        .imagen1{
+            width: 100vw;
+            height: 50vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(/SRC/descarga.png);
+            background-position: center;
+            background-size: cover;
+            background-clip: text;
+            background-color: transparent;
+        }
+        .imagen2{
+           color: rgb(221, 255, 1);
+            text-align: center;
+            width: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">
+
+            <img src="/SRC/images.jpg" alt="logo">
+            <h2 class="nombre-compañia">Laptop_web</h2>
+        </a>
+        <nav>
+            <a href="#">inicio</a>
+            <a href="#">sobre nosotros</a>
+            <a href="#">contactos</a>
+        </nav>
+    </header>
+
+    
+    <div class="imagen1">
+        <div class="imagen2"> <h2>Esta es la pagina indicada para encontrar tu laptop indicada</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, rem distinctio expedita, aperiam explicabo beatae vero iusto atque dolorum provident nobis ea recusandae nihil dolores tenetur voluptatibus natus culpa officiis!</p>
+        </div>
+           
+    </div>
+         
+
+
+<body>
+</html>

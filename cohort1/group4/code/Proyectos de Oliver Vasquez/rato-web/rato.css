@@ -1,0 +1,96 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    
+    
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+  padding: 10px;
+  border: solid black;
+  word-spacing: 60px;
+}
+
+.enca{
+    align-items: center;
+    display: flex;}
+
+
+.in{
+    margin-right: 20px;
+
+    }
+a{
+    text-decoration: none;
+}
+a :hover{
+    color: chartreuse;
+}
+
+
+#us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.section-1{
+    background-color: antiquewhite;
+    padding: 50px;
+}
+.section-2{
+    color: azure;
+    background-color: rgb(57, 165, 228);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+}
+
+#section-2-p1{
+    display: flex; 
+    flex-direction: column;
+    padding-left: 40%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+}
+
+
+
+#section-2-h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    padding-bottom: 70px;
+
+}
+
+ p {
+    left: 15px;
+    font-size: 13px;
+}
+
+
+.section-3{
+    background-image: url(/practic_login/SRC/Captura\ de\ pantalla\ 2024-12-10\ 151834.png);
+
+    color: aliceblue;
+}
+
+
+
+#section-4-h1{
+
+    color: aqua;
+}

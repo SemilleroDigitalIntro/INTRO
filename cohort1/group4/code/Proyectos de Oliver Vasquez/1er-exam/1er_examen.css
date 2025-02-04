@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+header{
+    background-color: darkblue;
+    font-size: larger;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.links{
+  
+    display:flex;
+    justify-content: center;
+
+}
+
+
+a{
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+} 
+a:hover{
+    color: greenyellow;
+}
+
+
+.log{
+    font-weight: bold ; 
+    font-size: larger;
+}
+
+.imgs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap ;
+    margin-top: 15px;
+    justify-content: space-around;
+   
+}
+
+
+.img1{
+    background-color: rgb(80, 133, 202);
+    
+    padding:50px;
+    
+}
+.img4{
+    background-color: rgb(62, 99, 136);
+    padding: 50px;
+}
+.img2{
+    background-color: rgb(55, 124, 193);
+    padding: 50px;
+}
+   
+.img3{
+    background-color: rgb(61, 111, 161);
+    padding: 50px;
+}
+
+footer{
+    background-color: black;
+    color: azure;
+}
+.contactos li:hover{
+    color: greenyellow;
+}
+   
+
+   
+      
