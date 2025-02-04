@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Login</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="Formulario">
+        <h1>Iniciar Sesión</h1>
+        <form action="/login" method="post"> 
+            <div class="username"> 
+                <input type="text" id="username" name="username" required>
+                <label for="username">Nombre de usuario</label>
+            </div>
+            <div class="username">
+                <input type="password" id="password" name="password" required>
+                <label for="password">Contraseña</label>
+            </div>
+            <div class="recordar"> 
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <input type="submit" value="Iniciar">
+            <div class="registrarse"> 
+                Crear cuenta <a href="#">Registrarse</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
