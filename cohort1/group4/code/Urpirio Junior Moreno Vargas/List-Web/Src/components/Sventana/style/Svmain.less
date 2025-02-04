@@ -1,0 +1,61 @@
+@color-hover-ventana: #5b5b5b;
+@color-hover-fonts: #787676;
+.Svmain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .Svmain__div1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        span{
+            display: flex;
+            align-items: center;
+            width: 90%;
+            gap: 10px;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            i{
+                height: 20px;
+                width: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &:hover{
+                background: #e7e6e6;
+            }
+        }
+        #Svm__tareas{
+            font-size: 16px;
+            color: red;
+            i{
+                background: red;
+                border-radius: 100%;
+                color: white;
+            }
+        }
+        #Svm__Buscador{
+            &:hover{
+                color: @color-hover-fonts;
+                i{
+                    color: @color-hover-ventana;
+                }
+            }
+        }
+
+        #Svm__BnEntrada{
+            &:hover{
+                color: @color-hover-fonts ;
+                i{
+                    color: @color-hover-ventana;
+                }
+            }
+        }
+
+    }
+}

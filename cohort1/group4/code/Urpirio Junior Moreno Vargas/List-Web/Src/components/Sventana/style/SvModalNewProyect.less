@@ -1,0 +1,297 @@
+@color-hover-ventana: #dad8d8;
+@color-hover-fonts: #787676;
+
+.SvModalNewProyect{
+    width: 11cm;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    .SvModalNP__div1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            i{
+                border: 1px solid black;
+                border-radius: 100%;
+                height: 25px;
+                width: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                &:hover{
+                    border: 1px solid @color-hover-fonts;
+                    color: @color-hover-fonts;
+                }
+            }
+        }
+        button{
+            border: none;
+            border-radius: 5px;
+            background: none;
+            height: 0.8cm;
+            width: 0.8cm;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                font-size: 25px;
+            }
+            &:hover{
+                background: @color-hover-ventana;
+            }
+        }
+        
+    }
+    .SvModalNP__div2{
+        display: flex;
+        flex-direction: column;
+        align-items: last baseline;
+        gap: 5px;
+        .SvModalNP__d2_div1{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            input{
+                height: 0.6cm;
+                outline: none;
+            }
+        }
+        .SvModalNP__d2_div2{
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            span{
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+        
+    }
+    .SvModalNP__div3{
+        display: flex;
+        flex-direction: column;
+        .SvModalNP__d3_div1{
+            display: flex;
+            flex-direction: column;
+            h3{
+                margin: 0;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .SvModalNP__div1_Span1{
+                    display: flex;
+                    gap: 5px;
+                        i{
+                        height: 15px;
+                        width: 15px;
+                        background: black;
+                        border-radius: 100%;
+                        }
+                        #Azul{
+                            height: 15px;
+                            width: 15px;
+                            background: blue;
+                            border-radius: 100%;
+                            }
+                            #Amarillo{
+                                height: 15px;
+                                width: 15px;
+                                background: yellow;
+                                border-radius: 100%;
+                                }
+                                #Rojo{
+                                    height: 15px;
+                                    width: 15px;
+                                    background: red;
+                                    border-radius: 100%;
+                                    }
+                                    #Verde{
+                                        height: 15px;
+                                        width: 15px;
+                                        background: green;
+                                        border-radius: 100%;
+                                        }
+                                        #Morado{
+                                            height: 15px;
+                                            width: 15px;
+                                            background: blueviolet;
+                                            border-radius: 100%;
+                                            }
+
+                }
+                .SvModalNP__div1_Span2{
+                    display: flex;
+                    align-items: center;
+                    i{
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .SvModalNP__d3_div2{
+            display: none;
+            flex-direction: column;
+            width: 11cm;
+            height: 4cm;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 0;
+            margin-top: 50px;
+            overflow: hidden;
+            overflow-y: scroll;
+            scrollbar-width: thin;
+            scrollbar-color:@color-hover-fonts @color-hover-ventana;
+            .SvSelectAzul{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 5px;
+                border-radius: 4px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+                cursor: pointer;
+                font-size: 14px;
+                #SvAzul{
+                    height: 10px;
+                    width: 10px;
+                    background: blue;
+                    border-radius: 100%;
+                }
+                &:hover{
+                    background: @color-hover-ventana;
+                }
+            }
+            .SvSelectRojo{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 5px;
+                cursor: pointer;
+                #SvRojo{
+                    height: 10px;
+                    width: 10px;
+                    background: red;
+                    border-radius: 100%;
+                }
+                &:hover{
+                    background: @color-hover-ventana;
+                }
+            }
+            .SvSelectVerde{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 5px;
+                cursor: pointer;
+                #SvVerde{
+                    height: 10px;
+                    width: 10px;
+                    background: green;
+                    border-radius: 100%;
+                }
+                &:hover{
+                    background: @color-hover-ventana;
+                }
+            }
+            .SvSelectAmarrillo{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 5px;
+                cursor: pointer;
+                #SvAmarrillo{
+                    height: 10px;
+                    width: 10px;
+                    background: yellow;
+                    border-radius: 100%;
+                }
+                &:hover{
+                    background: @color-hover-ventana;
+                }
+            }
+            .SvSelectMorado{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 5px;
+                border-radius: 5px;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                cursor: pointer;
+                #SvMorado{
+                    height: 10px;
+                    width: 10px;
+                    background: blueviolet;
+                    border-radius: 100%;
+                }
+                &:hover{
+                    background: @color-hover-ventana;
+                }
+            }
+            .SvSelectNegro{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 5px;
+                border-radius: 5px;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                cursor: pointer;
+                #SvNegro{
+                    height: 10px;
+                    width: 10px;
+                    background: #000000;
+                    border-radius: 100%;
+                }
+                &:hover{
+                    background: @color-hover-ventana;
+                }
+            }
+
+        }
+        
+    }
+    .SvModalNP__div4{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: right;
+        align-items: last baseline;
+        margin-top: 10px;
+        #SvModalNP__BtnCancelar{
+            height: 0.7cm;
+            border: 1px solid gray;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            &:hover{
+                background: #cbcaca;
+            }
+        }
+        #SvModalNP__BtnAñadir{
+            height: 0.7cm;
+            border: 1px solid gray;
+            border-radius: 5px;
+            background: red;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            &:hover{
+                 background: #de0101;
+            }
+        }
+    }
+    
+}

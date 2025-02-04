@@ -1,0 +1,104 @@
+.Smain__div1{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+}
+.SM_div1_div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: baseline;
+    h1{
+        margin: 0;
+        margin-top: 20px;
+    }
+    span{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: gray;
+        transition: 300ms;
+        cursor: pointer;
+        i{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            transition: 300ms;
+            
+            
+        }
+
+        &:hover{
+            color: red;
+            i{
+                color: white;
+                background-color: red;
+            }
+        }
+    }
+}
+.listarea{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+    gap: 20px;
+    .Sm__list{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+
+        i{
+            height: 20px;
+            width: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            border: 1px solid gray;
+            transition: 300ms;
+            &:hover{
+                background: blue;
+                color: white;
+                font-weight: 600;
+            }
+        }
+        
+
+        .Sm__list_div1{
+            display: flex;
+            flex-direction: column;
+            
+            h3{
+                font-size: 20px;
+                margin: 0;
+            }
+            p{
+                margin: 0;
+            }
+        }
+        .Sm__list_div2{
+            button{
+                height: 0.8cm;
+                width: 3cm;
+                border-radius: 10px;
+                border: 1px solid gray;
+                background: red;
+                color: white;
+                font-weight: 500;
+                transition: 300ms;
+
+                &:hover{
+                    background: #da0101;
+                    
+                }
+            }
+        }
+        
+    }
+}
