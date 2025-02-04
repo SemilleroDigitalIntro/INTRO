@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        .restart {
+            margin-top: 20px;
+            display: none;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .restart:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Piedra, Papel o Tijeras</h1>
+    <div class="container">
+        <button class="button" onclick="playGame('Piedra')">Piedra</button>
+        <button class="button" onclick="playGame('Papel')">Papel</button>
+        <button class="button" onclick="playGame('Tijeras')">Tijeras</button>
+    </div>
+    <div class="result" id="result"></div>
+    <button class="restart" id="restart" onclick="restartGame()">Reiniciar</button>
+
+    <script>
+        function playGame(playerChoice) {
+            const choices = ['Piedra', 'Papel', 'Tijeras'];
+            const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+            let result = '';
+
+            if (playerChoice === computerChoice) {
+                result = `Empate. Ambos eligieron ${playerChoice}.`;
+            } else if (
+                (playerChoice === 'Piedra' && computerChoice === 'Tijeras') ||
+                (playerChoice === 'Papel' && computerChoice === 'Piedra') ||
+                (playerChoice === 'Tijeras' && computerChoice === 'Papel')
+            ) {
+                result = `¡Ganaste! Elegiste ${playerChoice} y la computadora eligió ${computerChoice}.`;
+            } else {
+                result = `Perdiste. Elegiste ${playerChoice} y la computadora eligió ${computerChoice}.`;
+            }
+
+            document.getElementById('result').innerText = result;
+            document.getElementById('restart').style.display = 'inline-block';
+        }
+
+        function restartGame() {
+            document.getElementById('result').innerText = '';
+            document.getElementById('restart').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
