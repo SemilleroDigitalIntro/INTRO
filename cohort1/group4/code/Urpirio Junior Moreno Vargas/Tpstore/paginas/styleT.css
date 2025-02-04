@@ -1,0 +1,19 @@
+.Pro1{
+    display: flex; justify-content: space-around;
+}
+.pro1{
+    border: 1px solid black; height: 120px; 
+}
+.Pro2{
+    display: flex; justify-content: space-around;margin-top: 1cm;
+}
+.pro2{
+    border: 1px solid black; height: 120px; background-color: beige;border-radius: 20px;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(https://media.istockphoto.com/id/1215814221/es/foto/el-negro-y-la-plata-son-de-color-gris-claro-con-blanco-el-degradado-es-la-superficie-con.jpg?s=612x612&w=0&k=20&c=Yj2s-IFewZBdzW_8qml7Ipjha2LhXyi--_SASoh7g9o=);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

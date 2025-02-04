@@ -1,0 +1,377 @@
+body{
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+.header-section1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #16103A;
+    border: none;
+    
+}
+
+#div-h1-logo{
+    color: forestgreen;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-size: 40px;
+}
+.Section-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 700;
+    animation-name: section-nav;
+    animation-duration: 0.7s;
+}
+@keyframes section-nav{
+    from{
+       margin-top: -100%;
+    }
+    to{
+        margin-top: 0%;
+    }
+}
+
+.Section-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+}
+.Section-nav ul a{
+    display: block;
+    text-decoration: none;
+    background-color: #16103A;
+    color: #ffffff;
+    padding: 10px;
+}
+.section-nav-link-products{
+    font-weight: 500;
+    font-size: 18px;
+    transition: 300ms;
+}
+.section-nav-link-products:hover{
+    border-bottom: 2px solid white ;
+    font-weight: 700;
+    font-size: 20px;
+}
+.section-nav-link-procing{
+    font-weight: 500;
+    font-size: 18px;
+    transition: 300ms;
+}
+.section-nav-link-procing:hover{
+    border-bottom: 2px solid white ;
+    font-weight: 700;
+    font-size: 20px
+}
+.section-nav-link-best-practice{
+    font-weight: 500;
+    font-size: 18px; 
+    transition: 300ms;
+}
+.section-nav-link-best-practice:hover{
+    border-bottom: 2px solid white ;
+    font-weight: 700; 
+    font-size: 20px
+}
+.section-nav-link-dashboard-examples{
+    font-weight: 500; 
+    font-size: 18px;
+    transition: 300ms;
+}
+.section-nav-link-dashboard-examples:hover{
+    border-bottom: 2px solid white ;
+    font-weight: 700; 
+    font-size: 20px
+}
+.section-nav-link-company{
+    font-weight: 500;
+    font-size: 18px;
+    transition: 300ms;
+}
+.section-nav-link-company:hover{
+    border-bottom: 2px solid white ;
+    font-weight: 700;
+    font-size: 20px
+}
+.Ul-Li-Ul-li-a{
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.Ul-Li-Ul-li-a:hover{
+    background-color: #2c2073;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.Section-nav ul ul{
+    display: none;
+    position: absolute;
+    padding: 0;
+}
+.Section-nav ul ul li{
+    float: none;
+}
+.Section-nav ul ul a{
+    line-height: 120%;
+}
+.Section-nav ul li:hover > ul{
+    display: block;
+}
+.Section-div-in{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.div-in-login{
+    margin-right: 30px;
+}
+#in-login{
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    border-bottom: 2px solid white;
+    font-weight: 700;
+    transition: 300ms;
+}
+#in-login:hover{
+font-size: 20px;
+}
+#in-sign-up{
+   text-decoration: none;
+   font-size: 18px;
+   color: #ffffff;
+}
+#in-sign-up-btn{
+    height: 1cm;
+    width: 3cm;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(27, 152, 27);
+    font-weight: 700;
+    font-size: 18px;
+    transition: 300ms;
+}
+#in-sign-up-btn:hover{
+    height: 1.1cm;
+    width: 3.1cm;
+    opacity: 0.7;
+    border: 0.1px solid rgb(3, 201, 3);
+
+}
+main{
+    background: linear-gradient(white);
+    height: 20cm;
+}
+.main-section-h1-p{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: top;
+    align-items: center;
+    background-color: #16103A;
+    height: 10cm;
+    border-bottom-left-radius: 150%;
+    border-bottom-right-radius: 150%;
+    color: #ffffff;
+    animation-duration: 0.5s;
+    animation-name: main-Section1;
+}
+@keyframes main-Section1{
+    from {
+        height: 0cm;
+    }
+    to {
+        height: 10cm;
+    }
+}
+.section1-h1{
+    animation-duration: 1s;
+    animation-name: section1-h1;
+}
+.section1-h3{
+    animation-duration: 1s;
+    animation-name: section1-h1;
+}
+@keyframes section1-h1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+h3{
+    font-weight: 400;
+    margin-top: -0.3cm;
+}
+.main-section1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.section-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #16103A;
+    border-radius: 10px;
+    height: 8cm;
+    width: 12cm;
+    margin-top: -5cm;
+    background-color: #ffffff;
+}
+::placeholder{
+   padding-left: 5px;
+}
+
+#main-section1-Icone-Textboxs{
+    height: 30px;
+    margin-right: 5px;
+    background-color: #3da0ed;
+    border-radius: 100%;
+}
+#main-section1-texboxs{
+    height: 0.8cm;
+    width: 10cm;
+    border: 2px solid #16103A;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.form-div-Username{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-div-Email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-div-Password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-div-term{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div-term-checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#term-p-link{
+    display: flex;
+    align-items: center;
+}
+#term-p-link-a{
+    margin-left: 3px;
+}
+#div-btn-S2{
+    height: 1cm;
+    width: 3cm;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(27, 152, 27);
+    font-size: 16px;
+    font-weight: 700;
+    transition: 300ms;
+}
+#div-btn-S2:hover{
+    font-size: 18px;
+    opacity: 0.7;
+    height: 1.1cm;
+    width: 3.1cm;
+}
+.main-section-p{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.section-p-a-img{
+    display: flex;
+    align-items: center;
+}
+#p-a-img{
+    align-items: center;
+}
+#a-img{
+    height: 20px;
+    margin-top: 8.25px;
+}
+footer section{
+    background-color: #16103A;
+    height: 5cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer section h1{
+    color: #4731bf;    
+    font-size: 18px;
+    font-weight: 600;
+    transition: 300ms;
+}
+footer section h1:hover{
+    font-size: 20px;
+}
+footer section h1 a{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 300ms;
+}
+
+footer section h1 a:hover{
+    font-size: 22px;
+}
+.feo{
+    display: none;
+    position: absolute;
+}
+footer section h1 a:hover > .feo{
+    display: block;
+    color: aliceblue;
+}
+@media (max-width:667px){
+    .Section-div-in{
+        display: none;
+    }
+    ul{
+        display: none;
+
+    }
+    li{
+        display: none;
+    }
+    .header-section1{
+        display: flex;
+        justify-content: center;
+    }
+}
