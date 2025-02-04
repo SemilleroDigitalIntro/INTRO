@@ -1,0 +1,34 @@
+:root{
+    --navbar-bg: #000000;
+    --navbar-text-color: #ffffff;
+    --offcanvas-bg:#212529;
+    --offcanvas-text-color: #ffffff;
+    --btn-success-bg: #198754;
+    --btn-success-text: #ffffff;
+    --link-hover: #0d6efd;
+}
+
+.navbar{
+    background-color: var(--navbar-bg);
+    color: var(--navbar-text-color);
+}
+.navbar .nav-link{
+    color: var(--navbar-text-color);
+}
+.navbar .nav-link:hover{
+    color: var(--link-hover);
+}
+.offcanvas{
+    background-color: var(--offcanvas-bg);
+    color: var(--offcanvas-text-color);
+}
+.offcanvas .nav-link{
+    color: var(--offcanvas-text-color);
+}
+.btn-success{
+    background-color: var(--btn-success-bg);
+    color: var(--btn-success-text);
+}
+.btn-success:hover{
+    background-color: darken(var(--btn-success-bg));
+}

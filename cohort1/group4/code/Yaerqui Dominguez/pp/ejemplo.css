@@ -1,0 +1,33 @@
+.container{
+    background-color: aqua;
+    width: 800px;
+    height: 150px;
+    border: 1px solid black;
+}
+.col{
+    text-align: center;
+    border: 1px solid black;
+    display: grid;
+}
+/*cambia el color al hacer click*/
+.col:hover{
+    background-color: #fff;
+}
+/*color de la primera letra*/
+p::first-letter{
+color: aqua;
+}
+
+/*sombras*/
+p{
+    text-shadow: 5px 6px 7px rgb(179, 6, 179);
+}
+
+img{
+    width: 200px;
+    height: auto;
+    transition: all 4s ease;
+}
+img:hover{
+    transform: rotate(360deg);
+}

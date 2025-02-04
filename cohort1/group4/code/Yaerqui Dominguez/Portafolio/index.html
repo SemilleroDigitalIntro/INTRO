@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header data-aos="fade-up">
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo">Mi portafolio</h1>
+      </a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Proyectos</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Habilidades</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contacto</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-banner" data-aos="fade-up"
+          data-aos-duration="1000">
+
+            <!-- img -->
+            <img class="img/yarqui.jpg" src="" alt="">
+
+            <div class="elem elem-3">
+              <ion-icon name="trophy"></ion-icon>
+            </div>
+          </div>
+
+          <div class="hero-content" data-aos="fade-up"
+          data-aos-duration="1500">
+
+            <h2 class="hero-title">
+              <strong>Yaerqui Dominguez</strong>Desarrollador Web
+            </h2>
+
+            <p class="hero-text">
+                Técnica en programación con un enfoque orientado a la excelencia y al impacto tecnológico. Poseo experiencia en el desarrollo y administración de aplicaciones informáticas, destacándome por mi capacidad para diseñar soluciones innovadoras y resolver problemas complejos de manera eficiente.
+
+                Actualmente estoy cursando en Semillero Digital INTRO, con fecha de graduación prevista para 2025. Tengo experiencia en desarrollo front-end y estoy culminando cursos en HTML5, CSS y Javascript.
+            </p>
+
+            <div class="btn-group">
+              <a href="#contact" class="btn btn-primary black">Contactame</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+
+          <p class="section-subtitle">Projectos</p>
+
+          <h2 class="h2 section-title">!Mi huella digital!</h2>
+
+          <p class="section-text">
+           Aqui podras apreciar mis proyectos web
+          </p>
+
+          <ul class="portfolio-list">
+
+            <li class="portfolio-card" data-aos="fade-up">
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Login</h3>
+                  <p>Registro de inicio de sesion.</p>
+
+                  <a href="paginas/login/login.html" target="_blank" class="btn-link">
+                    <span>Ver proyecto</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </a>
+
+                </div>
+                
+                <img src="img/loginweb1.JPG" alt="">
+            </li>
+
+            <li class="portfolio-card" data-aos="fade-up">
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Imitación de facebook</h3>
+                  <p>Registro de inicio de sesion, utilizando Facebook como referencia.</p>
+
+                  <a href="file:///C:/yyy/yaerqui/proyectos/facebook/facebook.html" target="_blank" class="btn-link">
+                    <span>Ver proyecto</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </a>
+
+                </div>
+                
+                <img src="img/facebook.png" alt="">
+            </li>
+
+            <!-- Espacios faltantes -->
+            <li class="portfolio-card" data-aos="fade-up">
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Juego en Scratch</h3>
+                  <p>Competencia entre dos "serpientes" para acumular puntos.</p>
+
+                  <a href="https://scratch.mit.edu/projects/1072683781/editor" target="_blank" class="btn-link">
+                    <span>Ver proyecto</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </a>
+
+                </div>
+                
+                <img src="img/Captura de pantalla 2024-12-12 122625.png" alt="">
+            </li>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="section skills" id="skills" data-aos="fade-up">
+        <div class="container">
+
+          <p class="section-subtitle">Mis Habilidades</p>
+
+          <h2 class="h2 section-title">Entre mis habilidades tecnicas estan:</h2>
+
+          <div class="tecnologias">
+            <div class="item">
+                <img src="img/html.png" alt="">
+            </div>
+            <div class="item">
+                <img src="img/css.png" alt="">
+            </div>
+            <div class="item">
+                <img src="img/Canva.png" alt="">
+            </div>
+            <div class="item">
+                <img src="img/database.png" alt="">
+            </div>
+            <div class="item">
+                <img src="img/vb.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact" data-aos="fade-up">
+        <h2 class="h2 section-title">Contactame</h2>
+
+        <div class="contact-card">
+
+            <div class="wrapper">
+
+                <ul class="contact-list">
+
+                <li class="contact-item">
+
+                    <div class="contact-icon">
+                    <ion-icon name="location"></ion-icon>
+                    </div>
+
+                    <div>
+                    <h3 class="contact-item-title">Dirección</h3>
+
+                    <address class="contact-item-link">
+                        Barrio Nuevo, Villa Mella C#11
+                    </address>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="contact-icon">
+                    <ion-icon name="mail"></ion-icon>
+                    </div>
+
+                    <div>
+                    <h3 class="contact-item-title">Email</h3>
+
+                    <address class="contact-item-link">
+                      yaerquidominguez@gmail.com
+                  </address>
+                    </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                    <div class="contact-icon">
+                    <ion-icon name="call"></ion-icon>
+                    </div>
+
+                    <div>
+                    <h3 class="contact-item-title">Telefono</h3>
+
+                    <a href="tel:+919677804820" class="contact-item-link">809-302-5209</a>
+                    </div>
+
+                </li>
+
+                </ul>
+
+            </div>
+
+            <form class="form">
+                <div class="title">Contacto</div>
+                <input type="text" placeholder="Your email" class="input">
+                <textarea placeholder="Your message"></textarea>
+                 
+                <button>Enviar</button>
+            </form>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>

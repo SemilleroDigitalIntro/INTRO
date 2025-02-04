@@ -1,0 +1,47 @@
+@import url('https:fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(  #c9c6ca,#a8a2a8 );
+}
+
+.campo-batalla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(129, 123, 129);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.caja-batalla{
+    margin: 25px;
+}
+
+.text-mensajes{
+    font-size: 45px;
+}
+.img-batalla{
+    border-radius: 50%;
+}
+.btn-ataques{
+    width: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.btn-ataques:hover{
+    border: 5px solid rgb(129, 123, 129);
+    cursor: pointer;
+    margin: 18px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+}
+
+
+

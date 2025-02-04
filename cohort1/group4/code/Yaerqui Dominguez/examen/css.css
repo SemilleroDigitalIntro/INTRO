@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+}
+
+header img{
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+}
+ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    float: right;
+   background-color: black ;
+    color: #ffffff2a;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+} 
+
+h1{
+    text-align: center;
+    color: #ffffff2a;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+}
+
+.secciones{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+p{
+    color: #ffffff2a;
+}
+ footer{
+   
+    width: 100%;
+    height: 100px;
+    text-align: center;
+ }
+
+footer img{
+
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+}
