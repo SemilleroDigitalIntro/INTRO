@@ -1,0 +1,160 @@
+.SectionMain4{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url("src/Home/Assets/main/Background/canyon-1740973_1920.jpg");
+    background-size: cover;
+    box-shadow: 1px 1px 10px 15px #80808038;
+}
+.SectionMain4-div1{
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    flex-flow: wrap;
+    
+}
+.SectionMain4-div1 h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px gray;
+}
+.SectionMain4-div1 div{
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SectionMain4-div1 div div{
+    height: 0.02cm;
+    width: 100%;
+    background-color: white;
+    border: 1px solid white;
+}
+.SectionMain4-div2{
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.SectionMain4-div1-div1{
+    height: 8cm;
+    width: 10cm;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: center;
+    border: 1px solid #ffffff31;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: #4242427c;
+}
+.SectionMain4-div1-div1 button{
+    height: 0.9cm;
+    width: 4cm;
+    border: 1px solid #ffffff19;
+    border-radius: 10px;
+    background-color: green;
+    box-shadow: 1px 1px 5px 2px #ffffff13;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 300ms;
+}
+.SectionMain4-div1-div1 button:hover{
+    background: none;
+    border: 2px solid green;
+    transform: translateY(-5px);
+}
+.SectionMain4-div2 img{
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 5px 2px #ffffff16;
+}
+.SectionMain4-div1-div3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.SectionMain4-div1-div3 h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+   border-bottom: 2px solid white;
+   text-shadow: 1px 1px gray;
+}
+.SM4-div1-div4-div2{
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    z-index: 2;
+    padding: 10px;
+}
+.SM4-div1-div4-div2::-webkit-scrollbar{
+    display: none;
+}
+.SM4-div1-div4-div2 .cards{
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: start;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 5px #ffffff0f;
+}
+.SM4-div1-div4-div2 .cards img{
+    height: 400px;
+    z-index: 1;
+    border: none;
+}
+.SM4-div1-div4-div2 .cards div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ffffff00;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    background-color: #4242427c;
+}
+.SM4-div1-div4-div2 .cards div a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.SM4-div1-div4-div2 .cards div a span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.SM4-div1-div4-div2 .cards div a span p{
+    font-size: 15px;
+}
+.SM4-div1-div4-div2 .cards div a p{
+    margin: 0;
+    font-size: 30px;
+}
+.SM4-div1-div4-div2 .cards div a h4{
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+

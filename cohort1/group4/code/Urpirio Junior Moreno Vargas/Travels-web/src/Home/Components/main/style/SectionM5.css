@@ -1,0 +1,107 @@
+.SectionMain5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("src/Home/Assets/main/Background/mountains-4549189_1920.jpg");
+    background-size: cover;
+    box-shadow: 1px 1px 10px 10px #80808015;
+}
+.SectionMain5-div1{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: right;
+}
+.SectionMain5-div1 h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px gray;
+}
+.SectionMain5-div1 div{
+background-color: white;
+height: 0.08cm;
+width: 10cm;
+}
+.SectionMain5-div2{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    align-items: center;
+    width: 90%;
+    overflow: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.SectionMain5-div2::-webkit-scrollbar{
+    display: none;
+}
+.SM5-div2-btn button{
+    height: 1cm;
+    width: 1cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100%;
+    background: none;
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px gray;
+}
+.SectionMain5-div2-div1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.SectionMain5-div2-div1 img{
+    height: 200px;
+    position: absolute;
+    margin-left: 70px;
+    border-radius: 10px;
+}
+.SM5-Review-Back{
+    width: 5cm;
+    height: 8.5cm;
+}
+.SM5-Review-GComments{
+    width: 12cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    color: white;
+    background-color: #8080806e;
+    border: 1px solid #ffffff77;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 2px #ffffff2b;
+}
+
+
+.SM5-Review-Comment{
+    padding-left: 90px;
+    padding-right: 30px;
+}
+.SM5-Review-Comment h4{
+    margin: 0;
+    font-weight: 500;
+}
+.SM5-Review-Comment p{
+    margin: 0;
+    font-weight: 300;
+}
+.SM5-Review-Comment a{
+    text-decoration: none;
+    padding: 5px;
+    color: #1cceff;
+    font-weight: 400;
+}

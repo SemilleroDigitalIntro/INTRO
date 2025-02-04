@@ -1,0 +1,736 @@
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    height: 8cm;
+    width: 100%;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230713/pngtree-3d-render-illustration-of-software-development-and-programming-image_3860859.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.header-section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131515;
+    top: 0;
+    position: sticky;
+    z-index: 3;
+    border-bottom: 1px solid gray;
+}
+.header-section1 div h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    background-image: linear-gradient(-90deg,#caf0f8,#0096c7,#0077b6,#023e8a,#0077b6,#0096c7,#48cae4,#90e0ef,#ade8f4,#caf0f8);
+    background-clip: text;
+    color: transparent;
+    background-size: 1000%;
+    animation: color1 20s linear infinite;
+}
+@keyframes color1{
+    from{
+        background-position: 0% 500%;
+    }
+    to{
+        background-position:  750% 1000%;
+    }
+}
+.header-section1 div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header-section1-nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header-section1-nav div a button{
+    height: 1cm;
+    width: 4cm;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(-90deg,#0096c7,#0077b6,#023e8a,#0077b6,#0096c7);
+    background-size: 500%;
+    animation: color2 10s linear infinite;
+    transition: 300ms;
+}
+.header-section1-nav div a button:hover{
+    height: 1.1cm;
+    width: 4.1cm;
+    font-size: 20px;
+    border: 2px solid #0077b6;
+    background: linear-gradient(-90deg,#0096c7,#023e8a,#0077b6,#0096c7);
+    background-clip: text;
+    color: transparent;
+    background-size: 500%;
+    animation: color2 3s linear infinite;
+    
+}
+.header-section1 div nav ul{
+    list-style: none;
+    appearance: none;
+    display: flex;
+    justify-content: space-around;
+}
+.header-section1 div nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.header-section1 div nav ul li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.header-section1 div nav ul li ul{
+    display: none;
+}
+.header-section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8cm;
+}
+
+.header-section2 div h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+}
+.header-section2 div button{
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 550;
+    color: white;
+    transition: 300ms;
+}
+.header-section2 div button:hover{
+    font-size: 22px;
+    font-weight: 600;
+    opacity: 0.8;
+
+}
+#Contact_Company{
+    border-bottom: 2px solid white;
+}
+#Contact_Dev{
+    opacity: 0.5;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.main-section{
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-evenly;
+    height: 20cm;
+}
+.main-section1-section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border:none;
+    background-color: #131515;
+}
+.main-section1-section1 form{
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2c28;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0077b6;
+    border-radius: 20px;
+    height: 18cm;
+    width: 12cm;
+    color: white;
+    animation: form-Company 1s;
+}
+@keyframes form-Company {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+.form-div-title{
+    display: flex;
+    width: 10cm;
+    
+}
+.form-div-title h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+    color: rgb(220, 220, 220);
+}
+.form-div-title h3{
+    margin: 0;
+    opacity: 0.7;
+}
+.main-section1-section1 form div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-section1-section1 form div label{
+    font-weight: 600;
+}
+.main-section1-section1 form div input{
+    height: 1cm;
+    width: 10cm;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+    outline-color: none;
+    border: 1px solid #0077b6;
+    border-radius: 5px;
+    background-color: #373933;
+}
+.main-section1-section1 form div textarea{
+    height: 4cm;
+    width: 10.5cm;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: white;
+    outline-color: #083d77;
+    border: 1px solid #0077b6;
+    border-radius: 5px;
+    background-color: #373933;
+}
+.main-section1-section1 form div button{
+    height: 1.2cm;
+    width: 10cm;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(-90deg,#0096c7,#023e8a,#0096c7);
+    background-size: 500%;
+    animation: color2 3s linear infinite;
+    transition: 300ms;
+}
+.main-section1-section1 form div button:hover{
+    height: 1.3cm;
+    width: 10.1cm;
+    border: 3px solid #0077b6;
+    font-size: 1.4em;
+    font-weight: 600;
+    transform: translateY(-10px);
+    background: linear-gradient(90deg,white,#0096c7,#023e8a,#0096c7);
+    background-size: 500%;
+    background-clip: text;
+    color: transparent;
+    animation: color2 8s linear infinite;
+}
+@keyframes color2 {
+    from{
+        background-position: 0% 250%;
+    }
+    to{
+        background-position: 250% 500%;
+    }
+}
+.div-section{
+    width: 50%;
+    background-color: #131515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-section1-section2{
+    display: flex;
+    flex-direction: column;
+    width: 12cm;
+    height: 18cm;
+    justify-content: center;
+    align-items: center;
+    background-color:#131515;
+    color: white;
+}
+
+.main-section1-section2 div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.main-section1-section2 div div a h1{
+    margin: 0;
+}
+.main-section1-section2 div div a{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.main-section1-section2 div a i{
+    font-size: 80px;
+}
+.main-section1-section2 div .P{
+    text-align: center;
+    font-size: 22px;
+}
+.main-section1-section2 div p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.Gen-section-developers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131515;
+}
+.Section-Developers{
+    display: none;
+    flex-direction: column;
+    height: 25cm;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #131515;
+}
+.Section-Developers div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Section-Developers div .Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8cm;
+    height: 10cm;
+    background-color: #2b2c28;
+    border: 2px solid #0077b6;
+    border-radius: 20px;
+    color: white;
+}
+.Card p{
+    text-align: center;
+}
+.Card div  button{
+    height: 0.8cm;
+    width: 3cm;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(-90deg,#0096c7,#023e8a,#0096c7);
+    background-size: 500%;
+    animation: color2 3s linear infinite;
+    transition: 300ms;
+}
+.Card div  button:hover{
+    height: 0.9cm;
+    width: 3.1cm;
+    background: linear-gradient(-90deg, white,#0096c7,#023e8a,#0096c7,white);
+    background-clip: text;
+    background-size: 500%;
+    color: transparent;
+    border: 2px solid #0077b6;
+    animation: color2 3s linear infinite;
+}
+.Desarrollador-img{
+    height: 150px;
+    border-radius: 100%;
+}.developers-pop{
+    height: 60%;
+    width: 70%;
+    position: absolute;
+    background-color: #0a0908;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    animation: Pop-Up 1s;
+}
+@keyframes Pop-Up {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+.Salir-developers-pop{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 10%;
+}
+.Salir-developers-pop button{
+    background: none;
+    border: none;
+    
+}
+.Salir-developers-pop button i{
+    font-size: 30px;
+    color: white;
+    color: #0077b6;
+    font-weight: 800;
+    transition: 300ms;
+}
+.Salir-developers-pop button i:hover{
+    font-size: 35px;
+    transform: translateY(5px);
+}
+.Gen-info-dev-pop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    
+}
+.Info-developers-pop{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.Info-developers-pop div{
+    animation: Info-devs2 0.7s;
+}
+@keyframes Info-devs2  {
+    from{
+        opacity: 0;
+        transform: translateY(10cm);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+.Info-developers-pop div h1{
+    font-size: 25px;
+    margin: 0;
+    animation: Info-devs 0.7s;
+}
+.Info-developers-pop div p{
+    text-align: center;
+    animation: Info-devs 1s;
+}
+@keyframes Info-devs {
+    from{
+        opacity: 0;
+        transform: translateX(-4cm);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.Formulario-developers{
+    height: 90%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2c28;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border-left: 2px solid #0077b6;
+   border-top: 2px solid #0077b6;
+   border-bottom: 2px solid #0077b6;
+   animation: Form-devs 0.5s;
+}
+.Formulario-developers form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+@keyframes Form-devs {
+    from{
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    to{
+        opacity: 1;
+        height: 90%;
+        width: 40%;
+    }
+}
+.Formulario-developers form div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.Formulario-developers form div h1{
+    font-size: 25px;
+}
+.Formulario-developers form div label{
+    font-size: 16px;
+    font-weight: 500;
+}
+.Formulario-developers form div input{
+    height: 0.6cm;
+    width: 6cm;
+    color: white;
+    background-color: #373933;
+    border: 1px solid #0077b6;
+    outline-color:#0077b6;
+    outline-width: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.Formulario-developers form div button{
+    height: 0.8cm;
+    width: 4cm;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(-90deg,#0096c7,#023e8a,#0096c7);
+    background-size: 500%;
+    animation: color2 8s linear infinite;
+    margin-top: 10px;
+    transition: 300ms;
+}
+.Formulario-developers form div button:hover{
+    height: 0.9cm;
+    width: 4.1cm;
+    font-size: 15px;
+    background: linear-gradient(-90deg, white,#0096c7,#023e8a,#0096c7,white);
+    background-clip: text;
+    background-size: 500%;
+    color: transparent;
+    border: 3px solid #0077b6;
+    animation: color2 3s linear infinite;
+}
+.Icono-developers-pop a i{
+    font-size: 40px;
+    background: linear-gradient(#023e8a,#0096c7);
+    background-clip: text;
+    color: transparent;
+    transition: 300ms;
+    animation: Form-Devs-Icon 0.5s;
+}
+.Icono-developers-pop a i:hover{
+    font-size: 50px;
+    transform: translateY(2px);
+}
+@keyframes Form-Devs-Icon {
+    from{
+        opacity: o;
+        transform: translateY(4cm);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16cm;
+    background-color: #0a0908;
+    
+}
+.main-section2 .MS-div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 14cm;
+    width: 60%;
+}
+
+.MS-div1-cont2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20cm;
+    position: absolute;
+    z-index: 2;
+}
+.MS-div1 img{
+    height: 100%;
+    width: 100%; 
+    position: relative;
+    border-radius: 5px;
+    z-index: 1;
+    opacity: 0.5;
+    filter: blur(1px);
+}
+.MS-div1 div h3{
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    opacity: 0.8;
+}
+.MS-div1 div h1{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    opacity: 0.9;
+}
+.MS-div1 div button{
+    height: 1.5cm;
+    width: 6cm;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: #083d77;
+    border: none;
+}
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.footer-section1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Fs1-div1{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.Fs1-div1-h{
+    display: flex;
+    align-items: baseline;
+}
+.Fs1-div1 div h1{
+    font-size: 80px;
+    color: #083d77;
+    margin: 0;
+    background-image: linear-gradient(-90deg,#caf0f8,#0096c7,#0077b6,#023e8a,#0077b6,#0096c7,#48cae4,#90e0ef,#ade8f4,#caf0f8);
+    color: transparent;
+    background-clip: text;
+    background-size: 1000%;
+    animation: color1 20s linear infinite;
+}
+
+.Fs1-div1 div p{
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.Fs1-div2-gen{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+.Fs1-div2 div{
+    display: flex;
+    flex-direction: column;
+}
+.Fs1-div2 div h1{
+    color: #0077b6;
+    font-size: 25px;
+}
+.Fs1-div2 div a{
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    transition: 300ms;
+}
+.Fs1-div2 div a:hover{
+    color: #0077b6;
+    font-size: 18px;
+}
+.Fs1-div1 .link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Fs1-div1 .link a i{
+    font-size: 30px;
+    color: #0077b6;
+    transition: 300ms;
+}
+.Fs1-div1 .link a i:hover{
+    font-size: 40px;
+    transform: translateY(-1px);
+}
+.link a{
+    align-items: center;
+}
+
+i{
+    font-size: 25px;
+    margin-right: 10px;
+}
+.Fs1-div3 div{
+    display: flex;
+    flex-direction: column;
+}
+.Fs1-div3 div h3{
+    font-size: 25px;
+    color: #0077b6;
+}
+.Fs1-div3 div a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    transition: 300ms;
+}
+.Fs1-div3 div a:hover{
+    font-size: 18px;
+    color: #0077b6;
+}
+.footer-section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

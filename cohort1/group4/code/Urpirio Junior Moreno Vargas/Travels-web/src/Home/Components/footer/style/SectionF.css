@@ -1,0 +1,35 @@
+.SectionFooter1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.SectionFooter1 div:hover{
+    font-size: 20px;
+    transition: 300ms;
+}
+.SectionFooter1 div:hover > h1 span{
+    font-size: 40px;
+}
+.SectionFooter1 h1{
+    display: flex;
+    align-items: baseline;
+}
+.SectionFooter1 span{
+   background: linear-gradient(90deg,#03f203,#01b501,green,#01b501,#03f203);
+   background-clip: text;
+   background-size: 500%;
+   color: transparent;
+   font-size: 35px;
+   transition: 300ms;
+   animation: UrpiAni 10s linear infinite;
+}
+@keyframes UrpiAni {
+    from{
+        background-position: 0% 250%;
+    }
+    to{
+        background-position: 250% 500%;
+    }
+}

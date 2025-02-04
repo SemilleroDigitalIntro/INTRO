@@ -1,0 +1,97 @@
+.SectionMain3{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    background-image: url("src/Home/Assets/main/Background/mountains-1645078_1920.jpg");
+    background-size: cover;
+    box-shadow: 1px 1px 10px 20px #80808017;
+    color: white;
+}
+.SectionMain3-div1 h1{
+    font-size: 40px;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px gray;
+}
+.SectonMain3-div2{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 50px 50px 50px;
+}
+.SM3-div2-div1 img{
+    height: 400px;
+    border-radius: 20px;
+    border: 1px solid #80808037;
+    box-shadow: 1px 1px 5px 5px #8080803a;
+}
+.SM3-div2-div2 {
+    height: 8cm;
+    width: 10cm;
+    display: flex;
+   justify-content: center;
+   flex-flow: column;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: #8080807a;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+.SM3-dv2-div2-div1{
+    display: flex;
+    justify-content:left;
+    align-items:start;
+    flex-flow: column;
+}
+.SM3-dv2-div2-div1 h3{
+    font-size: 30px;
+    margin: 0;
+}
+.SM3-dv2-div2-div2{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+.SM3-dv2-div2-div2 div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+.SM3-dv2-div2-div2 button{
+    height: 0.9cm;
+    width: 4cm;
+    border: 1px solid #add8e65a;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 5px #ffffff2d;
+    background-color: #058ebb;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 300ms;
+}
+.SM3-dv2-div2-div2 button:hover{
+    background: none;
+    border: 3px solid #0464b7;
+    transform: translateY(-5px);
+}
+.SM3-dv2-div2-div2 div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.SM3-dv2-div2-div2 div div h4{
+    margin: 0;
+}
+.SM3-dv2-div2-div2 div div span{
+    margin: 0;
+    font-size: 14px;
+}
