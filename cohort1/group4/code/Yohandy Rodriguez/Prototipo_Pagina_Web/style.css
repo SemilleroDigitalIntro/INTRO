@@ -1,0 +1,227 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    justify-items: start; 
+    align-items: center;
+}
+
+nav {
+    margin-top: 25px;
+    justify-content: space-between;
+    padding-right: 150px;
+}
+
+h1 {
+    padding-left: 150px;
+
+}
+
+h1 span {
+    color: aqua;
+}
+
+h2 span {
+    padding: 30px;
+}
+
+
+.img {
+    background-image: url("lake-6578057_1920.jpg");
+    height: 500px;
+}
+
+.Lema {
+    width: 100%;
+    height: 500px;
+    padding-top: 100px;
+    justify-items: center;
+    font-size: 2rem;
+}
+
+.boton {
+    padding-left: -190px ;
+}
+
+
+.PrimerBoton{
+    background-color: black;
+    color: white;
+    width: 50px;
+    border-style: none;
+    width: 150px;
+    height: 50px;
+    
+}
+
+a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.iconos {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.Icons {
+    width: 300px;
+    justify-content: space-around;
+    word-wrap: normal;
+    margin: 40px;
+    text-align: center;
+}
+
+svg{
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.Titulo2{
+    width: 255px;
+    margin-left: 550px;
+    border-bottom: 2px solid black;
+}
+
+.parrafo2{
+    word-wrap: normal;
+    text-align: center;
+    padding-left: 100px;
+    
+}
+
+.Contenido {
+    width: 1250px;
+    margin-top: 70px;
+}
+
+.Video{
+    margin-top: 50px;
+    padding-top: 50px;
+    margin-left: 190px;
+    
+}
+
+.imagenes{
+    padding-top: 100px;
+    width: 200px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+.MainParte3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apartados{
+    display: flex;
+    margin-top: 80px;
+    
+}
+
+.apartado1{
+    margin-left: 170px;
+}
+
+.apartado2{
+    margin-right: 190px;
+}
+
+.Articulo1{
+    word-wrap: normal;
+    width: 200px;
+    margin-top: 75px;
+}
+
+.Vista{
+    margin-top: 20px;
+    padding-left: 50px ;
+    padding-right: 50px;
+    height: 25px;
+    background-color: black;
+    border-radius: 7px;
+    border-style: none;
+    color: white;
+}
+
+.MainParte4{
+    margin-top: 120px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Titulo3{
+    border-bottom: 2px solid black;
+    width: 158px;
+}
+
+.Titulo4{
+    border-bottom: 2px solid black;
+    width: 212px;
+    margin-left: 550px;
+}
+
+.parrafo4{
+    margin-top: 30px;
+    word-wrap: normal;
+    width: 900px;
+    text-align: center;
+    margin-left: 190px;
+}
+
+.vista2{
+    margin-top: 30px;
+    margin-left: 570px;
+    padding-left: 50px ;
+    padding-right: 50px;
+    height: 25px;
+    background-color: black;
+    border-radius: 7px;
+    border-style: none;
+    color: white;
+}
+
+.Pie{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    margin-top: 80px;
+    background-color: black;
+}
+
+.PieDePagina{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.PieDePagina span{
+    margin-top: 15px;
+}
+
+a:hover{
+    color: aqua;
+}
+
+button:hover{
+    background-color: aqua;
+    transform: scale(1.1);
+    transition: 1s ease-in;
+}
+
+.PieDePagina span:hover{
+    color: aqua;
+}
+
+

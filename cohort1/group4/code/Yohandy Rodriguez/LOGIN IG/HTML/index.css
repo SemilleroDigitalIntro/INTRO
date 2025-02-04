@@ -1,0 +1,135 @@
+body{
+    margin: 0px;
+}
+
+
+:root{
+    background: linear-gradient(120deg, #833AB4, #E1306C , #FD1D1D, #FCAF45);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    justify-content: center;
+    justify-items: center;
+    margin-top: 3cm;
+    color: white;
+    margin-bottom: 1cm;
+}
+
+
+
+input {
+    max-width: 300px;
+    min-width: 250px;
+    max-height: 75px;
+    min-height: 25px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 20px;
+}
+
+.Formulario{ 
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.Texto{
+    text-align: center;
+    margin: 20px;
+}
+
+.linea1{
+    width: 150px;
+}
+
+
+hr {
+    opacity: 0.6;
+}
+
+legend{
+    
+    color: white;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Texto2 {
+    text-align: center;
+    margin: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    color: white;
+    transition: .4s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:hover span {
+    color: #0095f6;
+
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+
+.boton{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    background-color: #0095f6;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: .4s ease;
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+button:hover {
+    transform:scale(1.2);
+}
+
+.Texto3{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+b {
+    color: #0095f6;
+    transition: .4s ease;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+b:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 667px) {
+    .boton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
