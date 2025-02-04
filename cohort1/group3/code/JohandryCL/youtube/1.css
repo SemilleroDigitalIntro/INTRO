@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: left;
+
+}
+
+.barra {
+    align-content: center;
+    color: red;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header input {
+    padding: 5px;
+    width: 50%;
+    align-content: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.video {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.video img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.video h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.video p {
+    font-size: 14px;
+    color: #666;
+}
