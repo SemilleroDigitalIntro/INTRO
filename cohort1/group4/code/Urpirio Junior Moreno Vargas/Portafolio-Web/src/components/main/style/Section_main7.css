@@ -1,0 +1,121 @@
+.Section-main7{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: black;
+    color: white;
+}
+.Section-main7-div1{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.Section-main7-div1 h1{
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: transparent;
+    background: linear-gradient(90deg,#90e0ef,#0077b6,blue,#0077b6,#90e0ef);
+    background-clip: text;
+    background-size: 500%;
+    animation: ani1 5s linear infinite;
+}
+.Section-main7-div1 p{
+    font-size: 18px;
+}
+.Section-main7-div2{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+}
+.Card-services{
+    width:8cm;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 40px;
+    border-radius: 10PX;
+    border: 1px solid blue;
+    box-shadow: 1px 1px 5px 5px rgba(128, 128, 128, 0.068);
+    padding: 20px 20px 20px 20px;
+    background: #000107;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@keyframes infinite_transtion {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.Card-services-div1{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.Card-services-div1 p{
+    text-align: center;
+    font-weight: 300;
+}
+.Card-services-div2{
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: center;
+}
+.Card-services-div2 h3{
+    margin: 0;
+}
+.Card-services-div2 p{
+    text-align: center;
+    font-size: 14px;
+}
+.Card-services img{
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+#Cardservices1{
+
+    animation: infinite_transtion 0.5s;
+}
+#Cardservices2{
+
+    animation: infinite_transtion 0.5s;
+}
+#Cardservices3{
+display: none;
+animation: infinite_transtion 0.5s;
+}
+#Cardservices4{
+    display: none;
+    animation: infinite_transtion 0.5s;
+}
+
+@media (max-width: 667px) and (max-height: 740px){
+    .Section-main7-div1 h1{
+        font-size: 30px;
+    }
+    .Section-main7-div1 p{
+        text-align: center;
+        font-size: 16px;
+    }
+}

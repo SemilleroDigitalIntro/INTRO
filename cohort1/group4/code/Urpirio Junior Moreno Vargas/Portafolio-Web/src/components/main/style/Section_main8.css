@@ -1,0 +1,297 @@
+.Section-main8{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 40px;
+    background: #000107 ;
+    color: white;
+    flex-wrap: wrap;
+}
+.form{
+    width: 14cm;
+    height: 20cm;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 255, 0.052);
+    gap: 30px;
+    background-color: black;
+    color: white;
+    
+}
+.form-div1{
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    flex-flow: column;
+    width: 80%;
+}
+.form-div1 h1{
+    font-size: 35px;
+    color: transparent;
+    background: linear-gradient(90deg,#90e0ef,#0077b6,blue,#0077b6,#90e0ef);
+    background-clip: text;
+    background-size: 500%;
+    animation: ani1 5s linear infinite;
+    margin: 0;
+}
+.form-div1 p{
+    font-size: 14px;
+}
+
+.Form-div2{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+.Form-div2 div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 5px;
+}
+.Form-div2 div input{
+    height: 1cm;
+    width: 5cm;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #000107;
+    color: white;
+    font-size: 16px;
+}
+#Error2{
+    display: none;
+    font-size: 12px;
+    color: red;
+    margin-left: 5px;
+}
+#Error1{
+    display: none;
+    font-size: 12px;
+    color: red;
+    margin-left: 5px;
+}
+.form-div3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+.form-div3 div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 5px;
+}
+.form-div3 div input{
+    height: 1cm;
+    width: 5cm;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #000107;
+    color: white;
+    font-size: 16px;
+}
+#Error3{
+    display: none;
+    font-size: 12px;
+    color: red;
+    margin-left: 5px;
+}
+.form-div4{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.form-div4 button{
+    width: 11cm;
+    height: 1.1cm;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: #000107;
+    color: white;
+}
+#Error4{
+    display: none;
+    font-size: 12px;
+    color: red;
+    margin-left: 5px;
+}
+#Error5{
+    display: none;
+    font-size: 14px;
+    color: red;
+}
+.Btn-Selection{
+    margin-top: 113.5px;
+    width: 11.2cm;
+    display: none;
+    flex-flow: column;
+    z-index: 3;
+    position: absolute;
+}
+.Btn-Selection button{
+    width: 6cm;
+    height: 0.5cm;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-radius: 0px;
+    background: white;
+    color: black;
+}
+.Btn-Selection .btn-last-selection{
+    border-bottom: 1px solid black;
+}
+.form-div5{
+    width: 80%;
+    height: 4cm;
+    display: flex;
+    justify-content: center;
+}
+.form-div5 textarea{
+    width: 11cm;
+    height: 4cm;
+    resize: none;
+    background: #000107;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: white;
+}
+.form-btn-sendMessage{
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+.form-btn-sendMessage button{
+    height: 1cm;
+    width: 4cm;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(90deg,blue,#0077b6);
+}
+#GlobalError{
+    border: 2px solid orange;
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#GlobalError p{
+    font-size: 14px;
+    font-weight: 600;
+}
+#GlobalSend{
+    border: 2px solid #38b000;
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#GlobalSend p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.Section-main8-div2{
+    width: 14cm;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 20px;
+}
+.S-M8-Dv2-Contact{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.S-M8-Dv2-Contact div{
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+    justify-content: left;
+}
+.S-M8-Dv2-Contact .S-M8-Dv2-Contact-div1{
+    height: 1.5cm;
+    width: 1.5cm;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: linear-gradient(90deg,blue,#0077b6);
+}
+.S-M8-Dv2-Contact div h3{
+    margin: 0;
+}
+.S-M8-Dv2-Contact div a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: 300ms;
+}
+.S-M8-Dv2-Contact div a:hover{
+    color: blue;
+}
+.S-M8-Dv2-Contact div i{
+    font-size: 30px;
+}
+@media (max-width: 485px) and (max-height: 740px) {
+    .form{
+        width: 9.5cm;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .Form-div2{
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .Form-div2 div input{
+        width: 8cm;
+    }
+    .form-div3{
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .form-div3 div input{
+        width: 8cm;
+    }
+    .form-div5 {
+        width: 90% ;
+    }
+    .Btn-Selection button{
+
+    }
+    .form-div4 button{
+        width: 8cm;
+    }
+    .S-M8-Dv2-Contact{
+        flex-flow: column;
+    }
+    .S-M8-Dv2-Contact div{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

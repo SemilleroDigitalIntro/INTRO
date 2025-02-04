@@ -1,0 +1,168 @@
+.Section-main5{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    background: black;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+}
+.Section-main-div1{
+    display: flex;
+    flex-flow: column;
+    width: 12cm;
+    gap: 20px;
+    color: white;
+}
+.Section-main-div1 .H1{
+    font-size: 30px;
+}
+.Section-main-div1 .H1 h1{
+    display: flex;
+    align-items: center;
+    color: transparent;
+    background: linear-gradient(90deg,#90e0ef,#0077b6,blue,#0077b6,#90e0ef);
+    background-clip: text;
+    margin: 0;
+    background-size: 500%;
+    animation: ani1 5s linear infinite;
+    
+}
+
+.Section-main-div2{
+    display: flex;
+    flex-flow: column;
+    width: 12cm;
+    gap: 20px;
+    color: white;
+}
+.Section-main-div2 .H1{
+    font-size: 30px;
+}
+.Section-main-div2 .H1 h1{
+    display: flex;
+    align-items: center ;
+    color: transparent;
+    background: linear-gradient(90deg,#90e0ef,#0077b6,blue,#0077b6,#90e0ef);
+    background-clip: text;
+    margin: 0;
+    background-size: 500%;
+    animation: ani1 5s linear infinite;
+}
+
+.Card-Education{
+    display: flex;
+    height: 3.5cm;
+    width: 13cm;
+    flex-flow: column;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    background-color: #000814;
+}
+.Card-Education-back{
+    position: relative;
+    z-index: 1;
+    height: 3.5cm;
+    width: 100%;
+    background: linear-gradient(-90deg,blue,#0077b6);
+    border-radius: 20px;
+    display: none;
+    animation: appear1 1s;
+}
+.Card-Education:hover > .Card-Education-back{
+    display: flex;
+}
+.Card-Education-Noback{
+    position: absolute;
+    z-index: 2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Card-Education h1{
+    margin: 0;
+}
+.Card-Education h2{
+    margin: 0;
+    font-size: 16px;
+}
+.Card-Experience{
+    display: flex;
+    height: 3.5cm;
+    width: 12cm;
+    flex-flow: column;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+   background: #000814;
+}
+ .Card-Experience-back{
+    height: 3.5cm;
+    width: 100%;
+    background: linear-gradient(-90deg,blue,#0077b6);
+    z-index: 1;
+    position: relative;
+    border-radius: 20px;
+    display: none;
+    animation: appear1 1s;
+}
+.Card-Experience:hover > .Card-Experience-back{
+    display: flex;
+}
+@keyframes appear1 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.Card-Experience-Noback{
+    position: absolute;
+    z-index: 2;
+    margin-left: 20px;
+}
+
+
+.Card-Experience h1{
+    margin: 0;
+}
+.Card-Experience h2{
+    margin: 0;
+    font-size: 16px;
+}
+@media (max-width: 485px) and (max-height: 740px)  {
+    .Section-main-div1{
+        justify-content: center;
+        align-items: center;
+    }
+    .Section-main-div2{
+        justify-content: center;
+        align-items: center;
+    }
+    .Section-main-div1 .H1 h1{
+        font-size: 40px;
+    }
+    .Section-main-div2 .H1 h1{
+        font-size: 40px;
+    }
+    .Card-Education{
+        width: 9cm;
+        height: 4.5cm;
+    }
+    .Card-Education-back{
+        position: relative;
+        z-index: 1;
+        height: 4.5cm;
+        width: 100%;
+    }
+
+    .Card-Experience{
+        height: 3.5cm;
+        width: 9cm;
+    }
+
+}

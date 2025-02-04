@@ -1,0 +1,202 @@
+.Section-main4-div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.Section-main4-div1 h1{
+font-size: 50px;
+color: transparent;
+background: linear-gradient(90deg,#90e0ef,#0077b6,blue,#0077b6,#90e0ef);
+background-clip: text;
+background-size: 500%;
+animation: ani1 5s linear infinite;
+}
+.Section-main4-div1 nav{
+    height: 1.2cm ;
+    width: 9cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px solid blue;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 255, 0.13);
+
+}
+
+@keyframes navTranstion1 {
+    from{
+        transform: translateX(80px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes navTranstion1_Negative {
+    from{
+        transform: translateX(-85px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes navTranstion2 {
+    from{
+        transform: translateX(170px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes navTranstion2_Negative {
+    from{
+        transform: translateX(-170px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes navTranstion3 {
+    from{
+        transform: translateX(250px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes navTranstion3_Negative {
+    from{
+        transform: translateX(-250px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.All{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1cm;
+    width: 2.5cm;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    background: none;
+}
+.All span{
+    position: absolute;
+    height: 1cm;
+    width: 2.28cm;
+    padding-top: 22px;
+    z-index: 2;
+}
+.All #Sm4-background-All{
+    background: linear-gradient(90deg,blue,#0077b6,#90e0ef);
+    height: 1cm;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 0px;
+    z-index: 1;
+    display: flex;
+}
+.Apps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1cm;
+    width: 2.5cm;
+    border: none;
+    color: white;
+    background: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.Apps span{
+    position: absolute;
+    height: 1cm;
+    width: 2.28cm;
+    padding-top: 22px;
+    z-index: 2;
+}
+.Apps #Sm4-background-Apps{
+    background: linear-gradient(90deg,blue,#0077b6,#90e0ef);
+    height: 1cm;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 0px;
+    display: none;
+    z-index: 1;
+}
+.Webs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1cm;
+    width: 2.5cm;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.Webs span{
+position: absolute;
+height: 1cm;
+width: 2.3cm;
+padding-top: 22px;
+z-index: 2;
+}
+.Webs #Sm4-background-Webs{
+    background: linear-gradient(90deg,blue,#0077b6,#90e0ef);
+    height: 1cm;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 0px;
+    display: none;
+    z-index: 1;
+}
+.UX-UI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1cm;
+    width: 2.5cm;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    
+} 
+
+.UX-UI span{
+position: absolute;
+height: 1cm;
+width: 2.30cm;
+z-index: 2;
+padding-top: 22px;
+}
+.UX-UI #Sm4-background-UX_UI{
+    background: linear-gradient(90deg,blue,#0077b6,#90e0ef);
+    height: 1cm;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 0px;
+    display: none;
+    z-index: 1;
+}
+@media (max-width: 485px) and (max-height: 740px) {
+    .Section-main4-div1 h1{
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,321 @@
+:root{
+    font-family: "Poppins", serif;
+}
+body{
+    margin: 0;
+}
+/* Diseño de la section dos*/
+.Section-main2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000107;
+}
+.Section-main2 div{
+    display: flex;
+    align-items: center;
+    width: 4cm;
+}
+.Section-main2 div h2{
+    font-size: 70px;
+    font-weight: 600;
+    color: transparent;
+    background: linear-gradient(90deg,#90e0ef,#0077b6,#90e0ef);
+    background-clip: text;
+    background-size: 500%;
+    animation: ani1 2s linear infinite;
+}
+.Section-main2 div p{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+@media (max-width: 820px) and (min-width: 485px) {
+    .Section-main2{
+        padding-left: 30px;
+        padding-right: 30px;
+        width: none;
+    }
+    .Section-main2 div{
+        width: 6cm;
+    }
+    .Section-main2 div p{
+        text-align: left;
+    }
+}
+@media (max-width: 485px) and (max-height: 740px) {
+    .Section-main2{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .Section-main2 div{
+        height: 3cm;
+        margin-right: 40px;
+    }
+    
+}
+/*Diseño de la parte 1 de la section tres*/
+.Section-main3{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: black;
+}
+.Section-main3-div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.Section-main3-div1 h1{
+    font-size: 45px;
+    margin: 0;
+    color: transparent;
+    background: linear-gradient(90deg,#90e0ef,#0077b6,blue,#0077b6,#90e0ef);
+    background-clip: text;
+    background-size: 500%;
+    animation: ani1 5s linear infinite;
+}
+.Section-main3-div1 p{
+    width: 75%;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+/*Diseño de la parte 2 de la section tres*/
+
+.Section-main3-div2{
+    width: 80%;
+
+}
+.Sm3-container-links{
+    height: 2.5cm;
+    border-bottom: 1px solid blue;
+}
+.Sm3-link-back{
+    background: linear-gradient(-90deg,blue,#0077b6);
+    height: 2.5cm;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+@keyframes trans1 {
+    from{
+        transform: translateY(90px);
+    }
+    to{
+        transform: translateY(0px)
+    }
+}
+@keyframes Ntrans2 {
+    from{
+        transform: translateY(-90px);
+    }
+    to{
+        transform: translateY(0px)
+    }
+}
+@keyframes trans3 {
+    from{
+        transform: translateY(190px);
+    }
+    to{
+        transform: translateY(0px)
+    }
+}
+@keyframes Ntrans3 {
+    from{
+        transform: translateY(-190px);
+    }
+    to{
+        transform: translateY(0px)
+    }
+}
+@keyframes trans4 {
+    from{
+        transform: translateY(280px);
+    }
+    to{
+        transform: translateY(0px)
+    }
+}
+@keyframes Ntrans4 {
+    from{
+        transform: translateY(-280px);
+    }
+    to{
+        transform: translateY(0px)
+    }
+}
+
+.Sm3-content-Noback {
+    height: 2.5cm;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    z-index: 2;
+}
+.Sm3-content-Noback div{
+ width: 10cm;
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+.Sm3-content-Noback div span{
+    font-size: 20px;
+}
+.Sm3-content-Noback div h1{
+    font-size: 30px;
+}
+.Sm3-content-Noback p{
+    width: 16cm;
+    font-size: 18px;
+}
+.Sm3-content-Noback i{
+    font-size: 40px;
+    rotate: -180deg;
+}
+@media (max-width: 820px) and (min-width: 485px) {
+    .Sm3-content-Noback div h1{
+        font-size: 20px;
+    }
+    .Sm3-content-Noback p{
+       font-size: 14px;
+    }
+}
+@media (max-width: 485px) and (max-height: 740px) {
+    .Section-main3-div1 h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .Sm3-content-Noback p{
+display: none;
+    }
+    
+}
+
+/*Diseño de la parte 2 de la section cuatro*/
+.Section-main4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 50px;
+    background: #000107;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.Divs-cards{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    gap: 30px;
+    flex-flow: wrap;
+    margin-bottom: 20px;
+}
+.Cards-pages{
+    width: 15cm;
+    height: 9cm;
+    background-color: rgba(1, 31, 62, 0.189);
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: center;
+    border: 1px solid blue;
+    border-radius: 10px;
+    animation: appear2 0.5s;
+}
+@keyframes appear2 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.Cards-pages img{
+    height: 300px;
+}
+.Cards-pages:hover > .Cards-pages-div1{
+    display: flex;
+}
+.Cards-pages-div1{
+    height: 2cm;
+    width: 14cm;
+    display: none;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    border: 1px solid blue;
+    border-radius: 10px;
+    background: linear-gradient(90deg,blue,#0077b6,#90e0ef);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 255, 0.197);
+    text-decoration: none;
+    color: white;
+    animation: appear2 0.5s;
+}
+.Cards-pages div h1, p{
+    margin: 0 ;
+}
+.Cards-pages-div1 i{
+    rotate: -180deg;
+    font-size: 35px;
+}
+#NoContent{
+    background-color: #e5e5e5;
+    display: none;
+}
+#NoContent img{
+    margin-bottom: 20px;
+    transition: 300ms;
+    margin-left: 0px;
+    margin-right: 0px ;
+}
+#NoContent:hover > img{
+    height: 200px;
+    margin-bottom: 100px;
+}
+@media (max-width: 667px){
+    .Cards-pages{
+        width: 10cm;
+        height: 6cm;
+    }
+    .Cards-pages img{
+        height: 200px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .Cards-pages-div1{
+        height: 1.7cm;
+        width: 8.5cm;
+    }
+    .Cards-pages-div1 h1{
+        font-size: 20px;
+    }
+    .Cards-pages-div1 p{
+       font-size: 12px;
+    }
+    #NoContent:hover > img{
+        height: 120px;
+        margin-bottom: 100px;
+        margin-left: 72px;
+        margin-right:72px ;
+    }
+}
